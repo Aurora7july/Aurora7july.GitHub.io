@@ -775,4 +775,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   refreshFn()
   unRefreshFn()
+
+// 针对特定导航项的点击事件
+document.addEventListener('DOMContentLoaded', function () {
+  var lifeNavItem = document.querySelector('.nav-item-life'); // 替换为你实际导航项的类名或其他选择器
+  if (lifeNavItem) {
+      lifeNavItem.addEventListener('click', function (event) {
+          event.preventDefault();
+          filterPostsByTag('个人'); // 替换为你实际的标签
+      });
+  }
+});
+
+// 根据标签筛选帖子的函数
+function filterPostsByTag(tag) {
+  var postItems = document.querySelectorAll('.post-item'); // 替换为你实际帖子项的类名或其他选择器
+  postItems.forEach(function (postItem) {
+      var tags = postItem.dataset.tags.split(','); // 替换为你实际存储标签的方式
+      if (tags.includes(tag)) {
+          postItem.style.display = 'block';
+      } else {
+          postItem.style.display = 'none';
+      }
+  });
+}
 })
