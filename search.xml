@@ -295,6 +295,56 @@
       </tags>
   </entry>
   <entry>
+    <title>git学习</title>
+    <url>/2023/12/16/git%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="git学习"><a href="#git学习" class="headerlink" title="git学习"></a>git学习</h1><h2 id="第I章-git是什么"><a href="#第I章-git是什么" class="headerlink" title="第I章 git是什么"></a>第I章 git是什么</h2><h3 id="git能解决什么？"><a href="#git能解决什么？" class="headerlink" title="git能解决什么？"></a>git能解决什么？</h3><p>git，是版本管理系统(时光机)  </p>
+<ul>
+<li>可以回到过去的状态</li>
+<li>对于同一个文件可以多人协助修改</li>
+<li>能记录修改源代码的原因</li>
+</ul>
+<h3 id="作为交流场所的GitHub和Bitbucket"><a href="#作为交流场所的GitHub和Bitbucket" class="headerlink" title="作为交流场所的GitHub和Bitbucket"></a>作为交流场所的GitHub和Bitbucket</h3><ul>
+<li>相互之间检查代码</li>
+<li>讨论前端样式和功能的实现</li>
+<li>共享设计前后过程，相互提意见</li>
+</ul>
+<h2 id="第II章-我独自学习"><a href="#第II章-我独自学习" class="headerlink" title="第II章 我独自学习"></a>第II章 我独自学习</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>下载SourceTree</p>
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>正常操作</p>
+<h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><ol>
+<li>添加一个TXT或是其他的，sourcetree都会感觉到</li>
+<li>点击“暂存所有”</li>
+<li>提交</li>
+<li>继续积累历史记录(先暂存再提交)</li>
+<li>记得添加注释</li>
+</ol>
+<h3 id="用checkout移动提交"><a href="#用checkout移动提交" class="headerlink" title="用checkout移动提交"></a>用checkout移动提交</h3><p>执行checkout可以让操作目录中的文件变成指定某个时刻文件的状态</p>
+<h2 id="第III章-多人协作使用git"><a href="#第III章-多人协作使用git" class="headerlink" title="第III章 多人协作使用git"></a>第III章 多人协作使用git</h2><h3 id="复制练习用仓库"><a href="#复制练习用仓库" class="headerlink" title="复制练习用仓库"></a>复制练习用仓库</h3><p>怎么复制？1.复刻；2，克隆<br>一个是复制到GitHub上，一个是复制到本地上</p>
+<ul>
+<li>复刻：指复制他人公开的远程仓库到自己账号中</li>
+<li>克隆：把远程仓库复制到本地</li>
+</ul>
+<h3 id="创建并行世界-分支"><a href="#创建并行世界-分支" class="headerlink" title="创建并行世界(分支)"></a>创建并行世界(分支)</h3><ul>
+<li>分支是什么？<br>分支是一个指向提交对象可变指针。指针的意思就是“现在”</li>
+<li>移动分支<br>可以用checkout来让自己移动到任意一次提交</li>
+<li>master是什么？<br>最开始就存在的分支，就像河流的“干流”</li>
+</ul>
+<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><p>merge可以让分支进行合并</p>
+<h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>上传数据，推送</p>
+<h3 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h3><p>想要下载并反映到本地仓库的时候就是拉取</p>
+<h3 id="有冲突怎么办"><a href="#有冲突怎么办" class="headerlink" title="有冲突怎么办"></a>有冲突怎么办</h3><ul>
+<li>冲突是什么？<br>在同一行代码在同一时间被不同的人修改时发生的状况</li>
+</ul>
+<h3 id="从拉取请求到合并"><a href="#从拉取请求到合并" class="headerlink" title="从拉取请求到合并"></a>从拉取请求到合并</h3><p>想把自己的代码同步到fork源仓库中，用拉取请求(pull request)</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo命令</title>
     <url>/2023/07/06/hexo%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h1><h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h2><p>使用以下命令后新文章将在博客目录下的<code>/source/_posts/</code>文件夹下<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
@@ -313,6 +363,21 @@
       <tags>
         <tag>学习</tag>
         <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SystemVerilog学习</title>
+    <url>/2023/12/16/systemverilog%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="第I章-验证导论"><a href="#第I章-验证导论" class="headerlink" title="第I章 验证导论"></a>第I章 验证导论</h1><h2 id="基本测试平台的功能"><a href="#基本测试平台的功能" class="headerlink" title="基本测试平台的功能"></a>基本测试平台的功能</h2><p>测试平台的用途在于确定待测设计的正确性，包含以下步骤:<br>1.产生激励<br>2.把激励施加到DUT上<br>3.捕捉响应<br>4.检验正确性<br>5.对照整个验证目标测算进展情况</p>
+<h1 id="第II章-数据类型"><a href="#第II章-数据类型" class="headerlink" title="第II章 数据类型"></a>第II章 数据类型</h1><h2 id="内建数据类型"><a href="#内建数据类型" class="headerlink" title="内建数据类型"></a>内建数据类型</h2><p>两种基本类型：变量和线网，各自都可以有四种取值：1,0,Z,X</p>
+<h3 id="1-逻辑-logic-类型"><a href="#1-逻辑-logic-类型" class="headerlink" title="1.逻辑(logic)类型"></a>1.逻辑(logic)类型</h3><p>SystemVerilog对经典的reg数据类型进行改进，使得它除了作为一个变量以外，还可以被连续赋值、门单元和模块所驱动，这种改进的数据类型被称为logic。<br>任何使用线网的地方均可以使用logic，但要求logic不能有多个结构性的驱动<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//logic类型使用实例</span><br><span class="line">module logic(input logic);</span><br><span class="line">  parameter CYCLE=20;</span><br><span class="line">  logic q,q_1,d,clk,rst_1;</span><br><span class="line">  inital begin</span><br><span class="line">    clk=0;                           //过程赋值</span><br><span class="line">    forever # (CYCLE/2) clk=~clk;</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  assign rst_1=~rst_h;               //连续赋值</span><br><span class="line">  not n1(q_1,q);                     //q_1被门驱动</span><br><span class="line">  my_dff d1(q,d,clk,rst_1);          //q被模块驱动</span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-双状态数据类型"><a href="#2-双状态数据类型" class="headerlink" title="2.双状态数据类型"></a>2.双状态数据类型</h3>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -505,6 +570,28 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
+    <title>马克思主义原理期末复习</title>
+    <url>/2022/12/07/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%8E%9F%E7%90%86%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<p>正确率应该在85%以上，只有选择题</p>
+<p>尽量使用网页打开文件，实在打不开点击<a href="https://github.com/Aurora7july/Files.github.io/blob/main/%E7%AC%94%E8%AE%B0PDF/%E9%A9%AC%E5%8E%9F%E5%A4%8D%E4%B9%A0.pdf">备份</a>试试看。</p>
+
+
+	<div class="row">
+    <embed src="/pdf/马原复习.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>量子力学</title>
     <url>/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -519,28 +606,6 @@ for faceRect in faceRects:
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>马克思主义原理期末复习</title>
-    <url>/2022/12/07/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%8E%9F%E7%90%86%E9%A2%98%E7%9B%AE/</url>
-    <content><![CDATA[<p>正确率应该在85%以上，只有选择题</p>
-<p>尽量使用网页打开文件，实在打不开点击<a href="https://github.com/Aurora7july/Files.github.io/blob/main/%E7%AC%94%E8%AE%B0PDF/%E9%A9%AC%E5%8E%9F%E5%A4%8D%E4%B9%A0.pdf">备份</a>试试看。</p>
-
-
-	<div class="row">
-    <embed src="/pdf/马原复习.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-]]></content>
       <categories>
         <category>学习</category>
       </categories>
