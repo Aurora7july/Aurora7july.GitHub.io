@@ -1,60 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Python每日练习</title>
-    <url>/2023/11/01/Python%E6%AF%8F%E6%97%A5%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="2023-11-1练习"><a href="#2023-11-1练习" class="headerlink" title="2023.11.1练习"></a>2023.11.1练习</h1><h2 id="问题1："><a href="#问题1：" class="headerlink" title="问题1："></a>问题1：</h2><p>编写一个程序，要求用户输入一个正整数，然后计算该整数的阶乘并输出结果。阶乘是指将一个整数与小于它的所有正整数相乘的结果。例如，5的阶乘是5 <em> 4 </em> 3 <em> 2 </em> 1 = 120。</p>
-<h2 id="要求："><a href="#要求：" class="headerlink" title="要求："></a>要求：</h2><ul>
-<li>提示用户输入一个正整数。</li>
-<li>检查用户输入是否是正整数，如果不是，显示错误消息并要求重新输入。</li>
-<li>计算输入整数的阶乘。</li>
-<li>输出计算结果。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#提示用户输入</span><br><span class="line">num = input(&quot;请阁下输入一个正整数：&quot;) </span><br><span class="line"></span><br><span class="line">#判断用户输入是否是正整数</span><br><span class="line">if num.isdigit(): </span><br><span class="line">   num = int(num)</span><br><span class="line">   if num &gt; 0:</span><br><span class="line">      print(f&quot;&#123;num&#125;是一个正整数&quot;)</span><br><span class="line">   else:</span><br><span class="line">      print(f&quot;&#123;num&#125;不是正整数，请阁下重新输入&quot;)</span><br><span class="line">else:</span><br><span class="line">   print(f&quot;&#123;num&#125;不是正整数，请阁下重新输入&quot;) </span><br><span class="line"></span><br><span class="line">#计算整数的阶乘</span><br><span class="line">result = 1</span><br><span class="line">for i in range(1, num+1):</span><br><span class="line">    result *= i</span><br><span class="line">print(f&quot;&#123;num&#125;的阶乘为:&#123;result&#125;&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="问题2："><a href="#问题2：" class="headerlink" title="问题2："></a>问题2：</h2><p> 编写一个Python程序，要求用户输入一个字符串，然后判断这个字符串是否是回文字符串。回文字符串是指正着读和倒着读都一样的字符串，例如 “level”、”radar” 和 “madam” 都是回文字符串。</p>
-<h2 id="要求：-1"><a href="#要求：-1" class="headerlink" title="要求："></a>要求：</h2><ul>
-<li>提示用户输入一个字符串。</li>
-<li>忽略字符串中的空格，标点符号和大小写（将所有字符转换为小写）。</li>
-<li>判断输入的字符串是否是回文字符串。</li>
-<li>输出相应的结果，指出是否是回文字符串。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import re</span><br><span class="line"></span><br><span class="line">#提示用户输入</span><br><span class="line">user_input = input(&quot;请阁下输入一个字符串：&quot;)</span><br><span class="line"></span><br><span class="line">#移除空格，标点和大小写</span><br><span class="line">user_input = user_input.replace(&quot; &quot;, &quot;&quot;) #移除空格</span><br><span class="line">user_input = re.sub(r&#x27;[^\w\s]&#x27;,&#x27;&#x27;,user_input) #移除符号标点</span><br><span class="line">user_input = user_input.lower() #转换为小写</span><br><span class="line"></span><br><span class="line">#判断输入的字符是否是回文字符串</span><br><span class="line">fan_input = user_input[::-1] #创建反向字符串</span><br><span class="line">if fan_input == user_input: #判断是否是回文字符串</span><br><span class="line">    print(f&quot;恭喜阁下，&#123;user_input&#125;是回文字符串！&quot;)</span><br><span class="line">else:</span><br><span class="line">    print(f&quot;很抱歉，&#123;user_input&#125;并不是回文字符串&quot;)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="2023-11-5练习"><a href="#2023-11-5练习" class="headerlink" title="2023.11.5练习"></a>2023.11.5练习</h1><h2 id="问题1：-1"><a href="#问题1：-1" class="headerlink" title="问题1："></a>问题1：</h2><p>写一个Python程序，找出一个列表中的所有奇数，并将它们存储在一个新的列表中。</p>
-<h2 id="要求：-2"><a href="#要求：-2" class="headerlink" title="要求："></a>要求：</h2><ul>
-<li>创建一个函数，该函数接受一个整数列表作为参数。</li>
-<li>函数应该返回一个新的列表，其中包含原列表中的所有奇数。</li>
-<li>不要使用内置的filter函数或列表解析来完成任务。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def find_odd_numbers(input_list): #定义奇数函数</span><br><span class="line">   odd_numbers = [] #形成一个列表</span><br><span class="line">   input_list = input_list.split(&quot;,&quot;) #对列表进行切片</span><br><span class="line">   input_list = [int(num.strip()) for num in input_list] #检查奇数</span><br><span class="line">   input_list = [int(num_str.strip()) for num_str in input_list]  # 更改变量名</span><br><span class="line"></span><br><span class="line">   for num in input_list: #遍历列表</span><br><span class="line">      if num % 2 != 0:</span><br><span class="line">         odd_numbers.append(num)</span><br><span class="line">         </span><br><span class="line">   return odd_numbers</span><br><span class="line"></span><br><span class="line">user_input = input(&quot;请阁下输入一串列表(用，隔开): &quot;)</span><br><span class="line">result = find_odd_numbers(user_input)</span><br><span class="line">print(&quot;奇数列表：&quot;, result)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="问题2：-1"><a href="#问题2：-1" class="headerlink" title="问题2："></a>问题2：</h2><p>编写一个Python程序，计算斐波那契数列的第n个数字，其中n是非负整数。<br>斐波那契数列的定义如下：<br>1.第0个和第1个数字分别为0和1。<br>2.从第2个数字开始，每个数字都是前两个数字之和</p>
-<h2 id="要求：-3"><a href="#要求：-3" class="headerlink" title="要求："></a>要求：</h2><ul>
-<li>创建一个函数，接受一个非负整数n作为参数。</li>
-<li>函数应该返回斐波那契数列的第n个数字。</li>
-<li>请使用递归方式来解决这个问题。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#定义斐波那契数列的函数</span><br><span class="line">def fibonacci(n):</span><br><span class="line">   if n &lt;= 0:</span><br><span class="line">      return 0</span><br><span class="line">   elif n == 1:</span><br><span class="line">      return 1</span><br><span class="line">   else:</span><br><span class="line">      return fibonacci(n-1) + fibonacci(n-2)</span><br><span class="line"></span><br><span class="line">#提示用户输入</span><br><span class="line">user_input = input(&quot;请阁下输入一个非负整数&quot;)</span><br><span class="line"></span><br><span class="line">#测试用户输入的是否是一个非负整数</span><br><span class="line">try:</span><br><span class="line">   user_input = int(user_input)</span><br><span class="line">   if user_input &lt; 0:</span><br><span class="line">    print(&quot;让你打非负整数你不听,你XX!&quot;)</span><br><span class="line">   else:</span><br><span class="line">    result =  fibonacci(user_input)</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;输入什么玩意儿，让你输入一个非负整数&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="2023-11-6练习"><a href="#2023-11-6练习" class="headerlink" title="2023.11.6练习"></a>2023.11.6练习</h1><h2 id="问题1：-2"><a href="#问题1：-2" class="headerlink" title="问题1："></a>问题1：</h2><p>猜数字游戏</p>
-<h2 id="要求：-4"><a href="#要求：-4" class="headerlink" title="要求："></a>要求：</h2><p>编写一个Python程序，实现一个简单的猜数字游戏。程序随机生成一个1到100之间的整数，然后要求玩家猜这个数字，直到玩家猜中为止。程序需要提供反馈，告诉玩家他们的猜测是太高还是太低。最后，当玩家猜中数字时，显示猜测次数和祝贺消息。<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line">def guess_num():</span><br><span class="line">   real_num = random.randint(1,100)</span><br><span class="line">   attempts = 0</span><br><span class="line"></span><br><span class="line">   while True:</span><br><span class="line">      user_num = int(input(&quot;请猜测一下目标数字为(在1-100间选择)：&quot;))</span><br><span class="line">      attempts += 1</span><br><span class="line"></span><br><span class="line">      if user_num &lt; real_num:</span><br><span class="line">         print(&quot;结果与猜测不符，有点小，请再试一次&quot;)</span><br><span class="line">      elif user_num &gt; real_num:</span><br><span class="line">         print(&quot;结果与猜测不符，有点大，请再试一次&quot;)</span><br><span class="line">      else:</span><br><span class="line">         print(f&quot;恭喜阁下猜中了！目标数字为&#123;real_num&#125;，与阁下猜测的&#123;user_num&#125;完全一致！您真是一个小天才！&quot;)</span><br><span class="line">         break</span><br><span class="line"></span><br><span class="line">guess_num()</span><br></pre></td></tr></table></figure></p>
-<h2 id="问题2：-2"><a href="#问题2：-2" class="headerlink" title="问题2："></a>问题2：</h2><p>查找最大元素</p>
-<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><p>编写一个Python函数，接受一个包含整数的列表作为参数，然后找到列表中的最大元素，并返回该最大元素的值。<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def find_max_element(lst): # 初始化最大元素为列表的第一个元素</span><br><span class="line">    max_element = lst[0]</span><br><span class="line"></span><br><span class="line">    # 使用循环遍历列表中的每个元素</span><br><span class="line">    for num in lst:</span><br><span class="line">        # 如果当前元素比最大元素大，更新最大元素的值</span><br><span class="line">        if num &gt; max_element:</span><br><span class="line">            max_element = num</span><br><span class="line"></span><br><span class="line">    # 返回最大元素的值</span><br><span class="line">    return max_element</span><br><span class="line"></span><br><span class="line"># 示例使用</span><br><span class="line">numbers = [12, 45, 62, 88, 34, 98, 75]</span><br><span class="line">result = find_max_element(numbers)</span><br><span class="line">print(f&quot;列表中的最大元素是 &#123;result&#125;&quot;)</span><br></pre></td></tr></table></figure></p>
-<h1 id="2023-11-12练习"><a href="#2023-11-12练习" class="headerlink" title="2023.11.12练习"></a>2023.11.12练习</h1><h2 id="问题1：简单的购物清单"><a href="#问题1：简单的购物清单" class="headerlink" title="问题1：简单的购物清单"></a>问题1：简单的购物清单</h2><h2 id="要求：-5"><a href="#要求：-5" class="headerlink" title="要求："></a>要求：</h2><ol>
-<li>初始化一个空的购物清单。</li>
-<li>提示用户选择操作：添加商品、显示购物清单或退出。</li>
-<li>如果用户选择添加商品，程序应该提示用户输入商品名称和价格，然后将商品添加到购物清单。</li>
-<li>如果用户选择显示购物清单，程序应该输出当前购物清单中的所有商品及其总价格。</li>
-<li>如果用户选择退出，程序应该结束运行。</li>
-<li>在每次循环后，再次显示操作选项。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line"></span><br><span class="line">def menu():</span><br><span class="line">   print(&quot;欢迎使用购物清单程序!\n操作选项：\n1. 添加商品\n2. 显示购物清单\n3. 退出&quot;)</span><br><span class="line"></span><br><span class="line">def add(shopping_list):</span><br><span class="line">   name = input(&quot;请输入商品的名称：&quot;)</span><br><span class="line">   price = input(&quot;请输入商品的价格：&quot;)</span><br><span class="line">   shopping_list[name] = price</span><br><span class="line">   print(f&quot;&#123;name&#125;已添加至购物车 \n &quot;)</span><br><span class="line"></span><br><span class="line">def display(shopping_list):</span><br><span class="line">   if not shopping_list:</span><br><span class="line">      print(&quot;购物车竟然是空的！再忙，也记得买点什么犒劳下自己&quot;)</span><br><span class="line">   else:</span><br><span class="line">      print(&quot;当前购物清单：&quot;)</span><br><span class="line">      for name, price in shopping_list.items():</span><br><span class="line">         print(f&quot; &#123;name&#125;: &#123;price&#125;&quot;)</span><br><span class="line">      total = sum(shopping_list.values())</span><br><span class="line">      print(f&quot;总价格为：&#123;total&#125; \n&quot;)</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    shopping_list = &#123;&#125;</span><br><span class="line">    while True:</span><br><span class="line">        menu()</span><br><span class="line">        choice = input(&quot;请选择操作 (1/2/3): &quot;)</span><br><span class="line"></span><br><span class="line">        if choice == &#x27;1&#x27;:</span><br><span class="line">            add(shopping_list)</span><br><span class="line">        elif choice == &#x27;2&#x27;:</span><br><span class="line">            display(shopping_list)</span><br><span class="line">        elif choice == &#x27;3&#x27;:</span><br><span class="line">            print(&quot;退出也没有，摇一摇等下又见面了&quot;)</span><br><span class="line">            break</span><br><span class="line">        else:</span><br><span class="line">            print(&quot;你在说什么？ \n&quot;)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>代码</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown常用命令</title>
     <url>/2022/09/03/Markdown%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="这是一篇用于测试的页面"><a href="#这是一篇用于测试的页面" class="headerlink" title="这是一篇用于测试的页面"></a>这是一篇用于测试的页面</h1><h1 id="2022-9-5"><a href="#2022-9-5" class="headerlink" title="2022.9.5"></a>2022.9.5</h1><p>今天想学习如何插入图片和代码表示：</p>
@@ -101,6 +47,10 @@
 <h2 id="把代码放在文章顶部"><a href="#把代码放在文章顶部" class="headerlink" title="把代码放在文章顶部"></a>把代码放在文章顶部</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">password: test</span><br><span class="line">message: 测试加密，这里的密码是：test</span><br></pre></td></tr></table></figure>
 <p>我以<a href="https://aurora7july.github.io/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">“量子力学”</a>这篇为例试验一下：</p>
 <p>成功了！</p>
+<h1 id="2023-12-20"><a href="#2023-12-20" class="headerlink" title="2023.12.20"></a>2023.12.20</h1><h2 id="如何改变字颜色"><a href="#如何改变字颜色" class="headerlink" title="如何改变字颜色"></a>如何改变字颜色</h2><ul>
+<li><font color=red>红字</font>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -295,24 +245,57 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo命令</title>
-    <url>/2023/07/06/hexo%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h1><h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h2><p>使用以下命令后新文章将在博客目录下的<code>/source/_posts/</code>文件夹下<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
-<p>举个例子，我今天想要创建一个hexo命令的文章，那我需要在<code>git bash here</code>中输入<code>hexo new &quot;hexo命令&quot;</code>即可创建新的文章，然后结合另一篇文章<a href="https://aurora7july.github.io/2022/09/03/Markdown%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/">Markdown常见命令</a>使用即可</p>
-<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><p>以下简写代码和完整代码都可以使用</p>
-<p>这是清理缓存：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure></p>
-<p>这是本地预览：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo s (完整代码为$ hexo server)</span><br></pre></td></tr></table></figure><br>这时会生成一个<code>http://localhost:4000/</code>网址，它相当于一个草稿，让你先看看要发布的文章有没有什么问题</p>
-<p>$ hexo s -p 5000<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">如果在运行hexo s后出现错误，无法访问等，可能是因为4000被占用了，所以我们可以修改至5000就可以预览我们修改的内容了</span><br></pre></td></tr></table></figure></p>
-<p>这是生成静态文件：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo g (完整代码为$ hexo generate)</span><br></pre></td></tr></table></figure></p>
-<p>这是将本地文件上传github等git仓库上<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo d (完整代码为$hexo deploy)</span><br></pre></td></tr></table></figure></p>
-<p>我通常写完文章后会喜欢使用“一键三连”上传<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><br>如果在上传过程中出现错误，先检查是不是代码打错了。如果不是代码问题，就是网络问题。这个全靠运气了，如果不行重启或者晚一点再上传。</p>
+    <title>Python每日练习</title>
+    <url>/2023/11/01/Python%E6%AF%8F%E6%97%A5%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="2023-11-1练习"><a href="#2023-11-1练习" class="headerlink" title="2023.11.1练习"></a>2023.11.1练习</h1><h2 id="问题1："><a href="#问题1：" class="headerlink" title="问题1："></a>问题1：</h2><p>编写一个程序，要求用户输入一个正整数，然后计算该整数的阶乘并输出结果。阶乘是指将一个整数与小于它的所有正整数相乘的结果。例如，5的阶乘是5 <em> 4 </em> 3 <em> 2 </em> 1 = 120。</p>
+<h2 id="要求："><a href="#要求：" class="headerlink" title="要求："></a>要求：</h2><ul>
+<li>提示用户输入一个正整数。</li>
+<li>检查用户输入是否是正整数，如果不是，显示错误消息并要求重新输入。</li>
+<li>计算输入整数的阶乘。</li>
+<li>输出计算结果。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#提示用户输入</span><br><span class="line">num = input(&quot;请阁下输入一个正整数：&quot;) </span><br><span class="line"></span><br><span class="line">#判断用户输入是否是正整数</span><br><span class="line">if num.isdigit(): </span><br><span class="line">   num = int(num)</span><br><span class="line">   if num &gt; 0:</span><br><span class="line">      print(f&quot;&#123;num&#125;是一个正整数&quot;)</span><br><span class="line">   else:</span><br><span class="line">      print(f&quot;&#123;num&#125;不是正整数，请阁下重新输入&quot;)</span><br><span class="line">else:</span><br><span class="line">   print(f&quot;&#123;num&#125;不是正整数，请阁下重新输入&quot;) </span><br><span class="line"></span><br><span class="line">#计算整数的阶乘</span><br><span class="line">result = 1</span><br><span class="line">for i in range(1, num+1):</span><br><span class="line">    result *= i</span><br><span class="line">print(f&quot;&#123;num&#125;的阶乘为:&#123;result&#125;&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="问题2："><a href="#问题2：" class="headerlink" title="问题2："></a>问题2：</h2><p> 编写一个Python程序，要求用户输入一个字符串，然后判断这个字符串是否是回文字符串。回文字符串是指正着读和倒着读都一样的字符串，例如 “level”、”radar” 和 “madam” 都是回文字符串。</p>
+<h2 id="要求：-1"><a href="#要求：-1" class="headerlink" title="要求："></a>要求：</h2><ul>
+<li>提示用户输入一个字符串。</li>
+<li>忽略字符串中的空格，标点符号和大小写（将所有字符转换为小写）。</li>
+<li>判断输入的字符串是否是回文字符串。</li>
+<li>输出相应的结果，指出是否是回文字符串。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import re</span><br><span class="line"></span><br><span class="line">#提示用户输入</span><br><span class="line">user_input = input(&quot;请阁下输入一个字符串：&quot;)</span><br><span class="line"></span><br><span class="line">#移除空格，标点和大小写</span><br><span class="line">user_input = user_input.replace(&quot; &quot;, &quot;&quot;) #移除空格</span><br><span class="line">user_input = re.sub(r&#x27;[^\w\s]&#x27;,&#x27;&#x27;,user_input) #移除符号标点</span><br><span class="line">user_input = user_input.lower() #转换为小写</span><br><span class="line"></span><br><span class="line">#判断输入的字符是否是回文字符串</span><br><span class="line">fan_input = user_input[::-1] #创建反向字符串</span><br><span class="line">if fan_input == user_input: #判断是否是回文字符串</span><br><span class="line">    print(f&quot;恭喜阁下，&#123;user_input&#125;是回文字符串！&quot;)</span><br><span class="line">else:</span><br><span class="line">    print(f&quot;很抱歉，&#123;user_input&#125;并不是回文字符串&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="2023-11-5练习"><a href="#2023-11-5练习" class="headerlink" title="2023.11.5练习"></a>2023.11.5练习</h1><h2 id="问题1：-1"><a href="#问题1：-1" class="headerlink" title="问题1："></a>问题1：</h2><p>写一个Python程序，找出一个列表中的所有奇数，并将它们存储在一个新的列表中。</p>
+<h2 id="要求：-2"><a href="#要求：-2" class="headerlink" title="要求："></a>要求：</h2><ul>
+<li>创建一个函数，该函数接受一个整数列表作为参数。</li>
+<li>函数应该返回一个新的列表，其中包含原列表中的所有奇数。</li>
+<li>不要使用内置的filter函数或列表解析来完成任务。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def find_odd_numbers(input_list): #定义奇数函数</span><br><span class="line">   odd_numbers = [] #形成一个列表</span><br><span class="line">   input_list = input_list.split(&quot;,&quot;) #对列表进行切片</span><br><span class="line">   input_list = [int(num.strip()) for num in input_list] #检查奇数</span><br><span class="line">   input_list = [int(num_str.strip()) for num_str in input_list]  # 更改变量名</span><br><span class="line"></span><br><span class="line">   for num in input_list: #遍历列表</span><br><span class="line">      if num % 2 != 0:</span><br><span class="line">         odd_numbers.append(num)</span><br><span class="line">         </span><br><span class="line">   return odd_numbers</span><br><span class="line"></span><br><span class="line">user_input = input(&quot;请阁下输入一串列表(用，隔开): &quot;)</span><br><span class="line">result = find_odd_numbers(user_input)</span><br><span class="line">print(&quot;奇数列表：&quot;, result)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="问题2：-1"><a href="#问题2：-1" class="headerlink" title="问题2："></a>问题2：</h2><p>编写一个Python程序，计算斐波那契数列的第n个数字，其中n是非负整数。<br>斐波那契数列的定义如下：<br>1.第0个和第1个数字分别为0和1。<br>2.从第2个数字开始，每个数字都是前两个数字之和</p>
+<h2 id="要求：-3"><a href="#要求：-3" class="headerlink" title="要求："></a>要求：</h2><ul>
+<li>创建一个函数，接受一个非负整数n作为参数。</li>
+<li>函数应该返回斐波那契数列的第n个数字。</li>
+<li>请使用递归方式来解决这个问题。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#定义斐波那契数列的函数</span><br><span class="line">def fibonacci(n):</span><br><span class="line">   if n &lt;= 0:</span><br><span class="line">      return 0</span><br><span class="line">   elif n == 1:</span><br><span class="line">      return 1</span><br><span class="line">   else:</span><br><span class="line">      return fibonacci(n-1) + fibonacci(n-2)</span><br><span class="line"></span><br><span class="line">#提示用户输入</span><br><span class="line">user_input = input(&quot;请阁下输入一个非负整数&quot;)</span><br><span class="line"></span><br><span class="line">#测试用户输入的是否是一个非负整数</span><br><span class="line">try:</span><br><span class="line">   user_input = int(user_input)</span><br><span class="line">   if user_input &lt; 0:</span><br><span class="line">    print(&quot;让你打非负整数你不听,你XX!&quot;)</span><br><span class="line">   else:</span><br><span class="line">    result =  fibonacci(user_input)</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;输入什么玩意儿，让你输入一个非负整数&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="2023-11-6练习"><a href="#2023-11-6练习" class="headerlink" title="2023.11.6练习"></a>2023.11.6练习</h1><h2 id="问题1：-2"><a href="#问题1：-2" class="headerlink" title="问题1："></a>问题1：</h2><p>猜数字游戏</p>
+<h2 id="要求：-4"><a href="#要求：-4" class="headerlink" title="要求："></a>要求：</h2><p>编写一个Python程序，实现一个简单的猜数字游戏。程序随机生成一个1到100之间的整数，然后要求玩家猜这个数字，直到玩家猜中为止。程序需要提供反馈，告诉玩家他们的猜测是太高还是太低。最后，当玩家猜中数字时，显示猜测次数和祝贺消息。<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line">def guess_num():</span><br><span class="line">   real_num = random.randint(1,100)</span><br><span class="line">   attempts = 0</span><br><span class="line"></span><br><span class="line">   while True:</span><br><span class="line">      user_num = int(input(&quot;请猜测一下目标数字为(在1-100间选择)：&quot;))</span><br><span class="line">      attempts += 1</span><br><span class="line"></span><br><span class="line">      if user_num &lt; real_num:</span><br><span class="line">         print(&quot;结果与猜测不符，有点小，请再试一次&quot;)</span><br><span class="line">      elif user_num &gt; real_num:</span><br><span class="line">         print(&quot;结果与猜测不符，有点大，请再试一次&quot;)</span><br><span class="line">      else:</span><br><span class="line">         print(f&quot;恭喜阁下猜中了！目标数字为&#123;real_num&#125;，与阁下猜测的&#123;user_num&#125;完全一致！您真是一个小天才！&quot;)</span><br><span class="line">         break</span><br><span class="line"></span><br><span class="line">guess_num()</span><br></pre></td></tr></table></figure></p>
+<h2 id="问题2：-2"><a href="#问题2：-2" class="headerlink" title="问题2："></a>问题2：</h2><p>查找最大元素</p>
+<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><p>编写一个Python函数，接受一个包含整数的列表作为参数，然后找到列表中的最大元素，并返回该最大元素的值。<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def find_max_element(lst): # 初始化最大元素为列表的第一个元素</span><br><span class="line">    max_element = lst[0]</span><br><span class="line"></span><br><span class="line">    # 使用循环遍历列表中的每个元素</span><br><span class="line">    for num in lst:</span><br><span class="line">        # 如果当前元素比最大元素大，更新最大元素的值</span><br><span class="line">        if num &gt; max_element:</span><br><span class="line">            max_element = num</span><br><span class="line"></span><br><span class="line">    # 返回最大元素的值</span><br><span class="line">    return max_element</span><br><span class="line"></span><br><span class="line"># 示例使用</span><br><span class="line">numbers = [12, 45, 62, 88, 34, 98, 75]</span><br><span class="line">result = find_max_element(numbers)</span><br><span class="line">print(f&quot;列表中的最大元素是 &#123;result&#125;&quot;)</span><br></pre></td></tr></table></figure></p>
+<h1 id="2023-11-12练习"><a href="#2023-11-12练习" class="headerlink" title="2023.11.12练习"></a>2023.11.12练习</h1><h2 id="问题1：简单的购物清单"><a href="#问题1：简单的购物清单" class="headerlink" title="问题1：简单的购物清单"></a>问题1：简单的购物清单</h2><h2 id="要求：-5"><a href="#要求：-5" class="headerlink" title="要求："></a>要求：</h2><ol>
+<li>初始化一个空的购物清单。</li>
+<li>提示用户选择操作：添加商品、显示购物清单或退出。</li>
+<li>如果用户选择添加商品，程序应该提示用户输入商品名称和价格，然后将商品添加到购物清单。</li>
+<li>如果用户选择显示购物清单，程序应该输出当前购物清单中的所有商品及其总价格。</li>
+<li>如果用户选择退出，程序应该结束运行。</li>
+<li>在每次循环后，再次显示操作选项。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line"></span><br><span class="line">def menu():</span><br><span class="line">   print(&quot;欢迎使用购物清单程序!\n操作选项：\n1. 添加商品\n2. 显示购物清单\n3. 退出&quot;)</span><br><span class="line"></span><br><span class="line">def add(shopping_list):</span><br><span class="line">   name = input(&quot;请输入商品的名称：&quot;)</span><br><span class="line">   price = input(&quot;请输入商品的价格：&quot;)</span><br><span class="line">   shopping_list[name] = price</span><br><span class="line">   print(f&quot;&#123;name&#125;已添加至购物车 \n &quot;)</span><br><span class="line"></span><br><span class="line">def display(shopping_list):</span><br><span class="line">   if not shopping_list:</span><br><span class="line">      print(&quot;购物车竟然是空的！再忙，也记得买点什么犒劳下自己&quot;)</span><br><span class="line">   else:</span><br><span class="line">      print(&quot;当前购物清单：&quot;)</span><br><span class="line">      for name, price in shopping_list.items():</span><br><span class="line">         print(f&quot; &#123;name&#125;: &#123;price&#125;&quot;)</span><br><span class="line">      total = sum(shopping_list.values())</span><br><span class="line">      print(f&quot;总价格为：&#123;total&#125; \n&quot;)</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    shopping_list = &#123;&#125;</span><br><span class="line">    while True:</span><br><span class="line">        menu()</span><br><span class="line">        choice = input(&quot;请选择操作 (1/2/3): &quot;)</span><br><span class="line"></span><br><span class="line">        if choice == &#x27;1&#x27;:</span><br><span class="line">            add(shopping_list)</span><br><span class="line">        elif choice == &#x27;2&#x27;:</span><br><span class="line">            display(shopping_list)</span><br><span class="line">        elif choice == &#x27;3&#x27;:</span><br><span class="line">            print(&quot;退出也没有，摇一摇等下又见面了&quot;)</span><br><span class="line">            break</span><br><span class="line">        else:</span><br><span class="line">            print(&quot;你在说什么？ \n&quot;)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></li>
+</ol>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>学习</tag>
-        <tag>命令</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -383,25 +366,39 @@
       </tags>
   </entry>
   <entry>
-    <title>半导体制造</title>
-    <url>/2023/09/16/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0/</url>
-    <content><![CDATA[<h1 id="半导体制造"><a href="#半导体制造" class="headerlink" title="半导体制造"></a>半导体制造</h1><p>半导体制程是被用于制造芯片，一种日常使用的电气和电子器件中集成电路的处理工艺。它是一系列照相和化学处理步骤，在其中电子电路逐渐形成在使用纯半导体材料制作的晶片上。硅是今天最常用的半导体材料，其他还有各种复合半导体材料。从一开始晶圆加工，到芯片封装测试，直到出货，通常需要6到8周，并且是在晶圆厂内完成。</p>
-<h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><p>这是我专业课最后期末复习的笔记，内容不是很多，都是知识点，也不是很难，只需要记住就可以了。如果在预览过程中发现有知识性错误请及时联系我修改！</p>
-<p>若无法显示PDF，可以点击该链接下载<a href="https://github.com/Aurora7july/files/blob/main/%E7%AC%94%E8%AE%B0PDF/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0.pdf">半导体制造</a></p>
-
-
-	<div class="row">
-    <embed src="/pdf/半导体制造.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
+    <title>hexo命令</title>
+    <url>/2023/07/06/hexo%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h1><h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h2><p>使用以下命令后新文章将在博客目录下的<code>/source/_posts/</code>文件夹下<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
+<p>举个例子，我今天想要创建一个hexo命令的文章，那我需要在<code>git bash here</code>中输入<code>hexo new &quot;hexo命令&quot;</code>即可创建新的文章，然后结合另一篇文章<a href="https://aurora7july.github.io/2022/09/03/Markdown%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/">Markdown常见命令</a>使用即可</p>
+<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><p>以下简写代码和完整代码都可以使用</p>
+<p>这是清理缓存：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure></p>
+<p>这是本地预览：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo s (完整代码为$ hexo server)</span><br></pre></td></tr></table></figure><br>这时会生成一个<code>http://localhost:4000/</code>网址，它相当于一个草稿，让你先看看要发布的文章有没有什么问题</p>
+<p>$ hexo s -p 5000<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">如果在运行hexo s后出现错误，无法访问等，可能是因为4000被占用了，所以我们可以修改至5000就可以预览我们修改的内容了</span><br></pre></td></tr></table></figure></p>
+<p>这是生成静态文件：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo g (完整代码为$ hexo generate)</span><br></pre></td></tr></table></figure></p>
+<p>这是将本地文件上传github等git仓库上<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo d (完整代码为$hexo deploy)</span><br></pre></td></tr></table></figure></p>
+<p>我通常写完文章后会喜欢使用“一键三连”上传<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><br>如果在上传过程中出现错误，先检查是不是代码打错了。如果不是代码问题，就是网络问题。这个全靠运气了，如果不行重启或者晚一点再上传。</p>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>学习</tag>
-        <tag>笔记</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SystemVerilog学习</title>
+    <url>/2023/12/16/systemverilog%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="第I章-验证导论"><a href="#第I章-验证导论" class="headerlink" title="第I章 验证导论"></a>第I章 验证导论</h1><h2 id="基本测试平台的功能"><a href="#基本测试平台的功能" class="headerlink" title="基本测试平台的功能"></a>基本测试平台的功能</h2><p>测试平台的用途在于确定待测设计的正确性，包含以下步骤:<br>1.产生激励<br>2.把激励施加到DUT上<br>3.捕捉响应<br>4.检验正确性<br>5.对照整个验证目标测算进展情况</p>
+<h1 id="第II章-数据类型"><a href="#第II章-数据类型" class="headerlink" title="第II章 数据类型"></a>第II章 数据类型</h1><h2 id="内建数据类型"><a href="#内建数据类型" class="headerlink" title="内建数据类型"></a>内建数据类型</h2><p>两种基本类型：变量和线网，各自都可以有四种取值：1,0,Z,X</p>
+<h3 id="1-逻辑-logic-类型"><a href="#1-逻辑-logic-类型" class="headerlink" title="1.逻辑(logic)类型"></a>1.逻辑(logic)类型</h3><p>SystemVerilog对经典的reg数据类型进行改进，使得它除了作为一个变量以外，还可以被连续赋值、门单元和模块所驱动，这种改进的数据类型被称为logic。<br>任何使用线网的地方均可以使用logic，但要求logic不能有多个结构性的驱动<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//logic类型使用实例</span><br><span class="line">module logic(input logic);</span><br><span class="line">  parameter CYCLE=20;</span><br><span class="line">  logic q,q_1,d,clk,rst_1;</span><br><span class="line">  inital begin</span><br><span class="line">    clk=0;                           //过程赋值</span><br><span class="line">    forever # (CYCLE/2) clk=~clk;</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  assign rst_1=~rst_h;               //连续赋值</span><br><span class="line">  not n1(q_1,q);                     //q_1被门驱动</span><br><span class="line">  my_dff d1(q,d,clk,rst_1);          //q被模块驱动</span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-双状态数据类型"><a href="#2-双状态数据类型" class="headerlink" title="2.双状态数据类型"></a>2.双状态数据类型</h3>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -472,6 +469,152 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
+    <title>学习英语计划</title>
+    <url>/2023/12/20/%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<p>Yesterday I learned how to learn English through YouTube, a program provided by Learn English with Bob the Canadian </p>
+<h1 id="plan"><a href="#plan" class="headerlink" title="plan"></a>plan</h1><p>THINGS YOU WILL NEED:</p>
+<ul>
+<li>1 hour per day (30 minutes will work as well).</li>
+<li>a notebook and a pen to write down new vocabulary each day.</li>
+<li>an English song.</li>
+<li>an English a book.</li>
+<li>an English TV show.</li>
+</ul>
+<p>MONDAYS (Spend 30-40 minutes Reading)</p>
+<ul>
+<li>Read your book.</li>
+<li>Read the news.</li>
+<li>Read an article on <a href="http://simple.wikipedia.com">http://simple.wikipedia.com</a></li>
+<li>Write down some new words in your notebook with their definition.</li>
+<li>Spend the rest of your hour:<br>— Reading out loud from your book<br>— Writing out some passages from your book.<br>— Listening to the audiobook of your book.<br>— Using Duolingo or other learning apps.</li>
+</ul>
+<p>TUESDAYS (Spend 30-40 minutes Writing)</p>
+<ul>
+<li>Write what you did yesterday, today, and tomorrow in your notebook.</li>
+<li>Write a few comments on Youtube videos.</li>
+<li>Write some sentences about what you like and dislike about your song, your book, and your TV show.</li>
+<li>Write a summary of what you have read in your book the day before.</li>
+<li>Put some new words in your dictionary.</li>
+<li>Spend the rest of your hour:<br>— Reading what you have written.<br>— Listening to what you have written by pasting your writing into Google translate and have it read it to you.<br>— Reading what you have written out loud.<br>— Using Duolingo or other learning apps.</li>
+</ul>
+<p>WEDNESDAYS (Spend 30-40 minutes Listening):</p>
+<ul>
+<li>Watch your TV show.</li>
+<li>Listen to your song.</li>
+<li>Listen to the Audiobook of your book if you have it.</li>
+<li>Watch a few Youtube videos.</li>
+<li>Put new words in your dictionary.</li>
+<li>Spend the rest of your hour:<br>— Read about your TV show.<br>— Write about how your song makes you feel.<br>— Mimic or shadow people from your TV show.<br>— Sing along to your song.</li>
+</ul>
+<p>THURSDAYS (Spend 30-40 minutes Speaking):</p>
+<ul>
+<li>Hire a tutor on:<br>— Preply: <a href="http://tracking.preply.com/SH2X">http://tracking.preply.com/SH2X</a><br>— Cambly: <a href="http://cambly.com">http://cambly.com</a><br>— iTalki: <a href="http://italki.com">http://italki.com</a></li>
+<li>Talk out loud.</li>
+<li>Narrate your life.</li>
+<li>Record yourself and play it back.</li>
+<li>Put words in your dictionary.</li>
+<li>Spend the rest of your hour:<br>— Reading out loud.<br>— Singing out loud.<br>— Shadowing or mimicking actors from your TV show.</li>
+</ul>
+<p>FRIDAYS (Spend the Entire hour on Vocabulary):</p>
+<ul>
+<li>Review all the words in your dictionary.</li>
+<li>Write them out.</li>
+<li>Say them out loud.</li>
+<li>Use them in a sentence.</li>
+<li>Make a <a href="http://quizlet.com">http://quizlet.com</a> set.</li>
+<li>Make flashcards.</li>
+<li>Work until you have them all memorized.</li>
+</ul>
+<p>WEEKENDS:</p>
+<ul>
+<li>Find a new song.</li>
+<li>Find a new book.</li>
+<li>Find a new TV show.</li>
+<li>Take a break.</li>
+</ul>
+<p>FORM:<a href="https://youtu.be/5-T6Xqlh6BU?si=S_KQ0CmjfEtER-fR">The Best Way To Learn English (In my humble opinion.)</a></p>
+<hr>
+<h1 id="Reading"><a href="#Reading" class="headerlink" title="Reading"></a>Reading</h1><h1 id="Writing"><a href="#Writing" class="headerlink" title="Writing"></a>Writing</h1><h1 id="Listening"><a href="#Listening" class="headerlink" title="Listening"></a>Listening</h1><h2 id="2023-12-20-Wednesday-listening"><a href="#2023-12-20-Wednesday-listening" class="headerlink" title="2023.12.20 Wednesday(listening)"></a>2023.12.20 Wednesday(listening)</h2><h3 id="What-did-you-hear"><a href="#What-did-you-hear" class="headerlink" title="What did you hear?"></a>What did you hear?</h3><p><a href="https://youtu.be/lXVQmHxAnAE?si=2uUeh8dfSi6A_QV8">《崩坏：星穹铁道》希儿角色PV——「一夜无事」</a></p>
+<font color=#6A5ACD>Seele</font>: Ha, there they come again.  
+<font color=red>Here they come again</font>
+
+<p>SoldierA: Wait, don’t let her get way.   </p>
+<font color=red>Wait, you will never get away</font>
+
+<p>SoldierB: It’s dameg, she is dead.  </p>
+<font color=red>It's a dead end, she's dead</font>
+
+<font color=#6A5ACD>Seele</font>: Make trobule in wildfire tr, you gus got a lot of nus.  
+<font color=red>Make trouble in wildfire's territory. You guys got a lot of nerves</font>
+
+<font color=#6A5ACD>Seele</font>: Still here. I'm feel things just come begining!  
+<font color=red>Still here. I'm afraid tings just got complicated. </font>
+
+<font color=#6A5ACD>Seele</font>: Sometimes a sharp pl on the way to keep people to do this.  
+<font color=red>Sometimes a sharp blade is the only way to get people to come to this. </font>
+
+<font color=#6A5ACD>Seele</font>: can I ask for your help?  
+<font color=red>Did I ask for you help? </font>
+
+<font color=#C8BFC6>Bronya</font>: Looks like you're use it.GO!  
+<font color=red>Looks like you could use it. Quick! </font>
+
+<font color=#6A5ACD>Seele</font>:Dot't tell me what to do  
+
+<font color=#C8BFC6>Bronya</font>:these is always weakness  
+<font color=red>There's always a weakness</font>
+
+<font color=#6A5ACD>Seele</font>:How about this move?  
+
+<font color=#C8BFC6>Bronya</font>:Nerve for the one that slip for the this  
+<font color=red>Now for the one that slip through the net.</font>
+
+<font color=#6A5ACD>Seele</font>:Stop me back over the , this pel of with butterflies   
+<font color=red>Stop holding me back over welder. Disappear among the sea of butterflies, collisions of the past.</font>
+
+<h2 id="New-vocabulary"><a href="#New-vocabulary" class="headerlink" title="New vocabulary"></a>New vocabulary</h2><ul>
+<li>territory <em>[ˈtɛrɪt(ə)ri]</em><br>n.领地</li>
+<li>nerves <em>[ˈnɜːvəs]</em><br>n.神经，胆子</li>
+<li>complicated. <em>[ˈkɒmplɪkeɪtɪd]</em><br>adj.复杂的</li>
+<li>sharp <em>[ˈʃɑrp]</em><br>adj.锋利的，尖锐的</li>
+<li>blade <em>[bled]</em><br>n.刀片，叶片</li>
+<li>slip <em>[slɪp]</em><br>v.滑落，纸片，滑到</li>
+<li>welder <em>[ˈweldə(r)]</em><br>n.焊工，电焊工</li>
+<li>Disappear <em>[ˌdisəˈpiə]</em><br>v.消失，失踪</li>
+<li>collisions <em>[kə’liʒən].</em><br>v.碰撞，冲突</li>
+</ul>
+<h1 id="Speaking"><a href="#Speaking" class="headerlink" title="Speaking"></a>Speaking</h1><h1 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h1>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>代码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>半导体制造</title>
+    <url>/2023/09/16/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0/</url>
+    <content><![CDATA[<h1 id="半导体制造"><a href="#半导体制造" class="headerlink" title="半导体制造"></a>半导体制造</h1><p>半导体制程是被用于制造芯片，一种日常使用的电气和电子器件中集成电路的处理工艺。它是一系列照相和化学处理步骤，在其中电子电路逐渐形成在使用纯半导体材料制作的晶片上。硅是今天最常用的半导体材料，其他还有各种复合半导体材料。从一开始晶圆加工，到芯片封装测试，直到出货，通常需要6到8周，并且是在晶圆厂内完成。</p>
+<h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><p>这是我专业课最后期末复习的笔记，内容不是很多，都是知识点，也不是很难，只需要记住就可以了。如果在预览过程中发现有知识性错误请及时联系我修改！</p>
+<p>若无法显示PDF，可以点击该链接下载<a href="https://github.com/Aurora7july/files/blob/main/%E7%AC%94%E8%AE%B0PDF/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0.pdf">半导体制造</a></p>
+
+
+	<div class="row">
+    <embed src="/pdf/半导体制造.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>旅游-外伶仃岛</title>
     <url>/2023/11/04/%E6%97%85%E6%B8%B8-%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/</url>
     <content><![CDATA[<h2 id="外伶仃岛一日游"><a href="#外伶仃岛一日游" class="headerlink" title="外伶仃岛一日游"></a>外伶仃岛一日游</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>自国庆假期以后，我便陷入了上课和学习的纠缠，生活中再也不如从前那般恣意。随着身心疲惫渐显，渴望一次宽慰身心、回归自然之旅渐生。因此，我迅速检查了周末的天气情况，立即预订了船票，最终期盼已久的日子终于到来，我难掩内心的喜悦。如今，结束了这次旅程，我迫不及待地开始写这篇文章。</p>
@@ -496,18 +639,51 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
-    <title>SystemVerilog学习</title>
-    <url>/2023/12/16/systemverilog%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="第I章-验证导论"><a href="#第I章-验证导论" class="headerlink" title="第I章 验证导论"></a>第I章 验证导论</h1><h2 id="基本测试平台的功能"><a href="#基本测试平台的功能" class="headerlink" title="基本测试平台的功能"></a>基本测试平台的功能</h2><p>测试平台的用途在于确定待测设计的正确性，包含以下步骤:<br>1.产生激励<br>2.把激励施加到DUT上<br>3.捕捉响应<br>4.检验正确性<br>5.对照整个验证目标测算进展情况</p>
-<h1 id="第II章-数据类型"><a href="#第II章-数据类型" class="headerlink" title="第II章 数据类型"></a>第II章 数据类型</h1><h2 id="内建数据类型"><a href="#内建数据类型" class="headerlink" title="内建数据类型"></a>内建数据类型</h2><p>两种基本类型：变量和线网，各自都可以有四种取值：1,0,Z,X</p>
-<h3 id="1-逻辑-logic-类型"><a href="#1-逻辑-logic-类型" class="headerlink" title="1.逻辑(logic)类型"></a>1.逻辑(logic)类型</h3><p>SystemVerilog对经典的reg数据类型进行改进，使得它除了作为一个变量以外，还可以被连续赋值、门单元和模块所驱动，这种改进的数据类型被称为logic。<br>任何使用线网的地方均可以使用logic，但要求logic不能有多个结构性的驱动<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//logic类型使用实例</span><br><span class="line">module logic(input logic);</span><br><span class="line">  parameter CYCLE=20;</span><br><span class="line">  logic q,q_1,d,clk,rst_1;</span><br><span class="line">  inital begin</span><br><span class="line">    clk=0;                           //过程赋值</span><br><span class="line">    forever # (CYCLE/2) clk=~clk;</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  assign rst_1=~rst_h;               //连续赋值</span><br><span class="line">  not n1(q_1,q);                     //q_1被门驱动</span><br><span class="line">  my_dff d1(q,d,clk,rst_1);          //q被模块驱动</span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-双状态数据类型"><a href="#2-双状态数据类型" class="headerlink" title="2.双状态数据类型"></a>2.双状态数据类型</h3>]]></content>
+    <title>旅游-香港</title>
+    <url>/2023/12/13/%E6%97%85%E6%B8%B8-%E9%A6%99%E6%B8%AF/</url>
+    <content><![CDATA[<h2 id="2023-12-11-2023-12-12-独行香港"><a href="#2023-12-11-2023-12-12-独行香港" class="headerlink" title="2023.12.11-2023.12.12 独行香港"></a>2023.12.11-2023.12.12 独行香港</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>香港有着“东方之珠”的美称，这个名字我以前也只在书中、电视里和母亲的口中听闻，它的繁华和发展早就在深入我心。基于2019年事件和网络上对香港的负面评价，作为一名非粤语母语者，对于香港多少带有恐惧情绪，万般纠结后还是决定亲自去看看这座城市。恰逢考完试有空闲时间，收拾好行李买好票就出发前往独自香港，开启了我的两天一夜香港之旅！</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
+<li>提前准备好八达通或者支付宝的香港地铁卡(我强烈建议用八达通)</li>
+<li>旅行时间短可在网上买境外流量包，时间长去便利店买33$的流量卡(50G+1000分钟电话，有效期1年)</li>
+<li>换一些零钱，有的店只收现金</li>
+<li>上下扶梯靠右站，上下楼靠左走</li>
+<li>不要在公众场合抽烟</li>
+<li>不要喂鸟类</li>
+<li>过海关不要带违禁品，注意携带烟酒数量</li>
+</ol>
+<h3 id="角色栏"><a href="#角色栏" class="headerlink" title="角色栏"></a>角色栏</h3><ul>
+<li>穿着：短袖、短裤、长外套、运动裤、运动鞋</li>
+<li>移动方式：步行、地铁、公交、渡轮</li>
+<li>证件：港澳通行证、身份证、交通卡、银行卡、过关小票、金巴小票</li>
+<li>花费：1000+</li>
+<li>其他：充电宝、数据线、转换头</li>
+</ul>
+<h3 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h3><p>从学校出发，要前往港珠澳大桥珠海关口，最快的方式是乘坐高铁抵达拱北口岸后打车。由于C7611车次临时停运，我只能乘坐C7617，加上打车的时间(直接坐出租车花了23，如果用打车软件会更便宜)近11点才抵达珠海关口。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/1.jpg?raw=true" alt="珠海关口"></p>
+<p>海关内禁止拍照，我描述一下。从“往香港”的入口随指示牌扫描通行证，按指纹，然后往前走，根据指示票前往穿梭巴士等候站，在大厅记得取票(一定要取票，检票不能用电子的，要扫实体票上的二维码)。跟随人流排队上车，很快就能上车。中午11点左右出发，坐左侧无太阳可看珠海、深圳、香港的城景和反光的大海；右侧有太阳但是看到的海景比左边好看，靠近香港机场可以见到蓝绿的海和缆车。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/2.jpg?raw=true" alt="港珠澳大桥"></p>
+<p>达到港珠澳大桥香港口岸后，随着人流过海关，下来在门口看到便利店可以在里面购买流量卡。出去之后可以选择搭乘巴士，巴士的价格和地点上面都有写。省钱小技巧：乘坐B5去欣澳站搭乘地铁前往想去的地方会便宜一些。若使用八达通，拍一下就可以上车了；使用支付宝则需要先切换左上角的地点至“中国香港”，后点击出行扫描二维码即可。到达欣澳后，我坐地铁去了深水埗吃饭，出地铁站走几步就看到了一家网红店“新香園 (堅記)” ，那时店里人挺多。一进门老板就热情的用普通话问我几位，我说1位后将我带进里面与两个老太太搭桌，拿着笔和纸问我吃什么。还好提前做了攻略，很快说出“冻奶茶和蛋牛治”，价钱小票和奶茶几乎同时放在我的桌子上，一个来回的功夫蛋牛治也好了，我拍了一张照后就狼吞虎咽的吃了起来。吃完拿着价钱小票去前台，收钱的老板不会讲普通话。“老細，AliPay————41蚊OK咗”，这是我在香港第一句粤语。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/3.jpg?raw=true" alt="冻奶茶和蛋牛治"></p>
+<p>吃饱喝足在深水埗逛逛，又返回地铁站前往旺角站，去看看那些耳熟能详的站台和真实的香港。走在彌敦道上，来往的人络绎不绝，各种肤色的人穿梭在这条路上。大家都急急忙忙的奔向各自的目的地。汽车在中间车道上快速行驶着，双层的巴士来来往往，红色复古的出租车是香港的特色。道路两侧有着高耸入云的破旧大厦，有的是住宅，有的是办公楼。有时我会看到这些大厦的入口，银色的防盗门，里面漆黑一片，偶尔还有开门的大爷老态龙钟的坐着，与门外的繁华形成了强烈的反差。路上的人也走的很快，旅客、本地人都是如此，伴随着人声、车流声、信号灯机械的提示声，在这些高楼大厦下更有了压迫感。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/4.JPEG?raw=true" alt="彌敦道"></p>
+<p>走到佐敦地铁站不远处，在彌敦道和柯士甸道交叉路口，我灵光一现想去历史博物馆看看。沿柯士甸道上走，这里远离了大部分的人群，走路也稍微变慢了些，鸽子扑棱着翅膀飞向路灯，四处观察着这座魔幻的城市。走到漆咸道南的十字路口，我惊讶的发现了香港理工大学，不过没有进去参观，只是远远的拍了张照就前往旁边的香港历史博物馆了。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/5.JPEG?raw=true" alt="香港理工大学"></p>
+<p>博物馆没意思，可能是我没找对<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/6.JPEG?raw=true" alt="香港历史博物馆"></p>
+<p>之后我又重新回到彌敦道，只为了打卡那座大厦————“重庆大厦”<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/7.JPEG?raw=true" alt="重庆大厦"></p>
+<p>继续往前走，我去了李小龙铜像，很多外国人都在铜像前摆着与雕像一致的动作合影留恋。沿着星光大道一路观赏着维多利亚港的美景，那时正好是太阳落山时间，夕阳的余辉洒在这片寸土寸金的大地上显得更加的高雅。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/8.JPEG?raw=true" alt="维多利亚港"></p>
+<p>路过K11时，外面摆放着Dior的圣诞树，浑身上下都释放着昂贵的气息，引的人们前去打卡拍照，合影留念。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/9.JPEG?raw=true" alt="Dior"></p>
+<p>本来想去香港岛吃晚饭的，肚子实在太饿了，但是周边又没有什么好吃的，没办法，看到了麦当劳…谁来香港吃国际连锁快餐啊喂！我靠还真的好贵，而且味道没有特别的。这里有个小插曲，有个1.9m的白男似乎想续杯咖啡，前台的那个姐姐仰着头，义正言辞的说“NO”，似乎还有点生气，我有点害怕。巧的是，下一个取餐的是我，我说了句“雷猴”把小票递给她(我不会念数字)，拿着我的餐就跑，不敢有太多的接触，社恐本人了。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/0b3ff7ece70b03124e4f2da6561400a.jpg?raw=true" alt="M记"></p>
+<p>吃完饭外面也天黑了，终于可以看到维港的夜景了，为了这个夜景我才选择留在香港一晚。真的非常漂亮，比我2010年第一次去上海时还要震撼。坐在天星轮渡上，我甚至忘记了多拍几张相，而是静静的欣赏这座城市，非常喜欢。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/10.JPEG?raw=true" alt="维港夜景"></p>
+<p>乘坐渡轮到达中环码头，就可以看见香港摩天轮，买票加上车排队共花了近40分钟，20蚊上去转三圈。在摩天轮上看香港的夜景真的很美，也不贵，还能听旁边两个老外讲英语笑话。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/11.JPEG?raw=true" alt="香港摩天轮"></p>
+<p>结束了Day1中计划的最后一个部分，我就要前往酒店了。决定步行前往，切身感受下香港岛的高级打工地，这里的人西装革履总是在打电话，神情严肃，走路飞快，但是人不多。在这里总是有种窒息感和压力，偶尔几天我觉得还挺舒服的，时间久了可能就…快靠近酒店时我还迷路了，Google map和高德都不准，没办法，我只能根据店名来判断，地图上的大厦名我根本找不到，好在最后还是找到了酒店。前台的小哥很好，我说普通话也很耐心的帮我办理手续，并且免费给我升级了房型。晚上10点半肚子饿了，跑到楼下711买吃的，附近有几家酒吧，不过不吵也不会觉得不安全。一个人住酒店莫名有些害怕，开了一晚上的灯睡觉，休息的还算不错。Day1就在睡梦中结束了。<br><img src="" alt="高级大床房"></p>
+<h3 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h3><p>早上8点多才起床，收拾好东西下楼check out，前往附近一家很出名的车仔面吃早餐。这家店“车仔面之家”已经开了60多年了，本地人也很喜欢吃，他家的特点是“立食”，因为店小只能站着吃，而且只收现金。里面的阿婆不太听得懂普通话，我的“幼面”和“油面”不太听得清，很耐心给我指着哪个面。点了配料之后在纸上给我写“35$”，我点的是“小份幼面+鱼蛋+鱿鱼”，他家的鱿鱼和猪大肠很出名。出餐也很快，接过面放在桌子上吃了几口我就开始找钱，正好口袋里有个5$的硬币。把钱拿过去时阿婆不在，只有个煮面的靓仔，看着有点凶。我鼓足勇气说“雷猴”他马上微笑过来，看到我把钱放在柜台上说“唔该”，我又回去吃面了，真的好好吃啊。之后来了一个东南亚男人，那个阿婆英语说的也好好啊，那个男人的咖喱味英语我都有点听不懂。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/CRnall_20231212_084131779.jpg?raw=true" alt="早餐"></p>
+<p>吃饱喝足来到下个目的地，也是我这次来香港的目的之一————办银行卡。我坐地铁前往汇丰银行北角分行，走过去的路上我不敢放慢脚步，生怕走慢了在银行前面犹豫而败北。进入银行，很庆幸里面没什么人，我找前台的姐姐问了这里可不可以开户，姐姐很耐心让我取个号等待。一分钟不到那个姐姐就领着我站在大堂的柜台上办理了。简单的问了我为什么来香港办理银行卡，我答了海淘和投资，姐姐没说什么，让我拿通行证、身份证、过关小票给她，填写信息就好，忙前忙后的，我就负责手机注册了。问了我现在有没有投资，我说有，基金，拿给姐姐看，不知道她看到我的白酒亏6个点是什么心情。旁边另外个姐姐过来问她“佢點解開卡？”“海淘”，以为我听不懂哈哈哈哈。当场下卡，开完就跑。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/12.jpg?raw=true" alt="汇丰one"></p>
+<p>吃完去太平山，坐的小巴，想体验一下“亡命小巴”的感觉，亡命小巴，现在出发！那个山是真的高，转了好久才到<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/CRnall_20231212_114109540.jpg?raw=true" alt="太平山"></p>
+<p>拍完下山去堅尼地城，本来要去熟食区买的，不会点餐，又跑出来了，去其他店看，不是人多就是好贵，之后去了大家樂，虽然这个也是连锁快餐，不过还是很有香港味道的<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/CRnall_20231212_130318868.jpg?raw=true" alt="大家樂"></p>
+<p>吃饱了就去香港大学了，买了纪念品HKU小熊。另外港大也真的很漂亮，虽然有点小，但是里面的学生给我一种精神气让我莫名有点畏惧，可能是社恐怕被同龄人问路吧hhh。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/CRnall_20231212_140430269.jpg?raw=true" alt="HKU"></p>
+<p>之后的时间我在港大坐着发呆，下午4点多返回九龙，去找汇丰的ATM机试图改卡的密码，失败，回去了。旅途结束了。</p>
+]]></content>
       <categories>
-        <category>学习</category>
+        <category>个人</category>
       </categories>
       <tags>
-        <tag>学习</tag>
-        <tag>代码</tag>
+        <tag>个人</tag>
+        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -559,54 +735,6 @@ for faceRect in faceRects:
       <tags>
         <tag>学习</tag>
         <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>旅游-香港</title>
-    <url>/2023/12/13/%E6%97%85%E6%B8%B8-%E9%A6%99%E6%B8%AF/</url>
-    <content><![CDATA[<h2 id="2023-12-11-2023-12-12-独行香港"><a href="#2023-12-11-2023-12-12-独行香港" class="headerlink" title="2023.12.11-2023.12.12 独行香港"></a>2023.12.11-2023.12.12 独行香港</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>香港有着“东方之珠”的美称，这个名字我以前也只在书中、电视里和母亲的口中听闻，它的繁华和发展早就在深入我心。基于2019年事件和网络上对香港的负面评价，作为一名非粤语母语者，对于香港多少带有恐惧情绪，万般纠结后还是决定亲自去看看这座城市。恰逢考完试有空闲时间，收拾好行李买好票就出发前往独自香港，开启了我的两天一夜香港之旅！</p>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
-<li>提前准备好八达通或者支付宝的香港地铁卡(我强烈建议用八达通)</li>
-<li>旅行时间短可在网上买境外流量包，时间长去便利店买33$的流量卡(50G+1000分钟电话，有效期1年)</li>
-<li>换一些零钱，有的店只收现金</li>
-<li>上下扶梯靠右站，上下楼靠左走</li>
-<li>不要在公众场合抽烟</li>
-<li>不要喂鸟类</li>
-<li>过海关不要带违禁品，注意携带烟酒数量</li>
-</ol>
-<h3 id="角色栏"><a href="#角色栏" class="headerlink" title="角色栏"></a>角色栏</h3><ul>
-<li>穿着：短袖、短裤、长外套、运动裤、运动鞋</li>
-<li>移动方式：步行、地铁、公交、渡轮</li>
-<li>证件：港澳通行证、身份证、交通卡、银行卡、过关小票、金巴小票</li>
-<li>花费：1000+</li>
-<li>其他：充电宝、数据线、转换头</li>
-</ul>
-<h3 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h3><p>从学校出发，要前往港珠澳大桥珠海关口，最快的方式是乘坐高铁抵达拱北口岸后打车。由于C7611车次临时停运，我只能乘坐C7617，加上打车的时间(直接坐出租车花了23，如果用打车软件会更便宜)近11点才抵达珠海关口。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/1.jpg?raw=true" alt="珠海关口"></p>
-<p>海关内禁止拍照，我描述一下。从“往香港”的入口随指示牌扫描通行证，按指纹，然后往前走，根据指示票前往穿梭巴士等候站，在大厅记得取票(一定要取票，检票不能用电子的，要扫实体票上的二维码)。跟随人流排队上车，很快就能上车。中午11点左右出发，坐左侧无太阳可看珠海、深圳、香港的城景和反光的大海；右侧有太阳但是看到的海景比左边好看，靠近香港机场可以见到蓝绿的海和缆车。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/2.jpg?raw=true" alt="港珠澳大桥"></p>
-<p>达到港珠澳大桥香港口岸后，随着人流过海关，下来在门口看到便利店可以在里面购买流量卡。出去之后可以选择搭乘巴士，巴士的价格和地点上面都有写。省钱小技巧：乘坐B5去欣澳站搭乘地铁前往想去的地方会便宜一些。若使用八达通，拍一下就可以上车了；使用支付宝则需要先切换左上角的地点至“中国香港”，后点击出行扫描二维码即可。到达欣澳后，我坐地铁去了深水埗吃饭，出地铁站走几步就看到了一家网红店“新香園 (堅記)” ，那时店里人挺多。一进门老板就热情的用普通话问我几位，我说1位后将我带进里面与两个老太太搭桌，拿着笔和纸问我吃什么。还好提前做了攻略，很快说出“冻奶茶和蛋牛治”，价钱小票和奶茶几乎同时放在我的桌子上，一个来回的功夫蛋牛治也好了，我拍了一张照后就狼吞虎咽的吃了起来。吃完拿着价钱小票去前台，收钱的老板不会讲普通话。“老細，AliPay————41蚊OK咗”，这是我在香港第一句粤语。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/3.jpg?raw=true" alt="冻奶茶和蛋牛治"></p>
-<p>吃饱喝足在深水埗逛逛，又返回地铁站前往旺角站，去看看那些耳熟能详的站台和真实的香港。走在彌敦道上，来往的人络绎不绝，各种肤色的人穿梭在这条路上。大家都急急忙忙的奔向各自的目的地。汽车在中间车道上快速行驶着，双层的巴士来来往往，红色复古的出租车是香港的特色。道路两侧有着高耸入云的破旧大厦，有的是住宅，有的是办公楼。有时我会看到这些大厦的入口，银色的防盗门，里面漆黑一片，偶尔还有开门的大爷老态龙钟的坐着，与门外的繁华形成了强烈的反差。路上的人也走的很快，旅客、本地人都是如此，伴随着人声、车流声、信号灯机械的提示声，在这些高楼大厦下更有了压迫感。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/4.JPEG?raw=true" alt="彌敦道"></p>
-<p>走到佐敦地铁站不远处，在彌敦道和柯士甸道交叉路口，我灵光一现想去历史博物馆看看。沿柯士甸道上走，这里远离了大部分的人群，走路也稍微变慢了些，鸽子扑棱着翅膀飞向路灯，四处观察着这座魔幻的城市。走到漆咸道南的十字路口，我惊讶的发现了香港理工大学，不过没有进去参观，只是远远的拍了张照就前往旁边的香港历史博物馆了。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/5.JPEG?raw=true" alt="香港理工大学"></p>
-<p>博物馆没意思，可能是我没找对<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/6.JPEG?raw=true" alt="香港历史博物馆"></p>
-<p>之后我又重新回到彌敦道，只为了打卡那座大厦————“重庆大厦”<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/7.JPEG?raw=true" alt="重庆大厦"></p>
-<p>继续往前走，我去了李小龙铜像，很多外国人都在铜像前摆着与雕像一致的动作合影留恋。沿着星光大道一路观赏着维多利亚港的美景，那时正好是太阳落山时间，夕阳的余辉洒在这片寸土寸金的大地上显得更加的高雅。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/8.JPEG?raw=true" alt="维多利亚港"></p>
-<p>路过K11时，外面摆放着Dior的圣诞树，浑身上下都释放着昂贵的气息，引的人们前去打卡拍照，合影留念。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/9.JPEG?raw=true" alt="Dior"></p>
-<p>本来想去香港岛吃晚饭的，肚子实在太饿了，但是周边又没有什么好吃的，没办法，看到了麦当劳…谁来香港吃国际连锁快餐啊喂！我靠还真的好贵，而且味道没有特别的。这里有个小插曲，有个1.9m的白男似乎想续杯咖啡，前台的那个姐姐仰着头，义正言辞的说“NO”，似乎还有点生气，我有点害怕。巧的是，下一个取餐的是我，我说了句“雷猴”把小票递给她(我不会念数字)，拿着我的餐就跑，不敢有太多的接触，社恐本人了。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/0b3ff7ece70b03124e4f2da6561400a.jpg?raw=true" alt="M记"></p>
-<p>吃完饭外面也天黑了，终于可以看到维港的夜景了，为了这个夜景我才选择留在香港一晚。真的非常漂亮，比我2010年第一次去上海时还要震撼。坐在天星轮渡上，我甚至忘记了多拍几张相，而是静静的欣赏这座城市，非常喜欢。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/10.JPEG?raw=true" alt="维港夜景"></p>
-<p>乘坐渡轮到达中环码头，就可以看见香港摩天轮，买票加上车排队共花了近40分钟，20蚊上去转三圈。在摩天轮上看香港的夜景真的很美，也不贵，还能听旁边两个老外讲英语笑话。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/11.JPEG?raw=true" alt="香港摩天轮"></p>
-<p>结束了Day1中计划的最后一个部分，我就要前往酒店了。决定步行前往，切身感受下香港岛的高级打工地，这里的人西装革履总是在打电话，神情严肃，走路飞快，但是人不多。在这里总是有种窒息感和压力，偶尔几天我觉得还挺舒服的，时间久了可能就…快靠近酒店时我还迷路了，Google map和高德都不准，没办法，我只能根据店名来判断，地图上的大厦名我根本找不到，好在最后还是找到了酒店。前台的小哥很好，我说普通话也很耐心的帮我办理手续，并且免费给我升级了房型。晚上10点半肚子饿了，跑到楼下711买吃的，附近有几家酒吧，不过不吵也不会觉得不安全。一个人住酒店莫名有些害怕，开了一晚上的灯睡觉，休息的还算不错。Day1就在睡梦中结束了。<br><img src="" alt="高级大床房"></p>
-<h3 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h3><p>早上8点多才起床，收拾好东西下楼check out，前往附近一家很出名的车仔面吃早餐。这家店“车仔面之家”已经开了60多年了，本地人也很喜欢吃，他家的特点是“立食”，因为店小只能站着吃，而且只收现金。里面的阿婆不太听得懂普通话，我的“幼面”和“油面”不太听得清，很耐心给我指着哪个面。点了配料之后在纸上给我写“35$”，我点的是“小份幼面+鱼蛋+鱿鱼”，他家的鱿鱼和猪大肠很出名。出餐也很快，接过面放在桌子上吃了几口我就开始找钱，正好口袋里有个5$的硬币。把钱拿过去时阿婆不在，只有个煮面的靓仔，看着有点凶。我鼓足勇气说“雷猴”他马上微笑过来，看到我把钱放在柜台上说“唔该”，我又回去吃面了，真的好好吃啊。之后来了一个东南亚男人，那个阿婆英语说的也好好啊，那个男人的咖喱味英语我都有点听不懂。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/CRnall_20231212_084131779.jpg?raw=true" alt="早餐"></p>
-<p>吃饱喝足来到下个目的地，也是我这次来香港的目的之一————办银行卡。我坐地铁前往汇丰银行北角分行，走过去的路上我不敢放慢脚步，生怕走慢了在银行前面犹豫而败北。进入银行，很庆幸里面没什么人，我找前台的姐姐问了这里可不可以开户，姐姐很耐心让我取个号等待。一分钟不到那个姐姐就领着我站在大堂的柜台上办理了。简单的问了我为什么来香港办理银行卡，我答了海淘和投资，姐姐没说什么，让我拿通行证、身份证、过关小票给她，填写信息就好，忙前忙后的，我就负责手机注册了。问了我现在有没有投资，我说有，基金，拿给姐姐看，不知道她看到我的白酒亏6个点是什么心情。旁边另外个姐姐过来问她“佢點解開卡？”“海淘”，以为我听不懂哈哈哈哈。当场下卡，开完就跑。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/12.jpg?raw=true" alt="汇丰one"></p>
-<p>吃完去太平山，坐的小巴，想体验一下“亡命小巴”的感觉，亡命小巴，现在出发！那个山是真的高，转了好久才到<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/CRnall_20231212_114109540.jpg?raw=true" alt="太平山"></p>
-<p>拍完下山去堅尼地城，本来要去熟食区买的，不会点餐，又跑出来了，去其他店看，不是人多就是好贵，之后去了大家樂，虽然这个也是连锁快餐，不过还是很有香港味道的<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/CRnall_20231212_130318868.jpg?raw=true" alt="大家樂"></p>
-<p>吃饱了就去香港大学了，买了纪念品HKU小熊。另外港大也真的很漂亮，虽然有点小，但是里面的学生给我一种精神气让我莫名有点畏惧，可能是社恐怕被同龄人问路吧hhh。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E9%A6%99%E6%B8%AF%E4%B9%8B%E6%97%85/CRnall_20231212_140430269.jpg?raw=true" alt="HKU"></p>
-<p>之后的时间我在港大坐着发呆，下午4点多返回九龙，去找汇丰的ATM机试图改卡的密码，失败，回去了。旅途结束了。</p>
-]]></content>
-      <categories>
-        <category>个人</category>
-      </categories>
-      <tags>
-        <tag>个人</tag>
-        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
