@@ -226,3 +226,74 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+# 2023.12.20练习
+## 问题1：猜单词游戏
+## 要求：
+1. 使用一个包含多个单词的列表作为单词库。
+2. 在游戏开始时，随机选择一个单词作为目标单词。
+3. 显示一个由下划线组成的部分单词，初始时下划线的位置与目标单词相对应。
+4. 允许玩家猜测字母，显示已经猜对的字母，并更新部分单词的显示。
+5. 显示玩家已经猜过的字母列表。
+6. 如果玩家在规定次数内猜对了整个单词，显示祝贺消息。如果猜错了6次，显示失败消息。
+
+```
+import random
+
+# 创建词库
+def choose_word():
+    word_list = ["python", "programming", "challenge", "coding", "computer"]
+    return random.choice(word_list)
+
+# 显示部分单词
+def display_partial_word(word, guessed_letters):
+    partial_word = ""   # 初始化字符串为空
+    for letter in word:   # 遍历目标单词的每个字符
+        if letter in guessed_letters: # 如果字母已经在已猜过的字母列表中
+            partial_word += letter # 将字母添加到部分单词中
+        else:
+            partial_word += "_"  # 否则，用下划线代替未猜对的字母
+    return partial_word
+
+# 游戏主循环
+def main():
+    target_word = choose_word()
+    guessed_letters = []
+    max_attempts = 6 #最大猜测次数
+    attempts = 0 #初始值
+
+    print("欢迎来到猜字母游戏!")
+    print(display_partial_word(target_word, guessed_letters))
+
+    while True:
+        guess = input("猜一个字母: ").lower()
+
+        if len(guess) != 1 or not guess.isalpha():
+            print("请输入一个有效的字母。")
+            continue
+
+        if guess in guessed_letters:
+            print("你已经猜过这个字母了。")
+            continue
+
+        guessed_letters.append(guess)
+
+        if guess not in target_word:
+            attempts += 1
+            print(f"猜错了！还剩余 {max_attempts - attempts} 次机会。")
+
+        partial_word = display_partial_word(target_word, guessed_letters)
+        print(partial_word)
+
+        if "_" not in partial_word:
+            print("恭喜你，你猜对了！")
+            break
+
+        if attempts == max_attempts:
+            print(f"很遗憾，你没有在规定次数内猜对。正确答案是: {target_word}")
+            break
+
+if __name__ == "__main__":
+    main()
+
+```

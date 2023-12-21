@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Aurora's Blog
+title: Hau's Blog
 subtitle: ''
 description: ''
 keywords:
-author: Aurora
-language: zh-TW
+author: Hau Uhang
+language: zh-CN
 timezone: ''
 
 # URL
@@ -103,6 +103,6 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:Aurora7july/Aurora7july.github.io.git
+  repository: git@github.com:HauUhang/HauUhang.github.io.git
   branch: main
 

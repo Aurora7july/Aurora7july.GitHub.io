@@ -13,7 +13,7 @@ menu:
   #   Movie: /movies/ || fas fa-video
   # 友链: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
-  #这个的格式是这样的：/名字/ || 图表名
+  #这个的格式是这样的：/名字/ || 图标名
   #子目录是
 
 # Code Blocks (代碼相關)
@@ -38,7 +38,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-   fab fa-github: https://github.com/Aurora7july || Github
+   fab fa-github: https://github.com/HauUhang || Github
    fas fa-envelope: mailto:yep6344@gmail.com || Email
    fas fa-brands fa-zhihu: https://www.zhihu.com/people/Aurora7july || Zhihu
 # search (搜索) 
@@ -370,7 +370,7 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: Aurora7july/Aurora7july.github.io
+  repo: HauUhang/HauUhang.github.io
   repo_id: R_kgDOH68BWA
   category_id: DIC_kwDOH68BWM4CSdAm
   theme:
@@ -623,8 +623,8 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family:
-  code-font-family:
+  font-family: -apple-system
+  code-font-family: 
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -683,7 +683,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/Aurora7july
+      link: https://github.com/HauUhang
   card_announcement: #公告
     enable: true
     content: 你好呀！欢迎来到我的博客ovo！如果有什么问题请及时联系我，评论区已修复，可直接通过留言、邮箱或者右下角聊天联系我！

@@ -140,3 +140,7 @@ message: 测试加密，这里的密码是：test
 我以[“量子力学”](https://aurora7july.github.io/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/)这篇为例试验一下：
 
 成功了！
+
+# 2023.12.20
+## 如何改变字颜色
+- <font color=red>红字</font>
