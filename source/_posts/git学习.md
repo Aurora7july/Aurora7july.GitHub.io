@@ -5,9 +5,23 @@ tags:
     - 学习
     - 命令
 mathjax: ture
-cover: /img/git.jpg
+cover: /img/git图片.JPG
 categories: 学习
 ---
+# git日常使用常用命令                  
+### github仓库git到本地，更新并上传
+1. 新建一个仓库
+2. 将仓库clone至本地任意位置，代码如下：(后面的地址可在GitHub上复制)  
+    `git clone git@github.com:用户名/仓库名.git`
+3. 将代码放入该文件/更新代码
+4. 使用以下命令：
+    ```
+    git add .
+    git commit -m"注释内容"
+    git push https://github.com/用户名/仓库名.git
+    git pull
+    ```
+
 # git学习(书)
 ## 第I章 git是什么
 ### git能解决什么？

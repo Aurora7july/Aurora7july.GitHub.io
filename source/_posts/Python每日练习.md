@@ -297,3 +297,127 @@ if __name__ == "__main__":
     main()
 
 ```
+
+# 2024.1.8练习
+## 问题1：学生成绩管理系统
+### 要求：
+你需要设计一个简单的学生成绩管理系统。系统应该包括以下功能：
+
+1. 添加学生：添加学生的姓名和成绩。
+2. 显示学生列表：显示所有学生的姓名和成绩。
+3. 搜索学生：通过学生姓名查找并显示其成绩。
+4. 计算平均成绩：计算并显示所有学生的平均成绩。
+
+你可以选择使用列表、字典或其他数据结构来存储学生信息。为了简化问题，你可以假设每个学生的姓名都是唯一的。
+
+### 解答
+```
+# 学生列表创建
+students_list = []
+
+# 添加学生名字及成绩
+while True:
+    name = input("请输入学生名字：")
+    grade = float(input("请输入学生成绩："))  # 将输入转换为浮点数
+
+# 学生信息存储
+    students_info = (name, grade)
+    students_list.append(students_info)
+
+# 询问用户是否继续添加学生信息
+    add_another = input("是否要添加另一个学生信息？(y/n): ").lower()
+    if add_another != 'y':
+        break
+
+# 显示学生列表
+print("学生列表：")
+for student in students_list:
+    print(f"姓名: {student[0]}, 成绩: {student[1]}")
+
+# 计算平均成绩
+total_grade = sum(student[1] for student in students_list)
+average_grade = total_grade / len(students_list)
+print(f"平均成绩：{average_grade}")
+
+# 搜索学生
+search_name = input("请输入要搜索的学生名字：")
+found = False
+
+for student in students_list:
+    if student[0] == search_name:
+        print(f"{search_name}的成绩是：{student[1]}")
+        found = True
+        break
+
+if not found:
+    print(f"找不到{search_name}学生")
+
+```
+
+# 2024.1.24练习
+## 题目：电影评分统计
+### 要求：  
+你需要设计一个电影评分统计系统。系统应该包括以下功能：
+
+1. 添加电影： 用户可以添加电影的名称和评分。
+2. 显示电影列表： 显示所有电影的名称和评分。
+3. 搜索电影： 通过电影名称查找并显示其评分。
+4. 计算平均评分： 计算并显示所有电影的平均评分。
+5. 推荐电影： 根据电影的平均评分，推荐一部用户可能喜欢的电影。推荐可以简单地选择平均评分较高的电影之一。
+
+### 解答
+```
+# 电影列表建立
+movies_list = []
+
+# 添加电影名字
+while True:
+    movies_name = input("请输入电影名字：")
+    movies_evaluate = float(input("请阁下为电影评分："))
+
+# 存储电影
+    movies = (movies_name, movies_evaluate)
+    movies_list.append(movies)
+
+# 询问用户是否继续添加信息
+    add_another = input("阁下是否还需要添加其他电影？(y/n): ").lower()
+    if add_another != 'y':
+        break
+
+# 显示电影列表
+print("电影列表：")
+for movies in movies_list:
+    print(f"电影名：{movies[0]}, 评分：{movies[1]}")
+
+# 搜索电影
+search_movies = input("请阁下输入要搜索的电影名字：")
+found = False
+
+for movies in movies_list:
+    if movies[0] == search_movies:
+        print(f"{search_movies}的评分是：{movies[1]}")
+        found = True
+        break
+
+if not found:
+    print(f"很抱歉，没有找到{search_movies}的相关信息")
+
+# 计算平均分
+total_grade = sum(movies[1] for movies in movies_list)
+average_grade = total_grade / len(movies_list)
+print(f"所有电影的平均评分为：")
+
+# 推荐电影：
+recommend_movies = None
+hight_rating = 0
+
+for movies in movies_list:
+    if movies[1] > hight_rating:
+        hight_rating = movies[1]
+        recommend_movies = movies[0]
+
+if recommend_movies:
+    print(f"这是我根据平均分为阁下推荐的电影：{recommend_movies},{hight_rating}")
+else:
+    print("很抱歉，暂无可推荐的电影")
+```
