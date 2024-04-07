@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>linux命令行与shell脚本编程</title>
+      <link href="/2024/04/02/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8Eshell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+      <url>/2024/04/02/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8Eshell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习Linux，使用的书籍为《Linux命令行与shell脚本编程大全》</p><h1 id="第一部分-Linux命令行"><a href="#第一部分-Linux命令行" class="headerlink" title="第一部分 Linux命令行"></a>第一部分 Linux命令行</h1><h2 id="第一章-初识Linux"><a href="#第一章-初识Linux" class="headerlink" title="第一章 初识Linux"></a>第一章 初识Linux</h2><p>Linux系统的核心是内核，内核控制着计算机系统的所有软件和硬件，主要负责以下4种功能：</p><ol><li>系统内存管理</li><li>软件程序管理</li><li>硬件设备管理</li><li>文件系统管理</li></ol><h2 id="第二章-走进shell"><a href="#第二章-走进shell" class="headerlink" title="第二章 走进shell"></a>第二章 走进shell</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2024.3.29形式验证方法培训</title>
       <link href="/2024/03/31/%E9%AA%8C%E8%AF%81%E5%9F%B9%E8%AE%AD/"/>
       <url>/2024/03/31/%E9%AA%8C%E8%AF%81%E5%9F%B9%E8%AE%AD/</url>
