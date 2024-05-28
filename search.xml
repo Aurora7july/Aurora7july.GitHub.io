@@ -146,7 +146,9 @@
 <p>提示：<br>可以使用input()函数获取用户输入的字符串。<br>为了简化问题，只需考虑英文字母a, e, i, o, u作为元音。<br>可以使用字符串的.lower()或.upper()方法来统一处理大小写问题。<br>利用循环遍历字符串中的每个字符，并检查是否是元音字母。</p>
 <h3 id="解答：-1"><a href="#解答：-1" class="headerlink" title="解答："></a>解答：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#用户输入</span><br><span class="line">user_input = input(&quot;请阁下输入一个字符串：&quot;)</span><br><span class="line"></span><br><span class="line">#统一大小写</span><br><span class="line">input_string = user_input.lower() </span><br><span class="line"></span><br><span class="line">#定义元音字母</span><br><span class="line">zimu = &#x27;aeiou&#x27;</span><br><span class="line"></span><br><span class="line">#初始化元音数</span><br><span class="line">zimu_count = 0</span><br><span class="line"></span><br><span class="line">#遍历字符串</span><br><span class="line">for char in input_string:</span><br><span class="line">    if char in zimu:</span><br><span class="line">        zimu_count += 1</span><br><span class="line"></span><br><span class="line">#输出</span><br><span class="line">print(&quot;元音字母的数量是：&quot;, zimu_count)</span><br></pre></td></tr></table></figure>
 <h1 id="2024-5-7"><a href="#2024-5-7" class="headerlink" title="2024.5.7"></a>2024.5.7</h1><h2 id="题目：统计列表中各元素的出现次数并输出结果"><a href="#题目：统计列表中各元素的出现次数并输出结果" class="headerlink" title="题目：统计列表中各元素的出现次数并输出结果"></a>题目：统计列表中各元素的出现次数并输出结果</h2><p>编写一个Python程序，要求用户输入一系列整数（可以是空格分隔的一行输入），然后程序会统计每个数字出现的次数，并以字典形式输出。每个键值对中的键是数字，值是该数字出现的次数。</p>
-<h3 id="解答：-2"><a href="#解答：-2" class="headerlink" title="解答："></a>解答：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">input_string = input(&quot;请输入一系列整数，用空格分隔：&quot;)</span><br><span class="line"></span><br><span class="line"># 切割</span><br><span class="line">try:</span><br><span class="line">    numbers = [int(num) for num in input_string.split()]</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;输入包含非整数，请确保所有输入都是整数。&quot;)</span><br><span class="line">    exit()</span><br><span class="line"></span><br><span class="line"># 初始化</span><br><span class="line">numlist = &#123;&#125;</span><br><span class="line"></span><br><span class="line"># 遍历</span><br><span class="line">for num in numbers:</span><br><span class="line">    if num in numlist:</span><br><span class="line">        numlist[num] += 1  </span><br><span class="line">    else:</span><br><span class="line">        numlist[num] = 1 </span><br><span class="line"></span><br><span class="line">print(numlist)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+<h3 id="解答：-2"><a href="#解答：-2" class="headerlink" title="解答："></a>解答：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">input_string = input(&quot;请输入一系列整数，用空格分隔：&quot;)</span><br><span class="line"></span><br><span class="line"># 切割</span><br><span class="line">try:</span><br><span class="line">    numbers = [int(num) for num in input_string.split()]</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;输入包含非整数，请确保所有输入都是整数。&quot;)</span><br><span class="line">    exit()</span><br><span class="line"></span><br><span class="line"># 初始化</span><br><span class="line">numlist = &#123;&#125;</span><br><span class="line"></span><br><span class="line"># 遍历</span><br><span class="line">for num in numbers:</span><br><span class="line">    if num in numlist:</span><br><span class="line">        numlist[num] += 1  </span><br><span class="line">    else:</span><br><span class="line">        numlist[num] = 1 </span><br><span class="line"></span><br><span class="line">print(numlist)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="2024-5-28"><a href="#2024-5-28" class="headerlink" title="2024.5.28"></a>2024.5.28</h1><h2 id="题目：寻找列表中的最大和最小元素"><a href="#题目：寻找列表中的最大和最小元素" class="headerlink" title="题目：寻找列表中的最大和最小元素"></a>题目：寻找列表中的最大和最小元素</h2><p>编写一个Python程序，要求用户输入一系列整数（用空格分隔）。然后程序会找到并输出这些整数中的最大值和最小值。</p>
+<h3 id="解答：-3"><a href="#解答：-3" class="headerlink" title="解答："></a>解答：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 输入内容并判断输入是否合法</span><br><span class="line">while True:</span><br><span class="line">    # 用户输入</span><br><span class="line">    usr_input = input(&quot;请阁下输入一系列整数，并用空格隔开：&quot;)</span><br><span class="line">    try:</span><br><span class="line">    # 分割成列表，并转换为整数列表</span><br><span class="line">        num_list = [int(num) for num in usr_input.split()]</span><br><span class="line">        break</span><br><span class="line">    except ValueError:</span><br><span class="line">        print(&quot;错误！请阁下重新输入正确的整数并用空格隔开&quot;)</span><br><span class="line"></span><br><span class="line"># 寻找max和min</span><br><span class="line">max_num = max(num_list)</span><br><span class="line">min_num = min(num_list)</span><br><span class="line"></span><br><span class="line">#输入max和min</span><br><span class="line">print(&quot;最大值：&quot;, max_num)</span><br><span class="line">print(&quot;最小值：&quot;, min_num)</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>学习</category>
       </categories>
@@ -579,6 +581,62 @@
       </tags>
   </entry>
   <entry>
+    <title>SystemVerilog学习</title>
+    <url>/2023/12/16/systemverilog%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="第I章-验证导论"><a href="#第I章-验证导论" class="headerlink" title="第I章 验证导论"></a>第I章 验证导论</h1><h2 id="基本测试平台的功能"><a href="#基本测试平台的功能" class="headerlink" title="基本测试平台的功能"></a>基本测试平台的功能</h2><p>测试平台的用途在于确定待测设计的正确性，包含以下步骤:<br>1.产生激励<br>2.把激励施加到DUT上<br>3.捕捉响应<br>4.检验正确性<br>5.对照整个验证目标测算进展情况</p>
+<h1 id="第II章-数据类型"><a href="#第II章-数据类型" class="headerlink" title="第II章 数据类型"></a>第II章 数据类型</h1><h2 id="内建数据类型"><a href="#内建数据类型" class="headerlink" title="内建数据类型"></a>内建数据类型</h2><p>两种基本类型：变量和线网，各自都可以有四种取值：1,0,Z,X</p>
+<h3 id="1-逻辑-logic-类型"><a href="#1-逻辑-logic-类型" class="headerlink" title="1.逻辑(logic)类型"></a>1.逻辑(logic)类型</h3><p>SystemVerilog对经典的reg数据类型进行改进，使得它除了作为一个变量以外，还可以被连续赋值、门单元和模块所驱动，这种改进的数据类型被称为logic。<br>任何使用线网的地方均可以使用logic，但要求logic不能有多个结构性的驱动<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//logic类型使用实例</span><br><span class="line">module logic(input logic);</span><br><span class="line">  parameter CYCLE=20;</span><br><span class="line">  logic q,q_1,d,clk,rst_1;</span><br><span class="line">  inital begin</span><br><span class="line">    clk=0;                           //过程赋值</span><br><span class="line">    forever # (CYCLE/2) clk=~clk;</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  assign rst_1=~rst_h;               //连续赋值</span><br><span class="line">  not n1(q_1,q);                     //q_1被门驱动</span><br><span class="line">  my_dff d1(q,d,clk,rst_1);          //q被模块驱动</span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-双状态数据类型"><a href="#2-双状态数据类型" class="headerlink" title="2.双状态数据类型"></a>2.双状态数据类型</h3><p>最简单的双状态数据类型是bit，无符号。另外四种带符号的双状态数据类型是byte,shourtint,int和longint。</p>
+<h2 id="定宽数组"><a href="#定宽数组" class="headerlink" title="定宽数组"></a>定宽数组</h2><h3 id="初始化和声明"><a href="#初始化和声明" class="headerlink" title="初始化和声明"></a>初始化和声明</h3><p>必须声明上下界<br><code>int lo_hi[0:15];  //16个整数[0]...[15]</code></p>
+<p>声明并使用多维数组<br><code>int array[0:7][0:3];  //完整的声明</code></p>
+<h3 id="常量数组"><a href="#常量数组" class="headerlink" title="常量数组"></a>常量数组</h3><p>常量数组：一个单引号加大括号来初始化数组<br><code>int ascend[4]=&#39;&#123;0,1,2,3&#125;;  //对4个元素进行初始化</code></p>
+<h3 id="for-和-foreach"><a href="#for-和-foreach" class="headerlink" title="for 和 foreach"></a>for 和 foreach</h3><ul>
+<li>i被声明为for循环内的局部变量</li>
+<li>在foreach循环中，只需要指定数组名并在其后面的方括号中给出索引变量，SV就会自动遍历数组中的元素。</li>
+</ul>
+<h3 id="复制和比较"><a href="#复制和比较" class="headerlink" title="复制和比较"></a>复制和比较</h3><ul>
+<li>比较仅限于等于或比较不等于</li>
+<li>操作符?:一个袖珍的if语句</li>
+</ul>
+<h3 id="使用位下标和数组上标"><a href="#使用位下标和数组上标" class="headerlink" title="使用位下标和数组上标"></a>使用位下标和数组上标</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">inital begin</span><br><span class="line">  bit [31:0] src[5] = &#x27;&#123;5&#123;5&#125;&#125;;</span><br><span class="line">  $display (src[0],,      // &#x27;b101或&#x27;d5</span><br><span class="line">            src[0][0],,   // &#x27;b1</span><br><span class="line">            src[0][2:1]);  // &#x27;b10</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<h3 id="合并数组"><a href="#合并数组" class="headerlink" title="合并数组"></a>合并数组</h3><p>数组大小定义的格式必须是[msb:lsb]，而不是[size]，就是个数</p>
+<h2 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h2><p>动态数组在声明时使用空的下标[ ].</p>
+<p>必须调用new[]操作符来分配。</p>
+<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><p>可以在一个队列中的任意地方增加或删除元素，队列的声明时使用带有美元符号的下标:[$]。队列元素的编号从0到$</p>
+<p>可以用字下标串联来替代方法，如果把$ 放在范围表达式的左边，那么$ 将代表最小值；<br>如果把$ 放在范围表达式的右边，那么$ 将代表最大值。</p>
+<h2 id="关联数组"><a href="#关联数组" class="headerlink" title="关联数组"></a>关联数组</h2><p>创建大容量数组可以用动态数组，创建超大容量用关联数组</p>
+<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><h2 id="数组的方法"><a href="#数组的方法" class="headerlink" title="数组的方法"></a>数组的方法</h2>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>代码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>半导体制造</title>
+    <url>/2023/09/16/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0/</url>
+    <content><![CDATA[<h1 id="半导体制造"><a href="#半导体制造" class="headerlink" title="半导体制造"></a>半导体制造</h1><p>半导体制程是被用于制造芯片，一种日常使用的电气和电子器件中集成电路的处理工艺。它是一系列照相和化学处理步骤，在其中电子电路逐渐形成在使用纯半导体材料制作的晶片上。硅是今天最常用的半导体材料，其他还有各种复合半导体材料。从一开始晶圆加工，到芯片封装测试，直到出货，通常需要6到8周，并且是在晶圆厂内完成。</p>
+<h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><p>这是我专业课最后期末复习的笔记，内容不是很多，都是知识点，也不是很难，只需要记住就可以了。如果在预览过程中发现有知识性错误请及时联系我修改！</p>
+<p>若无法显示PDF，可以点击该链接下载<a href="https://github.com/Aurora7july/files/blob/main/%E7%AC%94%E8%AE%B0PDF/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0.pdf">半导体制造</a></p>
+
+
+	<div class="row">
+    <embed src="/pdf/半导体制造.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>人脸识别实战</title>
     <url>/2023/03/19/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</url>
     <content><![CDATA[<h1 id="人脸识别实战"><a href="#人脸识别实战" class="headerlink" title="人脸识别实战"></a>人脸识别实战</h1><h2 id="人脸图片数据收集"><a href="#人脸图片数据收集" class="headerlink" title="人脸图片数据收集"></a>人脸图片数据收集</h2><h3 id="Olivetti-Faces人脸数据集"><a href="#Olivetti-Faces人脸数据集" class="headerlink" title="Olivetti Faces人脸数据集"></a>Olivetti Faces人脸数据集</h3><p>我以纽约大学提供的一个非常小的人脸数据集举例，每人的人脸图片为10张，清晰度还算不错，且图片为经过剪裁和对齐的灰度人脸图片，<a href="https://cs.nyu.edu/~roweis/data/olivettifaces.gif">下载网址</a></p>
@@ -646,60 +704,6 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
-    <title>SystemVerilog学习</title>
-    <url>/2023/12/16/systemverilog%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="第I章-验证导论"><a href="#第I章-验证导论" class="headerlink" title="第I章 验证导论"></a>第I章 验证导论</h1><h2 id="基本测试平台的功能"><a href="#基本测试平台的功能" class="headerlink" title="基本测试平台的功能"></a>基本测试平台的功能</h2><p>测试平台的用途在于确定待测设计的正确性，包含以下步骤:<br>1.产生激励<br>2.把激励施加到DUT上<br>3.捕捉响应<br>4.检验正确性<br>5.对照整个验证目标测算进展情况</p>
-<h1 id="第II章-数据类型"><a href="#第II章-数据类型" class="headerlink" title="第II章 数据类型"></a>第II章 数据类型</h1><h2 id="内建数据类型"><a href="#内建数据类型" class="headerlink" title="内建数据类型"></a>内建数据类型</h2><p>两种基本类型：变量和线网，各自都可以有四种取值：1,0,Z,X</p>
-<h3 id="1-逻辑-logic-类型"><a href="#1-逻辑-logic-类型" class="headerlink" title="1.逻辑(logic)类型"></a>1.逻辑(logic)类型</h3><p>SystemVerilog对经典的reg数据类型进行改进，使得它除了作为一个变量以外，还可以被连续赋值、门单元和模块所驱动，这种改进的数据类型被称为logic。<br>任何使用线网的地方均可以使用logic，但要求logic不能有多个结构性的驱动<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//logic类型使用实例</span><br><span class="line">module logic(input logic);</span><br><span class="line">  parameter CYCLE=20;</span><br><span class="line">  logic q,q_1,d,clk,rst_1;</span><br><span class="line">  inital begin</span><br><span class="line">    clk=0;                           //过程赋值</span><br><span class="line">    forever # (CYCLE/2) clk=~clk;</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  assign rst_1=~rst_h;               //连续赋值</span><br><span class="line">  not n1(q_1,q);                     //q_1被门驱动</span><br><span class="line">  my_dff d1(q,d,clk,rst_1);          //q被模块驱动</span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-双状态数据类型"><a href="#2-双状态数据类型" class="headerlink" title="2.双状态数据类型"></a>2.双状态数据类型</h3><p>最简单的双状态数据类型是bit，无符号。另外四种带符号的双状态数据类型是byte,shourtint,int和longint。</p>
-<h2 id="定宽数组"><a href="#定宽数组" class="headerlink" title="定宽数组"></a>定宽数组</h2><h3 id="初始化和声明"><a href="#初始化和声明" class="headerlink" title="初始化和声明"></a>初始化和声明</h3><p>必须声明上下界<br><code>int lo_hi[0:15];  //16个整数[0]...[15]</code></p>
-<p>声明并使用多维数组<br><code>int array[0:7][0:3];  //完整的声明</code></p>
-<h3 id="常量数组"><a href="#常量数组" class="headerlink" title="常量数组"></a>常量数组</h3><p>常量数组：一个单引号加大括号来初始化数组<br><code>int ascend[4]=&#39;&#123;0,1,2,3&#125;;  //对4个元素进行初始化</code></p>
-<h3 id="for-和-foreach"><a href="#for-和-foreach" class="headerlink" title="for 和 foreach"></a>for 和 foreach</h3><ul>
-<li>i被声明为for循环内的局部变量</li>
-<li>在foreach循环中，只需要指定数组名并在其后面的方括号中给出索引变量，SV就会自动遍历数组中的元素。</li>
-</ul>
-<h3 id="复制和比较"><a href="#复制和比较" class="headerlink" title="复制和比较"></a>复制和比较</h3><ul>
-<li>比较仅限于等于或比较不等于</li>
-<li>操作符?:一个袖珍的if语句</li>
-</ul>
-<h3 id="使用位下标和数组上标"><a href="#使用位下标和数组上标" class="headerlink" title="使用位下标和数组上标"></a>使用位下标和数组上标</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">inital begin</span><br><span class="line">  bit [31:0] src[5] = &#x27;&#123;5&#123;5&#125;&#125;;</span><br><span class="line">  $display (src[0],,      // &#x27;b101或&#x27;d5</span><br><span class="line">            src[0][0],,   // &#x27;b1</span><br><span class="line">            src[0][2:1]);  // &#x27;b10</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<h3 id="合并数组"><a href="#合并数组" class="headerlink" title="合并数组"></a>合并数组</h3><p>数组大小定义的格式必须是[msb:lsb]，而不是[size]，就是个数</p>
-<h2 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h2><p>动态数组在声明时使用空的下标[ ].</p>
-<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><p>队列的声明时使用带有美元符号的下标:[$]。队列元素的编号从0到$</p>
-<h2 id="关联数组"><a href="#关联数组" class="headerlink" title="关联数组"></a>关联数组</h2><p>创建大容量数组可以用动态数组，创建超大容量用关联数组</p>
-<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><h2 id="数组的方法"><a href="#数组的方法" class="headerlink" title="数组的方法"></a>数组的方法</h2>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>代码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>半导体制造</title>
-    <url>/2023/09/16/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0/</url>
-    <content><![CDATA[<h1 id="半导体制造"><a href="#半导体制造" class="headerlink" title="半导体制造"></a>半导体制造</h1><p>半导体制程是被用于制造芯片，一种日常使用的电气和电子器件中集成电路的处理工艺。它是一系列照相和化学处理步骤，在其中电子电路逐渐形成在使用纯半导体材料制作的晶片上。硅是今天最常用的半导体材料，其他还有各种复合半导体材料。从一开始晶圆加工，到芯片封装测试，直到出货，通常需要6到8周，并且是在晶圆厂内完成。</p>
-<h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><p>这是我专业课最后期末复习的笔记，内容不是很多，都是知识点，也不是很难，只需要记住就可以了。如果在预览过程中发现有知识性错误请及时联系我修改！</p>
-<p>若无法显示PDF，可以点击该链接下载<a href="https://github.com/Aurora7july/files/blob/main/%E7%AC%94%E8%AE%B0PDF/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0.pdf">半导体制造</a></p>
-
-
-	<div class="row">
-    <embed src="/pdf/半导体制造.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>旅游-外伶仃岛</title>
     <url>/2023/11/04/%E6%97%85%E6%B8%B8-%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/</url>
     <content><![CDATA[<h2 id="外伶仃岛一日游"><a href="#外伶仃岛一日游" class="headerlink" title="外伶仃岛一日游"></a>外伶仃岛一日游</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>自国庆假期以后，我便陷入了上课和学习的纠缠，生活中再也不如从前那般恣意。随着身心疲惫渐显，渴望一次宽慰身心、回归自然之旅渐生。因此，我迅速检查了周末的天气情况，立即预订了船票，最终期盼已久的日子终于到来，我难掩内心的喜悦。如今，结束了这次旅程，我迫不及待地开始写这篇文章。</p>
@@ -724,168 +728,25 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
-    <title>学习英语计划</title>
-    <url>/2023/12/20/%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<p>Yesterday I learned how to learn English through YouTube, a program provided by Learn English with Bob the Canadian </p>
-<h1 id="plan"><a href="#plan" class="headerlink" title="plan"></a>plan</h1><p>THINGS YOU WILL NEED:</p>
-<ul>
-<li>1 hour per day (30 minutes will work as well).</li>
-<li>a notebook and a pen to write down new vocabulary each day.</li>
-<li>an English song.</li>
-<li>an English a book.</li>
-<li>an English TV show.</li>
-</ul>
-<p>MONDAYS (Spend 30-40 minutes Reading)</p>
-<ul>
-<li>Read your book.</li>
-<li>Read the news.</li>
-<li>Read an article on <a href="http://simple.wikipedia.com">http://simple.wikipedia.com</a></li>
-<li>Write down some new words in your notebook with their definition.</li>
-<li>Spend the rest of your hour:<br>— Reading out loud from your book<br>— Writing out some passages from your book.<br>— Listening to the audiobook of your book.<br>— Using Duolingo or other learning apps.</li>
-</ul>
-<p>TUESDAYS (Spend 30-40 minutes Writing)</p>
-<ul>
-<li>Write what you did yesterday, today, and tomorrow in your notebook.</li>
-<li>Write a few comments on Youtube videos.</li>
-<li>Write some sentences about what you like and dislike about your song, your book, and your TV show.</li>
-<li>Write a summary of what you have read in your book the day before.</li>
-<li>Put some new words in your dictionary.</li>
-<li>Spend the rest of your hour:<br>— Reading what you have written.<br>— Listening to what you have written by pasting your writing into Google translate and have it read it to you.<br>— Reading what you have written out loud.<br>— Using Duolingo or other learning apps.</li>
-</ul>
-<p>WEDNESDAYS (Spend 30-40 minutes Listening):</p>
-<ul>
-<li>Watch your TV show.</li>
-<li>Listen to your song.</li>
-<li>Listen to the Audiobook of your book if you have it.</li>
-<li>Watch a few Youtube videos.</li>
-<li>Put new words in your dictionary.</li>
-<li>Spend the rest of your hour:<br>— Read about your TV show.<br>— Write about how your song makes you feel.<br>— Mimic or shadow people from your TV show.<br>— Sing along to your song.</li>
-</ul>
-<p>THURSDAYS (Spend 30-40 minutes Speaking):</p>
-<ul>
-<li>Hire a tutor on:<br>— Preply: <a href="http://tracking.preply.com/SH2X">http://tracking.preply.com/SH2X</a><br>— Cambly: <a href="http://cambly.com">http://cambly.com</a><br>— iTalki: <a href="http://italki.com">http://italki.com</a></li>
-<li>Talk out loud.</li>
-<li>Narrate your life.</li>
-<li>Record yourself and play it back.</li>
-<li>Put words in your dictionary.</li>
-<li>Spend the rest of your hour:<br>— Reading out loud.<br>— Singing out loud.<br>— Shadowing or mimicking actors from your TV show.</li>
-</ul>
-<p>FRIDAYS (Spend the Entire hour on Vocabulary):</p>
-<ul>
-<li>Review all the words in your dictionary.</li>
-<li>Write them out.</li>
-<li>Say them out loud.</li>
-<li>Use them in a sentence.</li>
-<li>Make a <a href="http://quizlet.com">http://quizlet.com</a> set.</li>
-<li>Make flashcards.</li>
-<li>Work until you have them all memorized.</li>
-</ul>
-<p>WEEKENDS:</p>
-<ul>
-<li>Find a new song.</li>
-<li>Find a new book.</li>
-<li>Find a new TV show.</li>
-<li>Take a break.</li>
-</ul>
-<p>FORM:<a href="https://youtu.be/5-T6Xqlh6BU?si=S_KQ0CmjfEtER-fR">The Best Way To Learn English (In my humble opinion.)</a></p>
-<hr>
-<h1 id="Reading"><a href="#Reading" class="headerlink" title="Reading"></a>Reading</h1><h1 id="Writing"><a href="#Writing" class="headerlink" title="Writing"></a>Writing</h1><h1 id="Listening"><a href="#Listening" class="headerlink" title="Listening"></a>Listening</h1><h2 id="2023-12-20-Wednesday-listening"><a href="#2023-12-20-Wednesday-listening" class="headerlink" title="2023.12.20 Wednesday(listening)"></a>2023.12.20 Wednesday(listening)</h2><h3 id="What-did-you-hear"><a href="#What-did-you-hear" class="headerlink" title="What did you hear?"></a>What did you hear?</h3><p><a href="https://youtu.be/lXVQmHxAnAE?si=2uUeh8dfSi6A_QV8">《崩坏：星穹铁道》希儿角色PV——「一夜无事」</a></p>
-<p><font color=#6A5ACD>Seele</font>: Ha, there they come again.<br><font color=red>Here they come again</font></p>
+    <title>马克思主义原理期末复习</title>
+    <url>/2022/12/07/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%8E%9F%E7%90%86%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<p>正确率应该在85%以上，只有选择题</p>
+<p>尽量使用网页打开文件，实在打不开点击<a href="https://github.com/Aurora7july/Files.github.io/blob/main/%E7%AC%94%E8%AE%B0PDF/%E9%A9%AC%E5%8E%9F%E5%A4%8D%E4%B9%A0.pdf">备份</a>试试看。</p>
 
-<p>SoldierA: Wait, don't let her get away.
-<br><font color=red>Wait, you will never get away</font></p>
 
-<p>SoldierB: It's damage, she is dead.
-<br><font color=red>It's a dead end, she's dead</font></p>
-
-<p><font color=#6A5ACD>Seele</font>: Make trouble in Wildfire's territory, you guys got a lot of nerves.
-<br><font color=red>Make trouble in Wildfire's territory. You guys got a lot of nerves</font></p>
-
-<p><font color=#6A5ACD>Seele</font>: Still here. I'm feeling like things just began!
-<br><font color=red>Still here. I'm afraid things just got complicated.</font></p>
-
-<p><font color=#6A5ACD>Seele</font>: Sometimes a sharp blade is the only way to get people to come to this.
-<br><font color=red>Sometimes a sharp blade is the only way to get people to come to this.</font></p>
-
-<p><font color=#6A5ACD>Seele</font>: Can I ask for your help?<br><font color=red>Did I ask for your help?</font></p>
-
-<p><font color=#C8BFC6>Bronya</font>: Looks like you could use it. Go!<br>
-<font color=red>Looks like you could use it. Quick!</font></p>
-
-<p><font color=#6A5ACD>Seele</font>: Don't tell me what to do.</p>
-
-<p><font color=#C8BFC6>Bronya</font>: There's always a weakness.
-<br><font color=red>There's always a weakness.</font></p>
-
-<p><font color=#6A5ACD>Seele</font>: How about this move?</p>
-
-<p><font color=#C8BFC6>Bronya</font>: Now for the one that slipped through the net.
-<br><font color=red>Now for the one that slipped through the net.</font></p>
-
-<p><font color=#6A5ACD>Seele</font>: Stop holding me back over the welder. Disappear among the sea of butterflies, collisions of the past.
-<br><font color=red>Stop holding me back over the welder. Disappear among the sea of butterflies, collisions of the past.</font></p>
+	<div class="row">
+    <embed src="/pdf/马原复习.pdf" width="100%" height="550" type="application/pdf">
+	</div>
 
 
 
-<h2 id="New-vocabulary"><a href="#New-vocabulary" class="headerlink" title="New vocabulary"></a>New vocabulary</h2><ul>
-<li>territory <em>[ˈtɛrɪt(ə)ri]</em><br>n.领地</li>
-<li>nerves <em>[ˈnɜːvəs]</em><br>n.神经，胆子</li>
-<li>complicated. <em>[ˈkɒmplɪkeɪtɪd]</em><br>adj.复杂的</li>
-<li>sharp <em>[ˈʃɑrp]</em><br>adj.锋利的，尖锐的</li>
-<li>blade <em>[bled]</em><br>n.刀片，叶片</li>
-<li>slip <em>[slɪp]</em><br>v.滑落，纸片，滑到</li>
-<li>welder <em>[ˈweldə(r)]</em><br>n.焊工，电焊工</li>
-<li>Disappear <em>[ˌdisəˈpiə]</em><br>v.消失，失踪</li>
-<li>collisions <em>[kə’liʒən].</em><br>v.碰撞，冲突</li>
-</ul>
-<h1 id="Speaking"><a href="#Speaking" class="headerlink" title="Speaking"></a>Speaking</h1><h1 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h1><h3 id="2024-1-8"><a href="#2024-1-8" class="headerlink" title="2024.1.8"></a>2024.1.8</h3><ul>
-<li>displayed 显示</li>
-<li>entrepreneurship 创业</li>
-<li>obtaining 获得</li>
-</ul>
-<p>“Obtaining” 和 “get” 是两个英语单词，它们在很多情况下可以互换使用，但也存在一些微妙的区别。</p>
-<p>“Obtaining” 更加正式和正式，通常用于描述更为复杂、正式或官方的获取行为。例如，你可能会说 “I obtained a copy of the report from the official archives”（我从官方档案中获取了一份报告）。<br>“Get” 则是更为通用和口语化的用词，可以用于各种日常场景，也可以表示简单的获取。例如，你可以说 “I need to get some groceries from the store”（我需要从商店里买些食品）。<br>程度的不同：</p>
-<p>“Obtaining” 可以强调努力、计划或一定的过程，而不仅仅是简单地获得。它可能涉及更多的步骤或困难。<br>“Get” 则可能更加简单和直接，强调结果而不是过程。<br>正式文体：</p>
-<p>在正式的文体中，例如法律文件或学术论文中，可能更倾向于使用 “obtaining” 而非 “get”，以保持正式性和精确性。</p>
-<ul>
-<li>attended 出席</li>
-<li>potential 潜在的</li>
-</ul>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>学习</tag>
-        <tag>代码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>旅游-澳门</title>
-    <url>/2023/09/29/%E6%97%85%E6%B8%B8-%E6%BE%B3%E9%97%A8/</url>
-    <content><![CDATA[<h2 id="澳门之旅-II"><a href="#澳门之旅-II" class="headerlink" title="澳门之旅 II"></a>澳门之旅 II</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>写这篇post的时候已经是2023.10.8了，本来计划在国庆假期内写完，还是拖到了现在才想起来，接下来就要我凭印象记录了。<br>这次是受高中同学的请求，带其去澳门看看，正好假期有空，便欣然答应。<br>这是我第二次去澳门，上次一人独行，初次领略纸醉金迷和高雅浪漫，可惜时间有限加之体力不足，未见夜晚的澳门的灯红酒绿，颇有些遗憾。此次前往，也算了却我一个小小的心愿。<br>澳门是一座美丽的城市，拥挤与繁华，富裕与友善，是我对这座小城市的印象。这座不及浦东机场面积的小城，竟甚至能在2019年产生世界第二的人均GDP。接下来，我将回忆本次去澳门的所见所闻与君分享。</p>
-<h3 id="旅行"><a href="#旅行" class="headerlink" title="旅行"></a>旅行</h3><ul>
-<li>过境准备<br>我们乘坐C7611与9:20到达珠海站，之后前往青茂口岸，路途换了20mop坐公车。青茂口岸在2021年9月8日才正式投入使用，这里人少，快捷，凉快，吸取上次在拱北口岸大排队的教训，我们很快通过了海关，正式踏入澳门境内。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/IMG_20230225_091702.jpg?raw=true" alt="珠海站"></li>
-<li><p>澳门半岛<br>从口岸坐公车前往澳门亚美打利庇卢大马路市政署和议事亭前地并拍照留念<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/1.jpg?raw=true" alt="市政署与议事亭前地"> </p>
-<p>之后前往大三巴及周边附近拍照留念<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/2.jpg?raw=true" alt="大三巴及周边"></p>
-<p>新葡京及附近娱乐场拍照留念<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/3.jpg?raw=true" alt="新葡京及附近娱乐场"></p>
-<p>在梳打冰室吃午餐<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/4.jpg?raw=true" alt="午餐"></p>
-<p>吃饱喝足之后前往澳门冼星海大马路澳门回归贺礼陈列馆<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/5.jpg?raw=true" alt="澳门回归贺礼陈列馆"></p>
-</li>
-<li><p>路氹<br>伦敦人、巴黎人、威尼斯人逛逛<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/6.jpg?raw=true" alt="三人"></p>
-<p>晚饭吃M记，吃太快没拍<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/7.jpg?raw=true" alt="晚饭"></p>
-<p>夜晚的澳门<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/8.jpg?raw=true" alt="夜之城"></p>
-</li>
-<li>返航<br>结束旅程，乘坐发财车返回口岸<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/9.jpg?raw=true" alt="回家"></li>
-</ul>
-<h3 id="个人感想"><a href="#个人感想" class="headerlink" title="个人感想"></a>个人感想</h3><p>很喜欢澳门，这里民风淳朴，风景怡人，物价吓人。未满21岁还不让我进赌场，不能一睹美女荷官芳容，可惜可惜。下次再来吧，澳门活动也多，可以来一场说走就走的旅行。</p>
-]]></content>
-      <categories>
-        <category>个人</category>
-      </categories>
-      <tags>
-        <tag>个人</tag>
-        <tag>旅行</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -937,6 +798,34 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
+    <title>旅游-澳门</title>
+    <url>/2023/09/29/%E6%97%85%E6%B8%B8-%E6%BE%B3%E9%97%A8/</url>
+    <content><![CDATA[<h2 id="澳门之旅-II"><a href="#澳门之旅-II" class="headerlink" title="澳门之旅 II"></a>澳门之旅 II</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>写这篇post的时候已经是2023.10.8了，本来计划在国庆假期内写完，还是拖到了现在才想起来，接下来就要我凭印象记录了。<br>这次是受高中同学的请求，带其去澳门看看，正好假期有空，便欣然答应。<br>这是我第二次去澳门，上次一人独行，初次领略纸醉金迷和高雅浪漫，可惜时间有限加之体力不足，未见夜晚的澳门的灯红酒绿，颇有些遗憾。此次前往，也算了却我一个小小的心愿。<br>澳门是一座美丽的城市，拥挤与繁华，富裕与友善，是我对这座小城市的印象。这座不及浦东机场面积的小城，竟甚至能在2019年产生世界第二的人均GDP。接下来，我将回忆本次去澳门的所见所闻与君分享。</p>
+<h3 id="旅行"><a href="#旅行" class="headerlink" title="旅行"></a>旅行</h3><ul>
+<li>过境准备<br>我们乘坐C7611与9:20到达珠海站，之后前往青茂口岸，路途换了20mop坐公车。青茂口岸在2021年9月8日才正式投入使用，这里人少，快捷，凉快，吸取上次在拱北口岸大排队的教训，我们很快通过了海关，正式踏入澳门境内。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/IMG_20230225_091702.jpg?raw=true" alt="珠海站"></li>
+<li><p>澳门半岛<br>从口岸坐公车前往澳门亚美打利庇卢大马路市政署和议事亭前地并拍照留念<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/1.jpg?raw=true" alt="市政署与议事亭前地"> </p>
+<p>之后前往大三巴及周边附近拍照留念<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/2.jpg?raw=true" alt="大三巴及周边"></p>
+<p>新葡京及附近娱乐场拍照留念<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/3.jpg?raw=true" alt="新葡京及附近娱乐场"></p>
+<p>在梳打冰室吃午餐<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/4.jpg?raw=true" alt="午餐"></p>
+<p>吃饱喝足之后前往澳门冼星海大马路澳门回归贺礼陈列馆<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/5.jpg?raw=true" alt="澳门回归贺礼陈列馆"></p>
+</li>
+<li><p>路氹<br>伦敦人、巴黎人、威尼斯人逛逛<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/6.jpg?raw=true" alt="三人"></p>
+<p>晚饭吃M记，吃太快没拍<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/7.jpg?raw=true" alt="晚饭"></p>
+<p>夜晚的澳门<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/8.jpg?raw=true" alt="夜之城"></p>
+</li>
+<li>返航<br>结束旅程，乘坐发财车返回口岸<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/macau-II/9.jpg?raw=true" alt="回家"></li>
+</ul>
+<h3 id="个人感想"><a href="#个人感想" class="headerlink" title="个人感想"></a>个人感想</h3><p>很喜欢澳门，这里民风淳朴，风景怡人，物价吓人。未满21岁还不让我进赌场，不能一睹美女荷官芳容，可惜可惜。下次再来吧，澳门活动也多，可以来一场说走就走的旅行。</p>
+]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+      <tags>
+        <tag>个人</tag>
+        <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>量子力学</title>
     <url>/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -951,28 +840,6 @@ for faceRect in faceRects:
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>马克思主义原理期末复习</title>
-    <url>/2022/12/07/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%8E%9F%E7%90%86%E9%A2%98%E7%9B%AE/</url>
-    <content><![CDATA[<p>正确率应该在85%以上，只有选择题</p>
-<p>尽量使用网页打开文件，实在打不开点击<a href="https://github.com/Aurora7july/Files.github.io/blob/main/%E7%AC%94%E8%AE%B0PDF/%E9%A9%AC%E5%8E%9F%E5%A4%8D%E4%B9%A0.pdf">备份</a>试试看。</p>
-
-
-	<div class="row">
-    <embed src="/pdf/马原复习.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-]]></content>
       <categories>
         <category>学习</category>
       </categories>
