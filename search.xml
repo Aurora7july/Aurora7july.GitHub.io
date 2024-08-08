@@ -1,91 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown常用命令</title>
-    <url>/2022/09/03/Markdown%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="这是一篇用于测试的页面"><a href="#这是一篇用于测试的页面" class="headerlink" title="这是一篇用于测试的页面"></a>这是一篇用于测试的页面</h1><h1 id="2022-9-5"><a href="#2022-9-5" class="headerlink" title="2022.9.5"></a>2022.9.5</h1><p>今天想学习如何插入图片和代码表示：</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>查了一下是代码表示为<code>tab上面的那个</code></p>
-<p>成功啦</p>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片为为<code>![名称](地址)</code>，试下：</p>
-<p><img src="https://pbs.twimg.com/media/FdLE8ipagAAA1qP?format=jpg&amp;name=large" alt="图片测试"></p>
-<p>成功啦！</p>
-<h1 id="2022-9-6"><a href="#2022-9-6" class="headerlink" title="2022.9.6"></a>2022.9.6</h1><p>今天学习下如何使用LaTeX公式，代码和注释：</p>
-<h2 id="公式："><a href="#公式：" class="headerlink" title="公式："></a>公式：</h2><p>如果有文章需要开启LaTeX，记得在开头加上<code>mathjax: ture</code></p>
-<p>貌似和LaTeX没有什么变化，一个美元是文本中的公式，两个美元是换行单独一行的公式,不好意思这里没办法打符号给大家看，用了转义符也没有显示。</p>
-<p>这里另外说一点，如果特殊符号转义只要在前面加<code>\</code>就可以了。</p>
-<p>试一下写个欧拉公式：</p>
-<script type="math/tex; mode=display">e^{i\pi }+1=0</script><p>成功啦！</p>
-<h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><h3 id="方法1：用tab键直接实现："><a href="#方法1：用tab键直接实现：" class="headerlink" title="方法1：用tab键直接实现："></a>方法1：用<code>tab</code>键直接实现：</h3><p>测试一下：</p>
-<pre><code>print&quot;hello world!&quot;
-</code></pre><p>成功啦！</p>
-<h3 id="方法2：用-包裹代码："><a href="#方法2：用-包裹代码：" class="headerlink" title="方法2：用```包裹代码："></a>方法2：用```包裹代码：</h3><p>测试一下：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print&quot;hello world!&quot;</span><br></pre></td></tr></table></figure></p>
-<p>成功啦！</p>
-<h2 id="写注释"><a href="#写注释" class="headerlink" title="写注释"></a>写注释</h2><p>有几张方法，不过写一个最简单的就好了：<code>&lt;！--写注释--&gt;</code></p>
-<p>测试一下：</p>
-<!--写注释-->
-<p>成功啦！哈哈哈当然你们看不到！</p>
-<h1 id="2022-9-7"><a href="#2022-9-7" class="headerlink" title="2022.9.7"></a>2022.9.7</h1><p>今天试着插入图片，之前插入的图片来源于Twitter，我今天试试Baidu的和本地的，看下能不能成功：</p>
-<h2 id="Baidu图片插入"><a href="#Baidu图片插入" class="headerlink" title="Baidu图片插入"></a>Baidu图片插入</h2><p>图片为为<code>![名称](地址)</code>，试下：</p>
-<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.577865b6804b46b74fbd1f90c32ab050?rik=wyyAsnT8byDlHQ&amp;riu=http%3a%2f%2fwww.bkill.com%2fu%2fupload%2f2018%2f03%2f13%2f140123254153.jpg&amp;ehk=duhXRwn7iwcIknm%2bTohI3sS200c%2fEKqnxxx0TFJWFMU%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="Baidu图片测试"></p>
-<p>成功啦！</p>
-<h2 id="本地图片插入"><a href="#本地图片插入" class="headerlink" title="本地图片插入"></a>本地图片插入</h2><p>1.试了下base64转码<a href="https://base64.us/">转码地址</a>这个是可以成功的，但是一大串代码放在我的md里面我看着非常难受，所以我试下用其他的方法；</p>
-<p>2.直接把图片放在一个文件夹里试试：</p>
-<p><img src="/images/0.jpg" alt="本地图片测试"> </p>
-<p><img src="/images/1.png" alt="图片暂存"></p>
-<p><strong>可以直接复制图片至文章中</strong></p>
-<p>成功了！</p>
-<h1 id="2022-9-8"><a href="#2022-9-8" class="headerlink" title="2022.9.8"></a>2022.9.8</h1><p>今天主要是弄了优化，实际上有些bug，无语了</p>
-<h1 id="2022-9-10"><a href="#2022-9-10" class="headerlink" title="2022.9.10"></a>2022.9.10</h1><p>中秋节快乐！</p>
-<p>昨天忘记记录了，不过也没干什么事情，出去玩了哈哈哈哈</p>
-<p>今天美化了一下我的blog，好看多了哈哈哈哈</p>
-<h2 id="置顶文章"><a href="#置顶文章" class="headerlink" title="置顶文章"></a>置顶文章</h2><p>如果需要对某篇文章进行置顶，只需要加入<code>sticky: 1</code>就可，详细可看<code>Myblog</code>已经置顶！</p>
-<p>成功啦！</p>
-<h2 id="给文章加封面"><a href="#给文章加封面" class="headerlink" title="给文章加封面"></a>给文章加封面</h2><p>在开头加入<code>cover: (图片地址)</code></p>
-<p>成功啦！</p>
-<h1 id="2023-3-27"><a href="#2023-3-27" class="headerlink" title="2023.3.27"></a>2023.3.27</h1><p>久违的更新，补充一下对文章的加密</p>
-<h2 id="准备工作（我的已完成）"><a href="#准备工作（我的已完成）" class="headerlink" title="准备工作（我的已完成）"></a>准备工作（我的已完成）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-blog-encrypt --save</span><br></pre></td></tr></table></figure>
-<h2 id="把代码放在文章顶部"><a href="#把代码放在文章顶部" class="headerlink" title="把代码放在文章顶部"></a>把代码放在文章顶部</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">password: test</span><br><span class="line">message: 测试加密，这里的密码是：test</span><br></pre></td></tr></table></figure>
-<p>我以<a href="https://aurora7july.github.io/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">“量子力学”</a>这篇为例试验一下：</p>
-<p>成功了！</p>
-<h1 id="2023-12-20"><a href="#2023-12-20" class="headerlink" title="2023.12.20"></a>2023.12.20</h1><h2 id="如何改变字颜色"><a href="#如何改变字颜色" class="headerlink" title="如何改变字颜色"></a>如何改变字颜色</h2><ul>
-<li><font color=red>红字</font>
-
-</li>
-</ul>
-<h1 id="Markdown三线表"><a href="#Markdown三线表" class="headerlink" title="Markdown三线表"></a>Markdown三线表</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
-<p>语法格式如下：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>我们可以设置表格的对齐方式：</p>
-<p>-: 设置内容和标题栏居右对齐。<br>:- 设置内容和标题栏居左对齐。<br>:-: 设置内容和标题栏居中对齐。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>命令</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python每日练习</title>
     <url>/2023/11/01/Python%E6%AF%8F%E6%97%A5%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="2023-11-1练习"><a href="#2023-11-1练习" class="headerlink" title="2023.11.1练习"></a>2023.11.1练习</h1><h2 id="问题1："><a href="#问题1：" class="headerlink" title="问题1："></a>问题1：</h2><p>编写一个程序，要求用户输入一个正整数，然后计算该整数的阶乘并输出结果。阶乘是指将一个整数与小于它的所有正整数相乘的结果。例如，5的阶乘是5 <em> 4 </em> 3 <em> 2 </em> 1 = 120。</p>
@@ -194,6 +109,91 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown常用命令</title>
+    <url>/2022/09/03/Markdown%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="这是一篇用于测试的页面"><a href="#这是一篇用于测试的页面" class="headerlink" title="这是一篇用于测试的页面"></a>这是一篇用于测试的页面</h1><h1 id="2022-9-5"><a href="#2022-9-5" class="headerlink" title="2022.9.5"></a>2022.9.5</h1><p>今天想学习如何插入图片和代码表示：</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>查了一下是代码表示为<code>tab上面的那个</code></p>
+<p>成功啦</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片为为<code>![名称](地址)</code>，试下：</p>
+<p><img src="https://pbs.twimg.com/media/FdLE8ipagAAA1qP?format=jpg&amp;name=large" alt="图片测试"></p>
+<p>成功啦！</p>
+<h1 id="2022-9-6"><a href="#2022-9-6" class="headerlink" title="2022.9.6"></a>2022.9.6</h1><p>今天学习下如何使用LaTeX公式，代码和注释：</p>
+<h2 id="公式："><a href="#公式：" class="headerlink" title="公式："></a>公式：</h2><p>如果有文章需要开启LaTeX，记得在开头加上<code>mathjax: ture</code></p>
+<p>貌似和LaTeX没有什么变化，一个美元是文本中的公式，两个美元是换行单独一行的公式,不好意思这里没办法打符号给大家看，用了转义符也没有显示。</p>
+<p>这里另外说一点，如果特殊符号转义只要在前面加<code>\</code>就可以了。</p>
+<p>试一下写个欧拉公式：</p>
+<script type="math/tex; mode=display">e^{i\pi }+1=0</script><p>成功啦！</p>
+<h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><h3 id="方法1：用tab键直接实现："><a href="#方法1：用tab键直接实现：" class="headerlink" title="方法1：用tab键直接实现："></a>方法1：用<code>tab</code>键直接实现：</h3><p>测试一下：</p>
+<pre><code>print&quot;hello world!&quot;
+</code></pre><p>成功啦！</p>
+<h3 id="方法2：用-包裹代码："><a href="#方法2：用-包裹代码：" class="headerlink" title="方法2：用```包裹代码："></a>方法2：用```包裹代码：</h3><p>测试一下：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print&quot;hello world!&quot;</span><br></pre></td></tr></table></figure></p>
+<p>成功啦！</p>
+<h2 id="写注释"><a href="#写注释" class="headerlink" title="写注释"></a>写注释</h2><p>有几张方法，不过写一个最简单的就好了：<code>&lt;！--写注释--&gt;</code></p>
+<p>测试一下：</p>
+<!--写注释-->
+<p>成功啦！哈哈哈当然你们看不到！</p>
+<h1 id="2022-9-7"><a href="#2022-9-7" class="headerlink" title="2022.9.7"></a>2022.9.7</h1><p>今天试着插入图片，之前插入的图片来源于Twitter，我今天试试Baidu的和本地的，看下能不能成功：</p>
+<h2 id="Baidu图片插入"><a href="#Baidu图片插入" class="headerlink" title="Baidu图片插入"></a>Baidu图片插入</h2><p>图片为为<code>![名称](地址)</code>，试下：</p>
+<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.577865b6804b46b74fbd1f90c32ab050?rik=wyyAsnT8byDlHQ&amp;riu=http%3a%2f%2fwww.bkill.com%2fu%2fupload%2f2018%2f03%2f13%2f140123254153.jpg&amp;ehk=duhXRwn7iwcIknm%2bTohI3sS200c%2fEKqnxxx0TFJWFMU%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="Baidu图片测试"></p>
+<p>成功啦！</p>
+<h2 id="本地图片插入"><a href="#本地图片插入" class="headerlink" title="本地图片插入"></a>本地图片插入</h2><p>1.试了下base64转码<a href="https://base64.us/">转码地址</a>这个是可以成功的，但是一大串代码放在我的md里面我看着非常难受，所以我试下用其他的方法；</p>
+<p>2.直接把图片放在一个文件夹里试试：</p>
+<p><img src="/images/0.jpg" alt="本地图片测试"> </p>
+<p><img src="/images/1.png" alt="图片暂存"></p>
+<p><strong>可以直接复制图片至文章中</strong></p>
+<p>成功了！</p>
+<h1 id="2022-9-8"><a href="#2022-9-8" class="headerlink" title="2022.9.8"></a>2022.9.8</h1><p>今天主要是弄了优化，实际上有些bug，无语了</p>
+<h1 id="2022-9-10"><a href="#2022-9-10" class="headerlink" title="2022.9.10"></a>2022.9.10</h1><p>中秋节快乐！</p>
+<p>昨天忘记记录了，不过也没干什么事情，出去玩了哈哈哈哈</p>
+<p>今天美化了一下我的blog，好看多了哈哈哈哈</p>
+<h2 id="置顶文章"><a href="#置顶文章" class="headerlink" title="置顶文章"></a>置顶文章</h2><p>如果需要对某篇文章进行置顶，只需要加入<code>sticky: 1</code>就可，详细可看<code>Myblog</code>已经置顶！</p>
+<p>成功啦！</p>
+<h2 id="给文章加封面"><a href="#给文章加封面" class="headerlink" title="给文章加封面"></a>给文章加封面</h2><p>在开头加入<code>cover: (图片地址)</code></p>
+<p>成功啦！</p>
+<h1 id="2023-3-27"><a href="#2023-3-27" class="headerlink" title="2023.3.27"></a>2023.3.27</h1><p>久违的更新，补充一下对文章的加密</p>
+<h2 id="准备工作（我的已完成）"><a href="#准备工作（我的已完成）" class="headerlink" title="准备工作（我的已完成）"></a>准备工作（我的已完成）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-blog-encrypt --save</span><br></pre></td></tr></table></figure>
+<h2 id="把代码放在文章顶部"><a href="#把代码放在文章顶部" class="headerlink" title="把代码放在文章顶部"></a>把代码放在文章顶部</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">password: test</span><br><span class="line">message: 测试加密，这里的密码是：test</span><br></pre></td></tr></table></figure>
+<p>我以<a href="https://aurora7july.github.io/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">“量子力学”</a>这篇为例试验一下：</p>
+<p>成功了！</p>
+<h1 id="2023-12-20"><a href="#2023-12-20" class="headerlink" title="2023.12.20"></a>2023.12.20</h1><h2 id="如何改变字颜色"><a href="#如何改变字颜色" class="headerlink" title="如何改变字颜色"></a>如何改变字颜色</h2><ul>
+<li><font color=red>红字</font>
+
+</li>
+</ul>
+<h1 id="Markdown三线表"><a href="#Markdown三线表" class="headerlink" title="Markdown三线表"></a>Markdown三线表</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
+<p>语法格式如下：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>我们可以设置表格的对齐方式：</p>
+<p>-: 设置内容和标题栏居右对齐。<br>:- 设置内容和标题栏居左对齐。<br>:-: 设置内容和标题栏居中对齐。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python爬虫</title>
     <url>/2024/01/26/Python%E7%88%AC%E8%99%AB/</url>
     <content><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>由于是自学的，学的比较杂，看的书本也不一样，没有系统的学习</p>
@@ -223,6 +223,100 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git学习</title>
+    <url>/2023/12/16/git%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="git日常使用常用命令"><a href="#git日常使用常用命令" class="headerlink" title="git日常使用常用命令"></a>git日常使用常用命令</h1><h3 id="github仓库git到本地，更新并上传"><a href="#github仓库git到本地，更新并上传" class="headerlink" title="github仓库git到本地，更新并上传"></a>github仓库git到本地，更新并上传</h3><ol>
+<li>新建一个仓库</li>
+<li>将仓库clone至本地任意位置，代码如下：(后面的地址可在GitHub上复制)<br> <code>git clone git@github.com:用户名/仓库名.git</code></li>
+<li>将代码放入该文件/更新代码</li>
+<li>使用以下命令： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m&quot;注释内容&quot;</span><br><span class="line">git push https://github.com/用户名/仓库名.git</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="git学习-书"><a href="#git学习-书" class="headerlink" title="git学习(书)"></a>git学习(书)</h1><h2 id="第I章-git是什么"><a href="#第I章-git是什么" class="headerlink" title="第I章 git是什么"></a>第I章 git是什么</h2><h3 id="git能解决什么？"><a href="#git能解决什么？" class="headerlink" title="git能解决什么？"></a>git能解决什么？</h3><p>git，是版本管理系统(时光机)  </p>
+<ul>
+<li>可以回到过去的状态</li>
+<li>对于同一个文件可以多人协助修改</li>
+<li>能记录修改源代码的原因</li>
+</ul>
+<h3 id="作为交流场所的GitHub和Bitbucket"><a href="#作为交流场所的GitHub和Bitbucket" class="headerlink" title="作为交流场所的GitHub和Bitbucket"></a>作为交流场所的GitHub和Bitbucket</h3><ul>
+<li>相互之间检查代码</li>
+<li>讨论前端样式和功能的实现</li>
+<li>共享设计前后过程，相互提意见</li>
+</ul>
+<h2 id="第II章-我独自学习"><a href="#第II章-我独自学习" class="headerlink" title="第II章 我独自学习"></a>第II章 我独自学习</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>下载SourceTree</p>
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>正常操作</p>
+<h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><ol>
+<li>添加一个TXT或是其他的，sourcetree都会感觉到</li>
+<li>点击“暂存所有”</li>
+<li>提交</li>
+<li>继续积累历史记录(先暂存再提交)</li>
+<li>记得添加注释</li>
+</ol>
+<h3 id="用checkout移动提交"><a href="#用checkout移动提交" class="headerlink" title="用checkout移动提交"></a>用checkout移动提交</h3><p>执行checkout可以让操作目录中的文件变成指定某个时刻文件的状态</p>
+<h2 id="第III章-多人协作使用git"><a href="#第III章-多人协作使用git" class="headerlink" title="第III章 多人协作使用git"></a>第III章 多人协作使用git</h2><h3 id="复制练习用仓库"><a href="#复制练习用仓库" class="headerlink" title="复制练习用仓库"></a>复制练习用仓库</h3><p>怎么复制？1.复刻；2，克隆<br>一个是复制到GitHub上，一个是复制到本地上</p>
+<ul>
+<li>复刻：指复制他人公开的远程仓库到自己账号中</li>
+<li>克隆：把远程仓库复制到本地</li>
+</ul>
+<h3 id="创建并行世界-分支"><a href="#创建并行世界-分支" class="headerlink" title="创建并行世界(分支)"></a>创建并行世界(分支)</h3><ul>
+<li>分支是什么？<br>分支是一个指向提交对象可变指针。指针的意思就是“现在”</li>
+<li>移动分支<br>可以用checkout来让自己移动到任意一次提交</li>
+<li>master是什么？<br>最开始就存在的分支，就像河流的“干流”</li>
+</ul>
+<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><p>merge可以让分支进行合并</p>
+<h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>上传数据，推送</p>
+<h3 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h3><p>想要下载并反映到本地仓库的时候就是拉取</p>
+<h3 id="有冲突怎么办"><a href="#有冲突怎么办" class="headerlink" title="有冲突怎么办"></a>有冲突怎么办</h3><ul>
+<li>冲突是什么？<br>在同一行代码在同一时间被不同的人修改时发生的状况</li>
+</ul>
+<h3 id="从拉取请求到合并"><a href="#从拉取请求到合并" class="headerlink" title="从拉取请求到合并"></a>从拉取请求到合并</h3><p>想把自己的代码同步到fork源仓库中，用拉取请求(pull request)</p>
+<h1 id="git实践学习"><a href="#git实践学习" class="headerlink" title="git实践学习"></a>git实践学习</h1><h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><ol>
+<li><code>git commit</code>是Git 仓库中的提交记录保存  </li>
+<li><code>git branch 名字</code>是创建分支  </li>
+<li><code>git checkout &lt;name&gt;</code>让我们在提交修改之前先切换到新的分支上  </li>
+<li>如果你想创建一个新的分支同时切换到新创建的分支的话，可以通过<code>git checkout -b &lt;your-branch-name&gt;</code>来实现。</li>
+<li>将两个分支合并到一起方法1：<code>git merge</code></li>
+<li>将两个分支合并到一起方法2：<code>git rebase</code></li>
+</ol>
+<h2 id="高级篇"><a href="#高级篇" class="headerlink" title="高级篇"></a>高级篇</h2><ol>
+<li><code>HEAD</code>是一个对当前所在分支的符号引用 —— 也就是指向你正在其基础上进行工作的提交记录。</li>
+<li><code>HEAD</code>总是指向当前分支上最近一次提交记录。大多数修改提交树的 Git 命令都是从改变<code>HEAD</code>的指向开始的。</li>
+<li>用<code>git log</code>来查查看提交记录的哈希值</li>
+<li>操作符 (^)。把这个符号加在引用名称的后面，表示让 Git 寻找指定提交记录的 parent 提交。</li>
+<li><code>~&lt;num&gt;</code>一次后退num步</li>
+<li>我使用相对引用最多的就是移动分支。可以直接使用 -f 选项让分支指向另一个提交。例如:<code>git branch -f main HEAD~3</code>。上面的命令会将 main 分支强制指向 HEAD 的第 3 级 parent 提交。</li>
+<li><code>git reset</code>通过把分支记录回退几个提交记录来实现撤销改动。你可以将这想象成“改写历史”</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux命令行与shell脚本编程</title>
+    <url>/2024/04/02/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8Eshell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习Linux，使用的书籍为《Linux命令行与shell脚本编程大全》</p>
+<h1 id="第一部分-Linux命令行"><a href="#第一部分-Linux命令行" class="headerlink" title="第一部分 Linux命令行"></a>第一部分 Linux命令行</h1><h2 id="第一章-初识Linux"><a href="#第一章-初识Linux" class="headerlink" title="第一章 初识Linux"></a>第一章 初识Linux</h2><p>Linux系统的核心是内核，内核控制着计算机系统的所有软件和硬件，主要负责以下4种功能：</p>
+<ol>
+<li>系统内存管理</li>
+<li>软件程序管理</li>
+<li>硬件设备管理</li>
+<li>文件系统管理</li>
+</ol>
+<h2 id="第二章-走进shell"><a href="#第二章-走进shell" class="headerlink" title="第二章 走进shell"></a>第二章 走进shell</h2>]]></content>
       <categories>
         <category>学习</category>
       </categories>
@@ -502,100 +596,6 @@
       </tags>
   </entry>
   <entry>
-    <title>git学习</title>
-    <url>/2023/12/16/git%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="git日常使用常用命令"><a href="#git日常使用常用命令" class="headerlink" title="git日常使用常用命令"></a>git日常使用常用命令</h1><h3 id="github仓库git到本地，更新并上传"><a href="#github仓库git到本地，更新并上传" class="headerlink" title="github仓库git到本地，更新并上传"></a>github仓库git到本地，更新并上传</h3><ol>
-<li>新建一个仓库</li>
-<li>将仓库clone至本地任意位置，代码如下：(后面的地址可在GitHub上复制)<br> <code>git clone git@github.com:用户名/仓库名.git</code></li>
-<li>将代码放入该文件/更新代码</li>
-<li>使用以下命令： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m&quot;注释内容&quot;</span><br><span class="line">git push https://github.com/用户名/仓库名.git</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h1 id="git学习-书"><a href="#git学习-书" class="headerlink" title="git学习(书)"></a>git学习(书)</h1><h2 id="第I章-git是什么"><a href="#第I章-git是什么" class="headerlink" title="第I章 git是什么"></a>第I章 git是什么</h2><h3 id="git能解决什么？"><a href="#git能解决什么？" class="headerlink" title="git能解决什么？"></a>git能解决什么？</h3><p>git，是版本管理系统(时光机)  </p>
-<ul>
-<li>可以回到过去的状态</li>
-<li>对于同一个文件可以多人协助修改</li>
-<li>能记录修改源代码的原因</li>
-</ul>
-<h3 id="作为交流场所的GitHub和Bitbucket"><a href="#作为交流场所的GitHub和Bitbucket" class="headerlink" title="作为交流场所的GitHub和Bitbucket"></a>作为交流场所的GitHub和Bitbucket</h3><ul>
-<li>相互之间检查代码</li>
-<li>讨论前端样式和功能的实现</li>
-<li>共享设计前后过程，相互提意见</li>
-</ul>
-<h2 id="第II章-我独自学习"><a href="#第II章-我独自学习" class="headerlink" title="第II章 我独自学习"></a>第II章 我独自学习</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>下载SourceTree</p>
-<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>正常操作</p>
-<h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><ol>
-<li>添加一个TXT或是其他的，sourcetree都会感觉到</li>
-<li>点击“暂存所有”</li>
-<li>提交</li>
-<li>继续积累历史记录(先暂存再提交)</li>
-<li>记得添加注释</li>
-</ol>
-<h3 id="用checkout移动提交"><a href="#用checkout移动提交" class="headerlink" title="用checkout移动提交"></a>用checkout移动提交</h3><p>执行checkout可以让操作目录中的文件变成指定某个时刻文件的状态</p>
-<h2 id="第III章-多人协作使用git"><a href="#第III章-多人协作使用git" class="headerlink" title="第III章 多人协作使用git"></a>第III章 多人协作使用git</h2><h3 id="复制练习用仓库"><a href="#复制练习用仓库" class="headerlink" title="复制练习用仓库"></a>复制练习用仓库</h3><p>怎么复制？1.复刻；2，克隆<br>一个是复制到GitHub上，一个是复制到本地上</p>
-<ul>
-<li>复刻：指复制他人公开的远程仓库到自己账号中</li>
-<li>克隆：把远程仓库复制到本地</li>
-</ul>
-<h3 id="创建并行世界-分支"><a href="#创建并行世界-分支" class="headerlink" title="创建并行世界(分支)"></a>创建并行世界(分支)</h3><ul>
-<li>分支是什么？<br>分支是一个指向提交对象可变指针。指针的意思就是“现在”</li>
-<li>移动分支<br>可以用checkout来让自己移动到任意一次提交</li>
-<li>master是什么？<br>最开始就存在的分支，就像河流的“干流”</li>
-</ul>
-<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><p>merge可以让分支进行合并</p>
-<h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>上传数据，推送</p>
-<h3 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h3><p>想要下载并反映到本地仓库的时候就是拉取</p>
-<h3 id="有冲突怎么办"><a href="#有冲突怎么办" class="headerlink" title="有冲突怎么办"></a>有冲突怎么办</h3><ul>
-<li>冲突是什么？<br>在同一行代码在同一时间被不同的人修改时发生的状况</li>
-</ul>
-<h3 id="从拉取请求到合并"><a href="#从拉取请求到合并" class="headerlink" title="从拉取请求到合并"></a>从拉取请求到合并</h3><p>想把自己的代码同步到fork源仓库中，用拉取请求(pull request)</p>
-<h1 id="git实践学习"><a href="#git实践学习" class="headerlink" title="git实践学习"></a>git实践学习</h1><h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><ol>
-<li><code>git commit</code>是Git 仓库中的提交记录保存  </li>
-<li><code>git branch 名字</code>是创建分支  </li>
-<li><code>git checkout &lt;name&gt;</code>让我们在提交修改之前先切换到新的分支上  </li>
-<li>如果你想创建一个新的分支同时切换到新创建的分支的话，可以通过<code>git checkout -b &lt;your-branch-name&gt;</code>来实现。</li>
-<li>将两个分支合并到一起方法1：<code>git merge</code></li>
-<li>将两个分支合并到一起方法2：<code>git rebase</code></li>
-</ol>
-<h2 id="高级篇"><a href="#高级篇" class="headerlink" title="高级篇"></a>高级篇</h2><ol>
-<li><code>HEAD</code>是一个对当前所在分支的符号引用 —— 也就是指向你正在其基础上进行工作的提交记录。</li>
-<li><code>HEAD</code>总是指向当前分支上最近一次提交记录。大多数修改提交树的 Git 命令都是从改变<code>HEAD</code>的指向开始的。</li>
-<li>用<code>git log</code>来查查看提交记录的哈希值</li>
-<li>操作符 (^)。把这个符号加在引用名称的后面，表示让 Git 寻找指定提交记录的 parent 提交。</li>
-<li><code>~&lt;num&gt;</code>一次后退num步</li>
-<li>我使用相对引用最多的就是移动分支。可以直接使用 -f 选项让分支指向另一个提交。例如:<code>git branch -f main HEAD~3</code>。上面的命令会将 main 分支强制指向 HEAD 的第 3 级 parent 提交。</li>
-<li><code>git reset</code>通过把分支记录回退几个提交记录来实现撤销改动。你可以将这想象成“改写历史”</li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux命令行与shell脚本编程</title>
-    <url>/2024/04/02/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8Eshell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习Linux，使用的书籍为《Linux命令行与shell脚本编程大全》</p>
-<h1 id="第一部分-Linux命令行"><a href="#第一部分-Linux命令行" class="headerlink" title="第一部分 Linux命令行"></a>第一部分 Linux命令行</h1><h2 id="第一章-初识Linux"><a href="#第一章-初识Linux" class="headerlink" title="第一章 初识Linux"></a>第一章 初识Linux</h2><p>Linux系统的核心是内核，内核控制着计算机系统的所有软件和硬件，主要负责以下4种功能：</p>
-<ol>
-<li>系统内存管理</li>
-<li>软件程序管理</li>
-<li>硬件设备管理</li>
-<li>文件系统管理</li>
-</ol>
-<h2 id="第二章-走进shell"><a href="#第二章-走进shell" class="headerlink" title="第二章 走进shell"></a>第二章 走进shell</h2>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>命令</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo命令</title>
     <url>/2023/07/06/hexo%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h1><h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h2><p>使用以下命令后新文章将在博客目录下的<code>/source/_posts/</code>文件夹下<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
@@ -651,11 +651,18 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2024/07/25/ubuntu%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <title>ubuntu学习记录</title>
+    <url>/2024/08/08/ubuntu%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<h2 id="权限开放"><a href="#权限开放" class="headerlink" title="权限开放"></a>权限开放</h2><p><code>sudo -s</code></p>
 <h2 id="共享文件夹位置"><a href="#共享文件夹位置" class="headerlink" title="共享文件夹位置"></a>共享文件夹位置</h2><p><code>cd /</code><br><code>ls</code><br><code>cd mnt</code><br><code>ls</code><br><code>vmhgfs-fuse /mnt/hgfs</code><br>进去文件就可以了</p>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>命令</tag>
+      </tags>
   </entry>
   <entry>
     <title>人脸识别实战</title>
@@ -722,6 +729,30 @@ for faceRect in faceRects:
       <tags>
         <tag>学习</tag>
         <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>旅游-外伶仃岛</title>
+    <url>/2023/11/04/%E6%97%85%E6%B8%B8-%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/</url>
+    <content><![CDATA[<h2 id="外伶仃岛一日游"><a href="#外伶仃岛一日游" class="headerlink" title="外伶仃岛一日游"></a>外伶仃岛一日游</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>自国庆假期以后，我便陷入了上课和学习的纠缠，生活中再也不如从前那般恣意。随着身心疲惫渐显，渴望一次宽慰身心、回归自然之旅渐生。因此，我迅速检查了周末的天气情况，立即预订了船票，最终期盼已久的日子终于到来，我难掩内心的喜悦。如今，结束了这次旅程，我迫不及待地开始写这篇文章。</p>
+<h3 id="装备列表"><a href="#装备列表" class="headerlink" title="装备列表"></a>装备列表</h3><ul>
+<li>穿着：登山帽、墨镜、短袖、运动长裤、运动鞋</li>
+<li>军粮：三明治、布丁、一包吐司、巧克力、550ml水</li>
+<li>拍摄：手机支架、长焦倍镜</li>
+<li>其他：清凉油、身份证、交通卡、充电宝</li>
+</ul>
+<h3 id="徒步路线"><a href="#徒步路线" class="headerlink" title="徒步路线"></a>徒步路线</h3><p>早上9：40从香洲港码头出发，于11：00抵达外伶仃岛。环岛旅行的交通方式有两种：乘坐观光车和步行前往。为了全身心融入这座美丽的小岛，我选择了徒步旅行。下了船，匆匆拍了两张港口的照片给朋友们分享后，便立即出发。徒步路线大致如下：<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/797e81330c452747f69f76c4fecaab9.jpg?raw=true" alt="徒步路线"></p>
+<h3 id="矿石湖"><a href="#矿石湖" class="headerlink" title="矿石湖"></a>矿石湖</h3><p>今日的外伶仃岛矿石湖，曾经矿石开挖地，因为人工开挖自然形成的矿坑，遗留的开挖痕迹和大小碎石，足以想象曾经的忙碌与辉煌。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_125242688.jpg?raw=true" alt="矿石湖"></p>
+<h3 id="最美公路"><a href="#最美公路" class="headerlink" title="最美公路"></a>最美公路</h3><p>外伶仃岛本就是一座被遗世独立的小岛，远离珠海市区，靠近香港，我徒步抵达时恰为正午，人烟稀少，只有远处鸣笛声声的货轮、呼啸长空的客机以及自由翱翔的鸟类陪伴，好生惬意。这条被誉为“最美公路”的蜿蜒小道是通往山顶的必经之路，也是最佳欣赏海景的不二之路。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_130734561.jpg?raw=true" alt="最美公里"><br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_132421420.jpg?raw=true" alt="飞机"><br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_132503436.jpg?raw=true" alt="鸟群"></p>
+<p>走在这条路上，是我人生最安静的时光。我不需要思考过去和未来，也不必担心现在，只是单纯的享受阳光和大海，很难用语言或是音乐来描述我当时的意境。我坐在高处，阳光毫不吝啬的洒向每片角落，望向远方海天一色的美景，波光粼粼的海面驶过满载的货轮，聆听汩汩的海浪声，老鹰在空中肆意盘旋。我无法停止对蓝天与大海的赞美，我生于斯，也希望死于斯，铭于斯，其魂气无不之也。他总是这样，海纳百川，包容我于所有不完美，接纳我于所有无痛呻吟，即使我没有带来鲜花与热血。在此，我可以同最原始的自己交流，我们不再探讨未来的经济、职业与社交，也不再欣赏音乐与哲学，只是静静地融入这里和倾听心脏平稳的跳动。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/IMG_20231104_160311.jpg?raw=true" alt="自在的独行"></p>
+<h3 id="独爱海景"><a href="#独爱海景" class="headerlink" title="独爱海景"></a>独爱海景</h3><p>我独爱海景，世间任何景色都难比于他。他给予我宁静，让我甘愿表露真我；他给予我恐惧，让我理智直面暗潮汹涌；他给予我方向，让我以自己的意志抵达未知。在无数个夜晚，感受到自己浸泡在海水中，随着洋流飘荡，与鱼群为友，与浪花为帆，穿越七大洲八大洋，没有目的，也是所有的目的地。我独爱海景，我无法停止赞美你，请祝福远行的游子早日追寻到她的自由与爱，赞美大海！<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_140105678.jpg?raw=true" alt="海洋"><br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_151734162.jpg?raw=true" alt="海洋"><br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_151854646.jpg?raw=true" alt="海洋"></p>
+]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+      <tags>
+        <tag>个人</tag>
+        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -1231,27 +1262,25 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
-    <title>旅游-外伶仃岛</title>
-    <url>/2023/11/04/%E6%97%85%E6%B8%B8-%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/</url>
-    <content><![CDATA[<h2 id="外伶仃岛一日游"><a href="#外伶仃岛一日游" class="headerlink" title="外伶仃岛一日游"></a>外伶仃岛一日游</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>自国庆假期以后，我便陷入了上课和学习的纠缠，生活中再也不如从前那般恣意。随着身心疲惫渐显，渴望一次宽慰身心、回归自然之旅渐生。因此，我迅速检查了周末的天气情况，立即预订了船票，最终期盼已久的日子终于到来，我难掩内心的喜悦。如今，结束了这次旅程，我迫不及待地开始写这篇文章。</p>
-<h3 id="装备列表"><a href="#装备列表" class="headerlink" title="装备列表"></a>装备列表</h3><ul>
-<li>穿着：登山帽、墨镜、短袖、运动长裤、运动鞋</li>
-<li>军粮：三明治、布丁、一包吐司、巧克力、550ml水</li>
-<li>拍摄：手机支架、长焦倍镜</li>
-<li>其他：清凉油、身份证、交通卡、充电宝</li>
-</ul>
-<h3 id="徒步路线"><a href="#徒步路线" class="headerlink" title="徒步路线"></a>徒步路线</h3><p>早上9：40从香洲港码头出发，于11：00抵达外伶仃岛。环岛旅行的交通方式有两种：乘坐观光车和步行前往。为了全身心融入这座美丽的小岛，我选择了徒步旅行。下了船，匆匆拍了两张港口的照片给朋友们分享后，便立即出发。徒步路线大致如下：<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/797e81330c452747f69f76c4fecaab9.jpg?raw=true" alt="徒步路线"></p>
-<h3 id="矿石湖"><a href="#矿石湖" class="headerlink" title="矿石湖"></a>矿石湖</h3><p>今日的外伶仃岛矿石湖，曾经矿石开挖地，因为人工开挖自然形成的矿坑，遗留的开挖痕迹和大小碎石，足以想象曾经的忙碌与辉煌。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_125242688.jpg?raw=true" alt="矿石湖"></p>
-<h3 id="最美公路"><a href="#最美公路" class="headerlink" title="最美公路"></a>最美公路</h3><p>外伶仃岛本就是一座被遗世独立的小岛，远离珠海市区，靠近香港，我徒步抵达时恰为正午，人烟稀少，只有远处鸣笛声声的货轮、呼啸长空的客机以及自由翱翔的鸟类陪伴，好生惬意。这条被誉为“最美公路”的蜿蜒小道是通往山顶的必经之路，也是最佳欣赏海景的不二之路。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_130734561.jpg?raw=true" alt="最美公里"><br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_132421420.jpg?raw=true" alt="飞机"><br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_132503436.jpg?raw=true" alt="鸟群"></p>
-<p>走在这条路上，是我人生最安静的时光。我不需要思考过去和未来，也不必担心现在，只是单纯的享受阳光和大海，很难用语言或是音乐来描述我当时的意境。我坐在高处，阳光毫不吝啬的洒向每片角落，望向远方海天一色的美景，波光粼粼的海面驶过满载的货轮，聆听汩汩的海浪声，老鹰在空中肆意盘旋。我无法停止对蓝天与大海的赞美，我生于斯，也希望死于斯，铭于斯，其魂气无不之也。他总是这样，海纳百川，包容我于所有不完美，接纳我于所有无痛呻吟，即使我没有带来鲜花与热血。在此，我可以同最原始的自己交流，我们不再探讨未来的经济、职业与社交，也不再欣赏音乐与哲学，只是静静地融入这里和倾听心脏平稳的跳动。<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/IMG_20231104_160311.jpg?raw=true" alt="自在的独行"></p>
-<h3 id="独爱海景"><a href="#独爱海景" class="headerlink" title="独爱海景"></a>独爱海景</h3><p>我独爱海景，世间任何景色都难比于他。他给予我宁静，让我甘愿表露真我；他给予我恐惧，让我理智直面暗潮汹涌；他给予我方向，让我以自己的意志抵达未知。在无数个夜晚，感受到自己浸泡在海水中，随着洋流飘荡，与鱼群为友，与浪花为帆，穿越七大洲八大洋，没有目的，也是所有的目的地。我独爱海景，我无法停止赞美你，请祝福远行的游子早日追寻到她的自由与爱，赞美大海！<br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_140105678.jpg?raw=true" alt="海洋"><br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_151734162.jpg?raw=true" alt="海洋"><br><img src="https://github.com/Aurora7july/files/blob/main/%E7%85%A7%E7%89%87/%E5%A4%96%E4%BC%B6%E4%BB%83%E5%B2%9B/CRnall_20231104_151854646.jpg?raw=true" alt="海洋"></p>
+    <title>马克思主义原理期末复习</title>
+    <url>/2022/12/07/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%8E%9F%E7%90%86%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<p>正确率应该在85%以上，只有选择题</p>
+<p>尽量使用网页打开文件，实在打不开点击<a href="https://github.com/Aurora7july/Files.github.io/blob/main/%E7%AC%94%E8%AE%B0PDF/%E9%A9%AC%E5%8E%9F%E5%A4%8D%E4%B9%A0.pdf">备份</a>试试看。</p>
+
+
+	<div class="row">
+    <embed src="/pdf/马原复习.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
 ]]></content>
       <categories>
-        <category>个人</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>个人</tag>
-        <tag>旅行</tag>
+        <tag>学习</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1317,28 +1346,6 @@ for faceRect in faceRects:
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>马克思主义原理期末复习</title>
-    <url>/2022/12/07/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%8E%9F%E7%90%86%E9%A2%98%E7%9B%AE/</url>
-    <content><![CDATA[<p>正确率应该在85%以上，只有选择题</p>
-<p>尽量使用网页打开文件，实在打不开点击<a href="https://github.com/Aurora7july/Files.github.io/blob/main/%E7%AC%94%E8%AE%B0PDF/%E9%A9%AC%E5%8E%9F%E5%A4%8D%E4%B9%A0.pdf">备份</a>试试看。</p>
-
-
-	<div class="row">
-    <embed src="/pdf/马原复习.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-]]></content>
       <categories>
         <category>学习</category>
       </categories>
