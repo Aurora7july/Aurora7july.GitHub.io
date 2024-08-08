@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Markdown常用命令</title>
+    <url>/2022/09/03/Markdown%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="这是一篇用于测试的页面"><a href="#这是一篇用于测试的页面" class="headerlink" title="这是一篇用于测试的页面"></a>这是一篇用于测试的页面</h1><h1 id="2022-9-5"><a href="#2022-9-5" class="headerlink" title="2022.9.5"></a>2022.9.5</h1><p>今天想学习如何插入图片和代码表示：</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>查了一下是代码表示为<code>tab上面的那个</code></p>
+<p>成功啦</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片为为<code>![名称](地址)</code>，试下：</p>
+<p><img src="https://pbs.twimg.com/media/FdLE8ipagAAA1qP?format=jpg&amp;name=large" alt="图片测试"></p>
+<p>成功啦！</p>
+<h1 id="2022-9-6"><a href="#2022-9-6" class="headerlink" title="2022.9.6"></a>2022.9.6</h1><p>今天学习下如何使用LaTeX公式，代码和注释：</p>
+<h2 id="公式："><a href="#公式：" class="headerlink" title="公式："></a>公式：</h2><p>如果有文章需要开启LaTeX，记得在开头加上<code>mathjax: ture</code></p>
+<p>貌似和LaTeX没有什么变化，一个美元是文本中的公式，两个美元是换行单独一行的公式,不好意思这里没办法打符号给大家看，用了转义符也没有显示。</p>
+<p>这里另外说一点，如果特殊符号转义只要在前面加<code>\</code>就可以了。</p>
+<p>试一下写个欧拉公式：</p>
+<script type="math/tex; mode=display">e^{i\pi }+1=0</script><p>成功啦！</p>
+<h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><h3 id="方法1：用tab键直接实现："><a href="#方法1：用tab键直接实现：" class="headerlink" title="方法1：用tab键直接实现："></a>方法1：用<code>tab</code>键直接实现：</h3><p>测试一下：</p>
+<pre><code>print&quot;hello world!&quot;
+</code></pre><p>成功啦！</p>
+<h3 id="方法2：用-包裹代码："><a href="#方法2：用-包裹代码：" class="headerlink" title="方法2：用```包裹代码："></a>方法2：用```包裹代码：</h3><p>测试一下：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print&quot;hello world!&quot;</span><br></pre></td></tr></table></figure></p>
+<p>成功啦！</p>
+<h2 id="写注释"><a href="#写注释" class="headerlink" title="写注释"></a>写注释</h2><p>有几张方法，不过写一个最简单的就好了：<code>&lt;！--写注释--&gt;</code></p>
+<p>测试一下：</p>
+<!--写注释-->
+<p>成功啦！哈哈哈当然你们看不到！</p>
+<h1 id="2022-9-7"><a href="#2022-9-7" class="headerlink" title="2022.9.7"></a>2022.9.7</h1><p>今天试着插入图片，之前插入的图片来源于Twitter，我今天试试Baidu的和本地的，看下能不能成功：</p>
+<h2 id="Baidu图片插入"><a href="#Baidu图片插入" class="headerlink" title="Baidu图片插入"></a>Baidu图片插入</h2><p>图片为为<code>![名称](地址)</code>，试下：</p>
+<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.577865b6804b46b74fbd1f90c32ab050?rik=wyyAsnT8byDlHQ&amp;riu=http%3a%2f%2fwww.bkill.com%2fu%2fupload%2f2018%2f03%2f13%2f140123254153.jpg&amp;ehk=duhXRwn7iwcIknm%2bTohI3sS200c%2fEKqnxxx0TFJWFMU%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="Baidu图片测试"></p>
+<p>成功啦！</p>
+<h2 id="本地图片插入"><a href="#本地图片插入" class="headerlink" title="本地图片插入"></a>本地图片插入</h2><p>1.试了下base64转码<a href="https://base64.us/">转码地址</a>这个是可以成功的，但是一大串代码放在我的md里面我看着非常难受，所以我试下用其他的方法；</p>
+<p>2.直接把图片放在一个文件夹里试试：</p>
+<p><img src="/images/0.jpg" alt="本地图片测试"> </p>
+<p><img src="/images/1.png" alt="图片暂存"></p>
+<p><strong>可以直接复制图片至文章中</strong></p>
+<p>成功了！</p>
+<h1 id="2022-9-8"><a href="#2022-9-8" class="headerlink" title="2022.9.8"></a>2022.9.8</h1><p>今天主要是弄了优化，实际上有些bug，无语了</p>
+<h1 id="2022-9-10"><a href="#2022-9-10" class="headerlink" title="2022.9.10"></a>2022.9.10</h1><p>中秋节快乐！</p>
+<p>昨天忘记记录了，不过也没干什么事情，出去玩了哈哈哈哈</p>
+<p>今天美化了一下我的blog，好看多了哈哈哈哈</p>
+<h2 id="置顶文章"><a href="#置顶文章" class="headerlink" title="置顶文章"></a>置顶文章</h2><p>如果需要对某篇文章进行置顶，只需要加入<code>sticky: 1</code>就可，详细可看<code>Myblog</code>已经置顶！</p>
+<p>成功啦！</p>
+<h2 id="给文章加封面"><a href="#给文章加封面" class="headerlink" title="给文章加封面"></a>给文章加封面</h2><p>在开头加入<code>cover: (图片地址)</code></p>
+<p>成功啦！</p>
+<h1 id="2023-3-27"><a href="#2023-3-27" class="headerlink" title="2023.3.27"></a>2023.3.27</h1><p>久违的更新，补充一下对文章的加密</p>
+<h2 id="准备工作（我的已完成）"><a href="#准备工作（我的已完成）" class="headerlink" title="准备工作（我的已完成）"></a>准备工作（我的已完成）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-blog-encrypt --save</span><br></pre></td></tr></table></figure>
+<h2 id="把代码放在文章顶部"><a href="#把代码放在文章顶部" class="headerlink" title="把代码放在文章顶部"></a>把代码放在文章顶部</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">password: test</span><br><span class="line">message: 测试加密，这里的密码是：test</span><br></pre></td></tr></table></figure>
+<p>我以<a href="https://aurora7july.github.io/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">“量子力学”</a>这篇为例试验一下：</p>
+<p>成功了！</p>
+<h1 id="2023-12-20"><a href="#2023-12-20" class="headerlink" title="2023.12.20"></a>2023.12.20</h1><h2 id="如何改变字颜色"><a href="#如何改变字颜色" class="headerlink" title="如何改变字颜色"></a>如何改变字颜色</h2><ul>
+<li><font color=red>红字</font>
+
+</li>
+</ul>
+<h1 id="Markdown三线表"><a href="#Markdown三线表" class="headerlink" title="Markdown三线表"></a>Markdown三线表</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
+<p>语法格式如下：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>我们可以设置表格的对齐方式：</p>
+<p>-: 设置内容和标题栏居右对齐。<br>:- 设置内容和标题栏居左对齐。<br>:-: 设置内容和标题栏居中对齐。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python每日练习</title>
     <url>/2023/11/01/Python%E6%AF%8F%E6%97%A5%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="2023-11-1练习"><a href="#2023-11-1练习" class="headerlink" title="2023.11.1练习"></a>2023.11.1练习</h1><h2 id="问题1："><a href="#问题1：" class="headerlink" title="问题1："></a>问题1：</h2><p>编写一个程序，要求用户输入一个正整数，然后计算该整数的阶乘并输出结果。阶乘是指将一个整数与小于它的所有正整数相乘的结果。例如，5的阶乘是5 <em> 4 </em> 3 <em> 2 </em> 1 = 120。</p>
@@ -106,91 +191,6 @@
       <tags>
         <tag>学习</tag>
         <tag>代码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown常用命令</title>
-    <url>/2022/09/03/Markdown%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="这是一篇用于测试的页面"><a href="#这是一篇用于测试的页面" class="headerlink" title="这是一篇用于测试的页面"></a>这是一篇用于测试的页面</h1><h1 id="2022-9-5"><a href="#2022-9-5" class="headerlink" title="2022.9.5"></a>2022.9.5</h1><p>今天想学习如何插入图片和代码表示：</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>查了一下是代码表示为<code>tab上面的那个</code></p>
-<p>成功啦</p>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片为为<code>![名称](地址)</code>，试下：</p>
-<p><img src="https://pbs.twimg.com/media/FdLE8ipagAAA1qP?format=jpg&amp;name=large" alt="图片测试"></p>
-<p>成功啦！</p>
-<h1 id="2022-9-6"><a href="#2022-9-6" class="headerlink" title="2022.9.6"></a>2022.9.6</h1><p>今天学习下如何使用LaTeX公式，代码和注释：</p>
-<h2 id="公式："><a href="#公式：" class="headerlink" title="公式："></a>公式：</h2><p>如果有文章需要开启LaTeX，记得在开头加上<code>mathjax: ture</code></p>
-<p>貌似和LaTeX没有什么变化，一个美元是文本中的公式，两个美元是换行单独一行的公式,不好意思这里没办法打符号给大家看，用了转义符也没有显示。</p>
-<p>这里另外说一点，如果特殊符号转义只要在前面加<code>\</code>就可以了。</p>
-<p>试一下写个欧拉公式：</p>
-<script type="math/tex; mode=display">e^{i\pi }+1=0</script><p>成功啦！</p>
-<h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><h3 id="方法1：用tab键直接实现："><a href="#方法1：用tab键直接实现：" class="headerlink" title="方法1：用tab键直接实现："></a>方法1：用<code>tab</code>键直接实现：</h3><p>测试一下：</p>
-<pre><code>print&quot;hello world!&quot;
-</code></pre><p>成功啦！</p>
-<h3 id="方法2：用-包裹代码："><a href="#方法2：用-包裹代码：" class="headerlink" title="方法2：用```包裹代码："></a>方法2：用```包裹代码：</h3><p>测试一下：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print&quot;hello world!&quot;</span><br></pre></td></tr></table></figure></p>
-<p>成功啦！</p>
-<h2 id="写注释"><a href="#写注释" class="headerlink" title="写注释"></a>写注释</h2><p>有几张方法，不过写一个最简单的就好了：<code>&lt;！--写注释--&gt;</code></p>
-<p>测试一下：</p>
-<!--写注释-->
-<p>成功啦！哈哈哈当然你们看不到！</p>
-<h1 id="2022-9-7"><a href="#2022-9-7" class="headerlink" title="2022.9.7"></a>2022.9.7</h1><p>今天试着插入图片，之前插入的图片来源于Twitter，我今天试试Baidu的和本地的，看下能不能成功：</p>
-<h2 id="Baidu图片插入"><a href="#Baidu图片插入" class="headerlink" title="Baidu图片插入"></a>Baidu图片插入</h2><p>图片为为<code>![名称](地址)</code>，试下：</p>
-<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.577865b6804b46b74fbd1f90c32ab050?rik=wyyAsnT8byDlHQ&amp;riu=http%3a%2f%2fwww.bkill.com%2fu%2fupload%2f2018%2f03%2f13%2f140123254153.jpg&amp;ehk=duhXRwn7iwcIknm%2bTohI3sS200c%2fEKqnxxx0TFJWFMU%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="Baidu图片测试"></p>
-<p>成功啦！</p>
-<h2 id="本地图片插入"><a href="#本地图片插入" class="headerlink" title="本地图片插入"></a>本地图片插入</h2><p>1.试了下base64转码<a href="https://base64.us/">转码地址</a>这个是可以成功的，但是一大串代码放在我的md里面我看着非常难受，所以我试下用其他的方法；</p>
-<p>2.直接把图片放在一个文件夹里试试：</p>
-<p><img src="/images/0.jpg" alt="本地图片测试"> </p>
-<p><img src="/images/1.png" alt="图片暂存"></p>
-<p><strong>可以直接复制图片至文章中</strong></p>
-<p>成功了！</p>
-<h1 id="2022-9-8"><a href="#2022-9-8" class="headerlink" title="2022.9.8"></a>2022.9.8</h1><p>今天主要是弄了优化，实际上有些bug，无语了</p>
-<h1 id="2022-9-10"><a href="#2022-9-10" class="headerlink" title="2022.9.10"></a>2022.9.10</h1><p>中秋节快乐！</p>
-<p>昨天忘记记录了，不过也没干什么事情，出去玩了哈哈哈哈</p>
-<p>今天美化了一下我的blog，好看多了哈哈哈哈</p>
-<h2 id="置顶文章"><a href="#置顶文章" class="headerlink" title="置顶文章"></a>置顶文章</h2><p>如果需要对某篇文章进行置顶，只需要加入<code>sticky: 1</code>就可，详细可看<code>Myblog</code>已经置顶！</p>
-<p>成功啦！</p>
-<h2 id="给文章加封面"><a href="#给文章加封面" class="headerlink" title="给文章加封面"></a>给文章加封面</h2><p>在开头加入<code>cover: (图片地址)</code></p>
-<p>成功啦！</p>
-<h1 id="2023-3-27"><a href="#2023-3-27" class="headerlink" title="2023.3.27"></a>2023.3.27</h1><p>久违的更新，补充一下对文章的加密</p>
-<h2 id="准备工作（我的已完成）"><a href="#准备工作（我的已完成）" class="headerlink" title="准备工作（我的已完成）"></a>准备工作（我的已完成）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-blog-encrypt --save</span><br></pre></td></tr></table></figure>
-<h2 id="把代码放在文章顶部"><a href="#把代码放在文章顶部" class="headerlink" title="把代码放在文章顶部"></a>把代码放在文章顶部</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">password: test</span><br><span class="line">message: 测试加密，这里的密码是：test</span><br></pre></td></tr></table></figure>
-<p>我以<a href="https://aurora7july.github.io/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">“量子力学”</a>这篇为例试验一下：</p>
-<p>成功了！</p>
-<h1 id="2023-12-20"><a href="#2023-12-20" class="headerlink" title="2023.12.20"></a>2023.12.20</h1><h2 id="如何改变字颜色"><a href="#如何改变字颜色" class="headerlink" title="如何改变字颜色"></a>如何改变字颜色</h2><ul>
-<li><font color=red>红字</font>
-
-</li>
-</ul>
-<h1 id="Markdown三线表"><a href="#Markdown三线表" class="headerlink" title="Markdown三线表"></a>Markdown三线表</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
-<p>语法格式如下：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>我们可以设置表格的对齐方式：</p>
-<p>-: 设置内容和标题栏居右对齐。<br>:- 设置内容和标题栏居左对齐。<br>:-: 设置内容和标题栏居中对齐。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>命令</tag>
       </tags>
   </entry>
   <entry>
@@ -617,20 +617,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ubuntu学习记录</title>
-    <url>/2024/08/08/ubuntu%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h2 id="权限开放"><a href="#权限开放" class="headerlink" title="权限开放"></a>权限开放</h2><p><code>sudo -s</code></p>
-<h2 id="共享文件夹位置"><a href="#共享文件夹位置" class="headerlink" title="共享文件夹位置"></a>共享文件夹位置</h2><p><code>cd /</code><br><code>ls</code><br><code>cd mnt</code><br><code>ls</code><br><code>vmhgfs-fuse /mnt/hgfs</code><br>进去文件就可以了</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>命令</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SystemVerilog学习</title>
     <url>/2023/12/16/systemverilog%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="第I章-验证导论"><a href="#第I章-验证导论" class="headerlink" title="第I章 验证导论"></a>第I章 验证导论</h1><h2 id="基本测试平台的功能"><a href="#基本测试平台的功能" class="headerlink" title="基本测试平台的功能"></a>基本测试平台的功能</h2><p>测试平台的用途在于确定待测设计的正确性，包含以下步骤:<br>1.产生激励<br>2.把激励施加到DUT上<br>3.捕捉响应<br>4.检验正确性<br>5.对照整个验证目标测算进展情况</p>
@@ -665,25 +651,17 @@
       </tags>
   </entry>
   <entry>
-    <title>半导体制造</title>
-    <url>/2023/09/16/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0/</url>
-    <content><![CDATA[<h1 id="半导体制造"><a href="#半导体制造" class="headerlink" title="半导体制造"></a>半导体制造</h1><p>半导体制程是被用于制造芯片，一种日常使用的电气和电子器件中集成电路的处理工艺。它是一系列照相和化学处理步骤，在其中电子电路逐渐形成在使用纯半导体材料制作的晶片上。硅是今天最常用的半导体材料，其他还有各种复合半导体材料。从一开始晶圆加工，到芯片封装测试，直到出货，通常需要6到8周，并且是在晶圆厂内完成。</p>
-<h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><p>这是我专业课最后期末复习的笔记，内容不是很多，都是知识点，也不是很难，只需要记住就可以了。如果在预览过程中发现有知识性错误请及时联系我修改！</p>
-<p>若无法显示PDF，可以点击该链接下载<a href="https://github.com/Aurora7july/files/blob/main/%E7%AC%94%E8%AE%B0PDF/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0.pdf">半导体制造</a></p>
-
-
-	<div class="row">
-    <embed src="/pdf/半导体制造.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
+    <title>ubuntu学习记录</title>
+    <url>/2024/08/08/ubuntu%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h2 id="权限开放"><a href="#权限开放" class="headerlink" title="权限开放"></a>权限开放</h2><p><code>sudo -s</code></p>
+<h2 id="共享文件夹位置"><a href="#共享文件夹位置" class="headerlink" title="共享文件夹位置"></a>共享文件夹位置</h2><p><code>cd /</code><br><code>ls</code><br><code>cd mnt</code><br><code>ls</code><br><code>vmhgfs-fuse /mnt/hgfs</code><br>进去文件就可以了</p>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>学习</tag>
-        <tag>笔记</tag>
+        <tag>命令</tag>
       </tags>
   </entry>
   <entry>
@@ -744,6 +722,28 @@ for faceRect in faceRects:
     x2 = faceRect.right ()
     y2 = faceRect.bottom()
 </code></pre><p>上述代码需要下载Dlib训练好的检测模型，<a href="htp://dlib. net/files/data/dlib_face_detector_training_data. tar. gz">官方地址</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>半导体制造</title>
+    <url>/2023/09/16/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0/</url>
+    <content><![CDATA[<h1 id="半导体制造"><a href="#半导体制造" class="headerlink" title="半导体制造"></a>半导体制造</h1><p>半导体制程是被用于制造芯片，一种日常使用的电气和电子器件中集成电路的处理工艺。它是一系列照相和化学处理步骤，在其中电子电路逐渐形成在使用纯半导体材料制作的晶片上。硅是今天最常用的半导体材料，其他还有各种复合半导体材料。从一开始晶圆加工，到芯片封装测试，直到出货，通常需要6到8周，并且是在晶圆厂内完成。</p>
+<h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><p>这是我专业课最后期末复习的笔记，内容不是很多，都是知识点，也不是很难，只需要记住就可以了。如果在预览过程中发现有知识性错误请及时联系我修改！</p>
+<p>若无法显示PDF，可以点击该链接下载<a href="https://github.com/Aurora7july/files/blob/main/%E7%AC%94%E8%AE%B0PDF/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%88%B6%E9%80%A0.pdf">半导体制造</a></p>
+
+
+	<div class="row">
+    <embed src="/pdf/半导体制造.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
 ]]></content>
       <categories>
         <category>学习</category>
@@ -912,7 +912,7 @@ for faceRect in faceRects:
 </table>
 </div>
 <h3 id="verilog代码-3"><a href="#verilog代码-3" class="headerlink" title="verilog代码"></a>verilog代码</h3><ol>
-<li>数据化结构<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module nand_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output wire Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    wire and_out;</span><br><span class="line">    </span><br><span class="line">    // 使用与门和非门组合实现与非门</span><br><span class="line">    and (and_out, A, B);</span><br><span class="line">    not (Y, and_out);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></li>
+<li>结构化结构<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module nand_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output wire Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    wire and_out;</span><br><span class="line">    </span><br><span class="line">    // 使用与门和非门组合实现与非门</span><br><span class="line">    and (and_out, A, B);</span><br><span class="line">    not (Y, and_out);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></li>
 <li>数据流描述<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module nand_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output wire Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    // 直接用数据流描述与非门的逻辑功能</span><br><span class="line">    assign Y = ~(A &amp; B);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></li>
 <li>行为级描述<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module nand_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output reg Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    // 使用 always 块描述与非门的行为</span><br><span class="line">    always @ (A or B) begin</span><br><span class="line">        Y = ~(A &amp; B);</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
 </li>
@@ -955,7 +955,7 @@ for faceRect in faceRects:
 </table>
 </div>
 <h3 id="verilog代码-4"><a href="#verilog代码-4" class="headerlink" title="verilog代码"></a>verilog代码</h3><ol>
-<li><p>数据化结构</p>
+<li><p>结构化结构</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module nor_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output wire Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    wire or_out;</span><br><span class="line"></span><br><span class="line">    // 使用或门和非门组合实现或非门</span><br><span class="line">    or (or_out, A, B);</span><br><span class="line">    not (Y, or_out);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>数据流描述</p>
@@ -1097,7 +1097,7 @@ for faceRect in faceRects:
 </table>
 </div>
 <h3 id="verilog代码-5"><a href="#verilog代码-5" class="headerlink" title="verilog代码"></a>verilog代码</h3><ol>
-<li><p>数据化结构</p>
+<li><p>结构化结构</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module nand_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output wire Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    wire and_out;</span><br><span class="line"></span><br><span class="line">    // 使用与门和非门组合实现与或非门</span><br><span class="line">    and (and_out, A, B);</span><br><span class="line">    not (Y, and_out);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>数据流描述</p>
@@ -1143,7 +1143,7 @@ for faceRect in faceRects:
 </table>
 </div>
 <h3 id="verilog代码-6"><a href="#verilog代码-6" class="headerlink" title="verilog代码"></a>verilog代码</h3><ol>
-<li><p>数据化结构</p>
+<li><p>结构化结构</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module xor_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output wire Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    wire and1, and2, notA, notB;</span><br><span class="line"></span><br><span class="line">    // 基于基本逻辑门组合实现异或门</span><br><span class="line">    not (notA, A);</span><br><span class="line">    not (notB, B);</span><br><span class="line">    and (and1, A, notB);</span><br><span class="line">    and (and2, notA, B);</span><br><span class="line">    or (Y, and1, and2);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>数据流描述</p>
@@ -1193,15 +1193,120 @@ for faceRect in faceRects:
 </table>
 </div>
 <h3 id="verilog代码-7"><a href="#verilog代码-7" class="headerlink" title="verilog代码"></a>verilog代码</h3><ol>
-<li><p>数据化结构</p>
+<li><p>结构化结构</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module xnor_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output wire Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    wire xor_out;</span><br><span class="line"></span><br><span class="line">    // 使用异或门和非门组合实现同或门</span><br><span class="line">    xor (xor_out, A, B);</span><br><span class="line">    not (Y, xor_out);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>数据流描述</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module xnor_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output wire Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    // 直接用数据流描述同或门的逻辑功能</span><br><span class="line">    assign Y = ~(A ^ B);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>行为级描述</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module xnor_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output reg Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    // 使用 always 块描述同或门的行为</span><br><span class="line">    always @ (A or B) begin</span><br><span class="line">        Y = ~(A ^ B);</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module xnor_gate (</span><br><span class="line">    input wire A,</span><br><span class="line">    input wire B,</span><br><span class="line">    output reg Y</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    // 使用 always 块描述同或门的行为</span><br><span class="line">    always @ (A or B) begin</span><br><span class="line">        Y = ~(A ^ B);</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
+<h1 id="组合逻辑电路"><a href="#组合逻辑电路" class="headerlink" title="组合逻辑电路"></a>组合逻辑电路</h1><h2 id="编码器"><a href="#编码器" class="headerlink" title="编码器"></a>编码器</h2><h3 id="普通编码器"><a href="#普通编码器" class="headerlink" title="普通编码器"></a>普通编码器</h3><p>在普通编码器中，通常是任何时刻只允许输入一个编码信号</p>
+<ol>
+<li>真值表</li>
+</ol>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">输入线 (A)</th>
+<th style="text-align:center">输出线 (Y2)</th>
+<th style="text-align:center">输出线 (Y1)</th>
+<th style="text-align:center">输出线 (Y0)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0000 0001</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0010</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0100</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1000</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0000</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0000</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 0000</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0000</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol>
+<li><p>逻辑式</p>
+<script type="math/tex; mode=display">\left\{\begin{matrix}
+Y_2 = I_4 + I_5 + I_6 + I_7\\
+Y_1 = I_2 + I_3 + I_6 + I_7\\
+Y_0 = I_1 + I_3 + I_5 + I_7
+\end{matrix}\right.</script></li>
+<li><p>verilog</p>
+</li>
+</ol>
+<ul>
+<li>结构化描述<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module encoder8to3 (</span><br><span class="line">    input [7:0] in,</span><br><span class="line">    output reg [2:0] out</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    always @(*) begin</span><br><span class="line">        case (in)</span><br><span class="line">            8&#x27;b00000001: out = 3&#x27;b000;</span><br><span class="line">            8&#x27;b00000010: out = 3&#x27;b001;</span><br><span class="line">            8&#x27;b00000100: out = 3&#x27;b010;</span><br><span class="line">            8&#x27;b00001000: out = 3&#x27;b011;</span><br><span class="line">            8&#x27;b00010000: out = 3&#x27;b100;</span><br><span class="line">            8&#x27;b00100000: out = 3&#x27;b101;</span><br><span class="line">            8&#x27;b01000000: out = 3&#x27;b110;</span><br><span class="line">            8&#x27;b10000000: out = 3&#x27;b111;</span><br><span class="line">            default: out = 3&#x27;bxxx; // Error case</span><br><span class="line">        endcase</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></li>
+<li>数据流描述<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module encoder8to3 (</span><br><span class="line">    input [7:0] in,</span><br><span class="line">    output [2:0] out</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    assign out = (in[7]) ? 3&#x27;b111 :</span><br><span class="line">                 (in[6]) ? 3&#x27;b110 :</span><br><span class="line">                 (in[5]) ? 3&#x27;b101 :</span><br><span class="line">                 (in[4]) ? 3&#x27;b100 :</span><br><span class="line">                 (in[3]) ? 3&#x27;b011 :</span><br><span class="line">                 (in[2]) ? 3&#x27;b010 :</span><br><span class="line">                 (in[1]) ? 3&#x27;b001 :</span><br><span class="line">                           3&#x27;b000;</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></li>
+<li>行为级描述<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">module encoder8to3 (</span><br><span class="line">    input [7:0] in,</span><br><span class="line">    output reg [2:0] out</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">    always @(*) begin</span><br><span class="line">        if (in[7]) out = 3&#x27;b111;</span><br><span class="line">        else if (in[6]) out = 3&#x27;b110;</span><br><span class="line">        else if (in[5]) out = 3&#x27;b101;</span><br><span class="line">        else if (in[4]) out = 3&#x27;b100;</span><br><span class="line">        else if (in[3]) out = 3&#x27;b011;</span><br><span class="line">        else if (in[2]) out = 3&#x27;b010;</span><br><span class="line">        else if (in[1]) out = 3&#x27;b001;</span><br><span class="line">        else out = 3&#x27;b000;</span><br><span class="line">    end</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="先写到这，之后在写吧"><a href="#先写到这，之后在写吧" class="headerlink" title="先写到这，之后在写吧"></a>先写到这，之后在写吧</h2><h3 id="优先编码器"><a href="#优先编码器" class="headerlink" title="优先编码器"></a>优先编码器</h3><ol>
+<li>真值表</li>
+<li>逻辑式</li>
+<li>verilog</li>
+</ol>
+<ul>
+<li>结构化描述<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```</span><br><span class="line">* 数据流描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 行为级描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 译码器</span><br><span class="line">1. 真值表</span><br><span class="line">2. 逻辑式</span><br><span class="line">3. verilog</span><br><span class="line">* 结构化描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 数据流描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 行为级描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 数据选择器</span><br><span class="line">1. 真值表</span><br><span class="line">2. 逻辑式</span><br><span class="line">3. verilog</span><br><span class="line">* 结构化描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 数据流描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 行为级描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 加法器</span><br><span class="line">1. 真值表</span><br><span class="line">2. 逻辑式</span><br><span class="line">3. verilog</span><br><span class="line">* 结构化描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 数据流描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 行为级描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 数值比较器</span><br><span class="line">1. 真值表</span><br><span class="line">2. 逻辑式</span><br><span class="line">3. verilog</span><br><span class="line">* 结构化描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 数据流描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 行为级描述</span><br></pre></td></tr></table></figure>
+```</li>
+</ul>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -1263,20 +1368,19 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
-    <title>量子力学</title>
-    <url>/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="94f1842aaf74c037b57870cae1da197f171bb4b00e77b3f9584c0963687bf7f5">bd25ed9264b080267271e137e33d0ce118960a041ac35a180347d4bc9710c7dc8ffd3a92c3998a037c2c77660c8510c08d0e2e16e0f79962dcd4fbd46c6468275b6104b5c5f163549a3ae237cf8441ca48a44ed76fdd12e2177ed6e20f330376316022f5b9e400d973edb71686f85cc1a3c589105c6b6cfd8c48832d45e050493b6807a91327cda5599b992e5dd6dc6f46f8d90531553790defaf3419cadf640df5a9272f92630053391aab2f04f0e941c499d263d05eeda6f52865a7e541d4d7885b6a959a16727e2629de8e566660b607e555868f581663afd7837d07944bae3bfd73eecd4b7fd29c02835e5c6734e010dc2ea7ad235e53ada6cf5576f88fe24b567fdb0d7e8b25ce1804987078c893fbb9903058ad1bed84279d51c7861b5ab7618e9959587689e369f947ce5cffa86838ae7e3683b3ab0f6351a0eb16fc46c786ff9bf10ec6738560d6f52ce1058b634397a089386fa6ceae2542f13175a8447a244dc9952cc222f832b88b76e65cb94ab73017a45c6cc9a2f86c658a782e0138a8e813f2ba0b73a402aa948c8fd88d5db4f01f07bda2b5e28dcb6cb926650e6a305aaaa025179c5b68b54306f0bbd6b8b07b527cb2d6fb35af9b0f43b4cb3715e04233547974bc63dd700da62214f2421a6024c9b6de40f01ac4629417ba21edeb0c46bab3311025178f60e4e626cc0b1b0c7ad7e9be839000b8e25805e17e650c81d441ba6830cf413918477bf16c82877fb7aa760a91e03a19c3c8cf997482699036deb6a50a96716aaa584eda645e7c284e8b66552d74403fea9289fc54dc995d412f1b58f31d42184227d05c761b4f65fecf9bb9624360ca03bda383852b787ef5182c61781e73b782c7008389cb8e288096f9ac9f54e4fcd4d2df2d17e9d1becc14b7572a131a28268120c310261e60aef3d30463f9bdb31691d2bb85ab403858ecac36f804ed97d49985d6bb6912a845133f0b94e95546172987aa9655a98b8c5722d23dd7a7a4cbd766a9da0c62fa368acfdd06795d7caad9c6898878535581480c629b2c99041a61c9a138ee0ff0dd0e2005d1f915f1f725400cace6f49ffc087ab028c7a794981358a4dedc466789e1ccaa0e1d45e1d51bcb37c4c25a38c713e4ce0fa3e84a8b2a5e37ade4bc48562c814e78707aca69aff877f43b63c6598238189d531e56d91cf3accba3951b96c7d2fdb8916bb29195e684449bd199cda2e7c8833cce8f31dfdb11c3ae1d0120d0aaf015b289eb205c0aa6bc1596e0e3ab8cb992c9fdcb04988e4234877acdacd92c99f4644b73063ce5d189f7de6d66aba9e9a60231689a604e90bea76b52dff5002a2c010f4bb7f8f2d291b0c45832d5e516fdc816e9454655af3d106d50688054bad89af3ca7da040dca23c6b2fa570a92d12d8288321ad913d1c6d1ca4e3a7efdd34230b8b8f7d6a30b46197e0906e20181bf938e2552135908c364d1c8b199c7d07fa0699e131bd26bf3b9886b4d3fa715aedb65004969760257328caf67aa251081a77174dd45eb03aba4b50c18c26bd4837ea082798483b45a8f6007bc154c9075e37710466492fdb90770ccd1eff1d9c458198ff518fe77268c021957f9b39ca5bb59085a4993b3ab939aaa12e63c0cdc9ff7f21e03d4a75e62fd2db17b764d1f45ee1c68f841730bf33685bf95ed4deb7838643f99e28b91aaa18099f2d06d86eed596bb75c83c7124fb96c3c9b6fa6294a9cfc439bbcef3fbad22eff0eb28f1a6c0e551fc7be26155ad3066d772dc7c50d1ca9fe7654cf046b399f28119c4fcf7da3e2e1b0da851a338cba01f56377faac6407bc9526cdf5bc13d2d7ca4417bcca6504a9824e2cd38698d00e344fc07b70d61a3b7cc68e5195971a0f1f6c17dc0610e1df35bb227a0cc1571fc9a646115b64f24b4e969edd2643ca1c5c9ef882bd8970ebf61f27b5798d9ef367a5658e4e0ac848723b61c3e4a0e6ef1594eaeccf698cdaa47e6ae3a81c3ce8486fa86fe41cb89b4c4bcacf36cac50774d6a56524b7aee25e5a9d14afb0cb0fc5a4840b6d7358a0cfa62c0267eae6980f370acc397cce90e27138efb9b449aa02c08c3f387493d2d491c2571dd163a02cc365a8ad06e4470bd9cc3b2295123f4ebc6ae0c09876b4d742a4ec4418eaf565365e5f17ec246592c18f1a00c43a5862074c26db30932df2bd5a66d3d0b1482f4d4b762d1218e93cb47363915de9163d413b5409057b4b62b946981a51937be83db164d8e96c32bfeb6c696093409ebf9f13c5c1e674d4adfaaeb09ca420fcf7435d796da31258cd91844fc2cd0eb1823c272881b593fb0c4a329277e89ed6728437343527aaaec13504a706335909a4ccbea585b6d66e2fcc450c8c200543ca8642e543fe3aa81162b6d0907ca59cfd47226650f585b5a79921ea25658e4246a76b96989b4631a4ba35c4fc1368340afb05ee2100a428989c43eadea661b3eab87fca30eb52b3905bf7bc59c9d5248631c151bd740e6c1d58288376d91f8260ce5c493c7a63187037136024b213dbe098bcfd19078d40061ffdc2c3b255c45ab9f8c60a1c02be8f5c77a83f07a415ddea570a0c0e50119733481b4559fe4cabe03f9bb65c9066f16c2ae732a1c895a83f84ae04bcb542fcb51d0c0fa3f6c706daffa6bf69927deb9db01281e7d9d6804cb8374cc3706da33c8bd904b56fac3f339c32d68d3108a897a2e0251d0528d1cf92e27caf94ee816eb975ecc08bbf865b4cbda32b3c594523f3786aebbb1d89cbf102f636d147f53b495c8faaec229ab816387a6bedb9890b984a021bb43c0da2035f7eb05258d3515a9456f5906801f95f67be673669ef7c4a1177f5c7c248874f76b22ed1489219a5762146439f0be4c613b732d15affe813e144a9c3d8e4105ff5a0d5b6ed879124bfd7449b269d4bd0799fff7b15f894ee141023792e30ac518059cb35b99f61f465fb6c7a18af2d3eb3cdc0b516faf04dc07ac7f8d493e237c72683ab14549819c8bc20edafd5d0dc392f4d139585473b99a725527237f82ce51b319afda48eecc0dea7548f7c292a58a54b1eb9a7ba9d21b05720f53df000f236a57a77fe42e4bb0d469d3a0e9f6be4f7147440faceeef0f62027396a876083b6b483149127277af717fda9ba172a11a68ae23ff0fac48c6c20e172a1e8c02f6c3a06688ee5e80e6b0d943f7f22c53ae7c00121480725c53cfdb4abdbf42d35bb341f69dbc042a3a2c4547c4a564a4fc91cea94c71e6b469f9b6bd94b1205c3e6efe6f77685ef6472a60daa59630b06670c0297395ff0b1a2d32889af7bc11f0c603b3f43cc24e31d76aaab779e14f8fd6da8ba8314f61a1a1712c0e4aa9e35d44f610fb065db0fcd36a1cf5970641a80fe95b5bf1116a621b3320e4c4b460746187f7fe8a43415f14584464e0f037adfe081d1b70b33576397c4c4cce450fa3be2fa97a4f1780beb0c91524c2cdaad8216b350bef7bc4943037b84be1c0e3a23d0964a86b027a4a3e6236f9d3e86570802858d54d487655378fd824194344d1252462118b4d6b596e24aa16bdbc99cefac54b91c40398f8b69715914e4cf43464b4b8a35eb949d2093d07a48d63bf731c9dde1ba6f5a51ee7b0866eb1344b51180b7d9a79e0f479a5d3c9d43ff950e77997f15453703b9c21d7429af094f722c5e9b99f3bc916971988fbe244716b0f91854762b0bce64c14e00e46765a49afcb70f5cafb646a780a4043d0ce6cadc99c733fd4cf179294b4fcabfcb849c495f520c52218f5d073bbdf7f3a6eeb6398f624703698bebbb24b7f24f45ca53ba351bbabac6ab97967e5230aa3b6f6f27ad6d97005dcc467f2dcf6fea073b9a501590c4d378976e6dec157cbe3649a536fdc46563ea7b5ad0bc19bd99ad2ffcd57605bb44342603c6ebb65de4ed075b467591a70a3c1affd24855864c80db3dd6eb8ee0b5740bb5d9303f2aa13c6768bced4bb1bcead733fe768a4a2fbda30a940f195deb114c48352703e72a511d3cd5d99a164f057ae76511275b1e846c0026db12aeb71ae6a7211579f04aaf91f74f215e32e4e3b680cf04488dc6d5f39d602a443374e249fd1bb88e6ef7cb35fee86da4767e4dd29465637a6efadcff7fee7ef067e4215301c4e86afb79bf103423e4642a73c060688de4153913b0aa0dba3dbc45db1301fdba4839913c7ffb761eef023157ecd603b47443282394e13c47e5fd7e1b8f53d4c7509736cdb1386e9843fc708428d8db1b71564a7171227ea0c9fd2e352f3e5a26e7a456e79b30368c38174166ae64b055e2007dd830ebc7ca409ac57b5ff0d7209d5d25efcf0e72836e0e865d90cfdbfcbbb86cbac5961e14e4ea1ac3f2f26feef3af51927a616951c6c0f327dad1a04ba8a38ca41982f396aeed0b8af54fad6c8a4b1b3fa708e160586807c726efb110bfc0bda8133c7125c0f99db722b9c84007354c99fedf22f5e5278d2faf892fe2077fef9207c5a0fc4b05f9027737cd3d187ad5425cf69368a89c0eac89858ea35526d16edbdcee5be30ee2035a6681efef9eb5c9f1984d36f093391934c4f216a9ce1e6da813a47ac9d49b5b3ff11031fe96a318958231f4882500df535c249b34a32cd720c9bff7aa53b4ec49a6639ae62088abe5327ba60c1a057c7c04aa2feb87e0bf79d5bfc61b41067eefcd77580ec8734c9ad5ddedaaa7aa1bf6c6ac1fa458669ec21632da94f7540909c5292e24051f488266ca53cda03a3ae01b73c5cd65e5e1ebca5982853ce062acf06c6de4bf284ffc039068ab3028a9027228d13b6a32a7cab74a1c74090bc692317880eaa9c34eac455ee5d9953c686ff683458dc03828519cd1f67a89c653346bbc3f1c9bd752155f5c99bdba3c26d967bafa526a5d1d085eb3c04179d443f905eb2069a263af11385d0e599c238481e93f90723cb2db4539c85cf579959b95608b820ac73baeff9bb2db7cded0591082fa36267d377955c24118a6a3ac26cdd94bf06d884bfe70fb8bec6ba51fb16803a085c3dddd4ac808c384389693f0dc8540c6946884af366a2fdf125bdd8654dbc09b325cd9a8a8dbb5f88eca7b93666ba3646a94653e66e692c84cffdf3e6e541f812dbab433944e2155c19b078794e7e8293d08c21809e639d2b5993d6ac197e90662922ecf08b4669d6ed2a8d4e1aceb611fd1cf2f0b903ce9f5db7b2093655403aa5e2e17cfa0b25fff8fb81ae285dc9678d8f8efb9a50d19ac081a29d02769d761d1b75a0e415c22b07343fe280759f58723f47d5bc2aed6af179568e91f5325b6fafe6bfe51d979e3fe4ad7d8b1728f0458dbec65dadf58769d8344e4471abea45aea42e45cb61daed7d3746e6a5128176da08c2d27852a3b290256cb4defcef92962850d492a567e79d11b6b33b02c72656e882d763785fce9d5e1f6dd644d4a42b4a8da091dad83029dc743e8fa942353760bee40a6e8ce189970bf05f290529d30917abe8f8d42337e392d247fd0fae800f516d24f970fc436a9cc09da9a16461c2e6cd34595be1b8fd15c5406b16bbe3a6ecd724c66eb73bde89685261fca26072620f621e8d0d42ed31d41a6c09eb3bafa0d67bdd3f8166aeb4bcd1c80fdd6f8b88c143a08001595a550551a65217b1e537c4ad3f4401f533f7dbda65612247cd56a9510c3b99bd099ecc5fd45378d9c56e5296f6ff60a8bd4eb822759cbf62f37ae635ba2f824e997f8d5e55501ed517b51d98434182bdc66444012e0cecc365e612ef5e9d6cc749e5dec5255929e34f9e7a3a92680ff50d7cbd066ae7f831e017d255276fe7d6e684ff038a0dd3df84ffe1c615e0da3abcef65ab3f46694385940c0ff8c42167365d371b181f9976d301f66f3512c1dfd65af198539efe4664579dc2c42b153615afc42d6af8e3071e4d76e13cf1ed9fb6620a97137b212fcd3c8797c4858192b8cce6160fe06499509b8fbf78d9ca204bd3105590b46d151639b9233f4b23d95e1c00413d6343667d0610fc64419725125afc5028f7f52bcd44c49b79835a599553c00dcc51df5816befc94ce17e29510b7c7c77c28f5d7af8f2a4167afeaf27f6e4e621ac0d56dac973c43ea201a7791003f1438e69173003bc9c210befac344c00a946275c29be4549d02777ea0275a126aabae93cc17afd843ad28a417ab68027fa201f0e1a5c10fb5ebc9ed894c4973433b855fb8dce46535e573b78e870df7d2eaee0a0636340550ad90f7550dc84b9c2a28a1b618b97fb4c48204cde999c0f11e4a26101e42962d245aa567ba2c74141f221c4f9b3371000b0b62e333deefab3e16831f9274b8bfa9394a5d9db56d0965be8d2fbbc7d14e2c8bfcd3910c9ca4abe34d42e362e0e7f5b06ad5d8a66b569b4fa8cfd9ca2d3ee2bb493cf0c36ba5075ae2a70540e6bdf3c3e2d8efb9f1509866f79a2ffda6bacb59d4940f5b820791d918477c609486904cbfe7ca9d3f5f666de821c66fe97bc100440e1bc7fde7e34000e56dba4a3ad703687bbdb31e963def36c5d6d970b6bf248d938d7b4f7ca1bb71c885d5ccee86eb68f3d98649be0e8dfe2864dceec68d35fc32cd7425a94d06cf1ce95df51dacf38af3a784b2f8e4727e2b62eb8416a1bfbffa1ac40755156bc65dbe5d6758a9f2219b5d716382997261d7eda19baa85e6acceadfad5f7f2b3c5d366f5bd247a2fa4a483898dd6e2d3a73a5a535459090a31867ae3d9b33292809c7a39d7bc85351a150bbc09f8ae5aefc3406125680140ddcfaae77f2ae8098991eaf654b796d100e7596daef45d2ae35b6aecacb886112dbf2a8994aed555ca194a7881501d67b0c88ae6189bb287e9810210d5e70a09c36029d7b4d13f4384bc4a0905cb82283bade0bfa1f45e38fad5b3d2e100291ffc2802587876</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">测试加密，这里的密码是：test</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <title>马克思主义原理期末复习</title>
+    <url>/2022/12/07/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%8E%9F%E7%90%86%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<p>正确率应该在85%以上，只有选择题</p>
+<p>尽量使用网页打开文件，实在打不开点击<a href="https://github.com/Aurora7july/Files.github.io/blob/main/%E7%AC%94%E8%AE%B0PDF/%E9%A9%AC%E5%8E%9F%E5%A4%8D%E4%B9%A0.pdf">备份</a>试试看。</p>
+
+
+	<div class="row">
+    <embed src="/pdf/马原复习.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
       <categories>
         <category>学习</category>
       </categories>
@@ -1334,19 +1438,20 @@ for faceRect in faceRects:
       </tags>
   </entry>
   <entry>
-    <title>马克思主义原理期末复习</title>
-    <url>/2022/12/07/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%8E%9F%E7%90%86%E9%A2%98%E7%9B%AE/</url>
-    <content><![CDATA[<p>正确率应该在85%以上，只有选择题</p>
-<p>尽量使用网页打开文件，实在打不开点击<a href="https://github.com/Aurora7july/Files.github.io/blob/main/%E7%AC%94%E8%AE%B0PDF/%E9%A9%AC%E5%8E%9F%E5%A4%8D%E4%B9%A0.pdf">备份</a>试试看。</p>
-
-
-	<div class="row">
-    <embed src="/pdf/马原复习.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
-]]></content>
+    <title>量子力学</title>
+    <url>/2022/10/25/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="94f1842aaf74c037b57870cae1da197f171bb4b00e77b3f9584c0963687bf7f5">bd25ed9264b080267271e137e33d0ce118960a041ac35a180347d4bc9710c7dc8ffd3a92c3998a037c2c77660c8510c08d0e2e16e0f79962dcd4fbd46c6468275b6104b5c5f163549a3ae237cf8441ca48a44ed76fdd12e2177ed6e20f330376316022f5b9e400d973edb71686f85cc1a3c589105c6b6cfd8c48832d45e050493b6807a91327cda5599b992e5dd6dc6f46f8d90531553790defaf3419cadf640df5a9272f92630053391aab2f04f0e941c499d263d05eeda6f52865a7e541d4d7885b6a959a16727e2629de8e566660b607e555868f581663afd7837d07944bae3bfd73eecd4b7fd29c02835e5c6734e010dc2ea7ad235e53ada6cf5576f88fe24b567fdb0d7e8b25ce1804987078c893fbb9903058ad1bed84279d51c7861b5ab7618e9959587689e369f947ce5cffa86838ae7e3683b3ab0f6351a0eb16fc46c786ff9bf10ec6738560d6f52ce1058b634397a089386fa6ceae2542f13175a8447a244dc9952cc222f832b88b76e65cb94ab73017a45c6cc9a2f86c658a782e0138a8e813f2ba0b73a402aa948c8fd88d5db4f01f07bda2b5e28dcb6cb926650e6a305aaaa025179c5b68b54306f0bbd6b8b07b527cb2d6fb35af9b0f43b4cb3715e04233547974bc63dd700da62214f2421a6024c9b6de40f01ac4629417ba21edeb0c46bab3311025178f60e4e626cc0b1b0c7ad7e9be839000b8e25805e17e650c81d441ba6830cf413918477bf16c82877fb7aa760a91e03a19c3c8cf997482699036deb6a50a96716aaa584eda645e7c284e8b66552d74403fea9289fc54dc995d412f1b58f31d42184227d05c761b4f65fecf9bb9624360ca03bda383852b787ef5182c61781e73b782c7008389cb8e288096f9ac9f54e4fcd4d2df2d17e9d1becc14b7572a131a28268120c310261e60aef3d30463f9bdb31691d2bb85ab403858ecac36f804ed97d49985d6bb6912a845133f0b94e95546172987aa9655a98b8c5722d23dd7a7a4cbd766a9da0c62fa368acfdd06795d7caad9c6898878535581480c629b2c99041a61c9a138ee0ff0dd0e2005d1f915f1f725400cace6f49ffc087ab028c7a794981358a4dedc466789e1ccaa0e1d45e1d51bcb37c4c25a38c713e4ce0fa3e84a8b2a5e37ade4bc48562c814e78707aca69aff877f43b63c6598238189d531e56d91cf3accba3951b96c7d2fdb8916bb29195e684449bd199cda2e7c8833cce8f31dfdb11c3ae1d0120d0aaf015b289eb205c0aa6bc1596e0e3ab8cb992c9fdcb04988e4234877acdacd92c99f4644b73063ce5d189f7de6d66aba9e9a60231689a604e90bea76b52dff5002a2c010f4bb7f8f2d291b0c45832d5e516fdc816e9454655af3d106d50688054bad89af3ca7da040dca23c6b2fa570a92d12d8288321ad913d1c6d1ca4e3a7efdd34230b8b8f7d6a30b46197e0906e20181bf938e2552135908c364d1c8b199c7d07fa0699e131bd26bf3b9886b4d3fa715aedb65004969760257328caf67aa251081a77174dd45eb03aba4b50c18c26bd4837ea082798483b45a8f6007bc154c9075e37710466492fdb90770ccd1eff1d9c458198ff518fe77268c021957f9b39ca5bb59085a4993b3ab939aaa12e63c0cdc9ff7f21e03d4a75e62fd2db17b764d1f45ee1c68f841730bf33685bf95ed4deb7838643f99e28b91aaa18099f2d06d86eed596bb75c83c7124fb96c3c9b6fa6294a9cfc439bbcef3fbad22eff0eb28f1a6c0e551fc7be26155ad3066d772dc7c50d1ca9fe7654cf046b399f28119c4fcf7da3e2e1b0da851a338cba01f56377faac6407bc9526cdf5bc13d2d7ca4417bcca6504a9824e2cd38698d00e344fc07b70d61a3b7cc68e5195971a0f1f6c17dc0610e1df35bb227a0cc1571fc9a646115b64f24b4e969edd2643ca1c5c9ef882bd8970ebf61f27b5798d9ef367a5658e4e0ac848723b61c3e4a0e6ef1594eaeccf698cdaa47e6ae3a81c3ce8486fa86fe41cb89b4c4bcacf36cac50774d6a56524b7aee25e5a9d14afb0cb0fc5a4840b6d7358a0cfa62c0267eae6980f370acc397cce90e27138efb9b449aa02c08c3f387493d2d491c2571dd163a02cc365a8ad06e4470bd9cc3b2295123f4ebc6ae0c09876b4d742a4ec4418eaf565365e5f17ec246592c18f1a00c43a5862074c26db30932df2bd5a66d3d0b1482f4d4b762d1218e93cb47363915de9163d413b5409057b4b62b946981a51937be83db164d8e96c32bfeb6c696093409ebf9f13c5c1e674d4adfaaeb09ca420fcf7435d796da31258cd91844fc2cd0eb1823c272881b593fb0c4a329277e89ed6728437343527aaaec13504a706335909a4ccbea585b6d66e2fcc450c8c200543ca8642e543fe3aa81162b6d0907ca59cfd47226650f585b5a79921ea25658e4246a76b96989b4631a4ba35c4fc1368340afb05ee2100a428989c43eadea661b3eab87fca30eb52b3905bf7bc59c9d5248631c151bd740e6c1d58288376d91f8260ce5c493c7a63187037136024b213dbe098bcfd19078d40061ffdc2c3b255c45ab9f8c60a1c02be8f5c77a83f07a415ddea570a0c0e50119733481b4559fe4cabe03f9bb65c9066f16c2ae732a1c895a83f84ae04bcb542fcb51d0c0fa3f6c706daffa6bf69927deb9db01281e7d9d6804cb8374cc3706da33c8bd904b56fac3f339c32d68d3108a897a2e0251d0528d1cf92e27caf94ee816eb975ecc08bbf865b4cbda32b3c594523f3786aebbb1d89cbf102f636d147f53b495c8faaec229ab816387a6bedb9890b984a021bb43c0da2035f7eb05258d3515a9456f5906801f95f67be673669ef7c4a1177f5c7c248874f76b22ed1489219a5762146439f0be4c613b732d15affe813e144a9c3d8e4105ff5a0d5b6ed879124bfd7449b269d4bd0799fff7b15f894ee141023792e30ac518059cb35b99f61f465fb6c7a18af2d3eb3cdc0b516faf04dc07ac7f8d493e237c72683ab14549819c8bc20edafd5d0dc392f4d139585473b99a725527237f82ce51b319afda48eecc0dea7548f7c292a58a54b1eb9a7ba9d21b05720f53df000f236a57a77fe42e4bb0d469d3a0e9f6be4f7147440faceeef0f62027396a876083b6b483149127277af717fda9ba172a11a68ae23ff0fac48c6c20e172a1e8c02f6c3a06688ee5e80e6b0d943f7f22c53ae7c00121480725c53cfdb4abdbf42d35bb341f69dbc042a3a2c4547c4a564a4fc91cea94c71e6b469f9b6bd94b1205c3e6efe6f77685ef6472a60daa59630b06670c0297395ff0b1a2d32889af7bc11f0c603b3f43cc24e31d76aaab779e14f8fd6da8ba8314f61a1a1712c0e4aa9e35d44f610fb065db0fcd36a1cf5970641a80fe95b5bf1116a621b3320e4c4b460746187f7fe8a43415f14584464e0f037adfe081d1b70b33576397c4c4cce450fa3be2fa97a4f1780beb0c91524c2cdaad8216b350bef7bc4943037b84be1c0e3a23d0964a86b027a4a3e6236f9d3e86570802858d54d487655378fd824194344d1252462118b4d6b596e24aa16bdbc99cefac54b91c40398f8b69715914e4cf43464b4b8a35eb949d2093d07a48d63bf731c9dde1ba6f5a51ee7b0866eb1344b51180b7d9a79e0f479a5d3c9d43ff950e77997f15453703b9c21d7429af094f722c5e9b99f3bc916971988fbe244716b0f91854762b0bce64c14e00e46765a49afcb70f5cafb646a780a4043d0ce6cadc99c733fd4cf179294b4fcabfcb849c495f520c52218f5d073bbdf7f3a6eeb6398f624703698bebbb24b7f24f45ca53ba351bbabac6ab97967e5230aa3b6f6f27ad6d97005dcc467f2dcf6fea073b9a501590c4d378976e6dec157cbe3649a536fdc46563ea7b5ad0bc19bd99ad2ffcd57605bb44342603c6ebb65de4ed075b467591a70a3c1affd24855864c80db3dd6eb8ee0b5740bb5d9303f2aa13c6768bced4bb1bcead733fe768a4a2fbda30a940f195deb114c48352703e72a511d3cd5d99a164f057ae76511275b1e846c0026db12aeb71ae6a7211579f04aaf91f74f215e32e4e3b680cf04488dc6d5f39d602a443374e249fd1bb88e6ef7cb35fee86da4767e4dd29465637a6efadcff7fee7ef067e4215301c4e86afb79bf103423e4642a73c060688de4153913b0aa0dba3dbc45db1301fdba4839913c7ffb761eef023157ecd603b47443282394e13c47e5fd7e1b8f53d4c7509736cdb1386e9843fc708428d8db1b71564a7171227ea0c9fd2e352f3e5a26e7a456e79b30368c38174166ae64b055e2007dd830ebc7ca409ac57b5ff0d7209d5d25efcf0e72836e0e865d90cfdbfcbbb86cbac5961e14e4ea1ac3f2f26feef3af51927a616951c6c0f327dad1a04ba8a38ca41982f396aeed0b8af54fad6c8a4b1b3fa708e160586807c726efb110bfc0bda8133c7125c0f99db722b9c84007354c99fedf22f5e5278d2faf892fe2077fef9207c5a0fc4b05f9027737cd3d187ad5425cf69368a89c0eac89858ea35526d16edbdcee5be30ee2035a6681efef9eb5c9f1984d36f093391934c4f216a9ce1e6da813a47ac9d49b5b3ff11031fe96a318958231f4882500df535c249b34a32cd720c9bff7aa53b4ec49a6639ae62088abe5327ba60c1a057c7c04aa2feb87e0bf79d5bfc61b41067eefcd77580ec8734c9ad5ddedaaa7aa1bf6c6ac1fa458669ec21632da94f7540909c5292e24051f488266ca53cda03a3ae01b73c5cd65e5e1ebca5982853ce062acf06c6de4bf284ffc039068ab3028a9027228d13b6a32a7cab74a1c74090bc692317880eaa9c34eac455ee5d9953c686ff683458dc03828519cd1f67a89c653346bbc3f1c9bd752155f5c99bdba3c26d967bafa526a5d1d085eb3c04179d443f905eb2069a263af11385d0e599c238481e93f90723cb2db4539c85cf579959b95608b820ac73baeff9bb2db7cded0591082fa36267d377955c24118a6a3ac26cdd94bf06d884bfe70fb8bec6ba51fb16803a085c3dddd4ac808c384389693f0dc8540c6946884af366a2fdf125bdd8654dbc09b325cd9a8a8dbb5f88eca7b93666ba3646a94653e66e692c84cffdf3e6e541f812dbab433944e2155c19b078794e7e8293d08c21809e639d2b5993d6ac197e90662922ecf08b4669d6ed2a8d4e1aceb611fd1cf2f0b903ce9f5db7b2093655403aa5e2e17cfa0b25fff8fb81ae285dc9678d8f8efb9a50d19ac081a29d02769d761d1b75a0e415c22b07343fe280759f58723f47d5bc2aed6af179568e91f5325b6fafe6bfe51d979e3fe4ad7d8b1728f0458dbec65dadf58769d8344e4471abea45aea42e45cb61daed7d3746e6a5128176da08c2d27852a3b290256cb4defcef92962850d492a567e79d11b6b33b02c72656e882d763785fce9d5e1f6dd644d4a42b4a8da091dad83029dc743e8fa942353760bee40a6e8ce189970bf05f290529d30917abe8f8d42337e392d247fd0fae800f516d24f970fc436a9cc09da9a16461c2e6cd34595be1b8fd15c5406b16bbe3a6ecd724c66eb73bde89685261fca26072620f621e8d0d42ed31d41a6c09eb3bafa0d67bdd3f8166aeb4bcd1c80fdd6f8b88c143a08001595a550551a65217b1e537c4ad3f4401f533f7dbda65612247cd56a9510c3b99bd099ecc5fd45378d9c56e5296f6ff60a8bd4eb822759cbf62f37ae635ba2f824e997f8d5e55501ed517b51d98434182bdc66444012e0cecc365e612ef5e9d6cc749e5dec5255929e34f9e7a3a92680ff50d7cbd066ae7f831e017d255276fe7d6e684ff038a0dd3df84ffe1c615e0da3abcef65ab3f46694385940c0ff8c42167365d371b181f9976d301f66f3512c1dfd65af198539efe4664579dc2c42b153615afc42d6af8e3071e4d76e13cf1ed9fb6620a97137b212fcd3c8797c4858192b8cce6160fe06499509b8fbf78d9ca204bd3105590b46d151639b9233f4b23d95e1c00413d6343667d0610fc64419725125afc5028f7f52bcd44c49b79835a599553c00dcc51df5816befc94ce17e29510b7c7c77c28f5d7af8f2a4167afeaf27f6e4e621ac0d56dac973c43ea201a7791003f1438e69173003bc9c210befac344c00a946275c29be4549d02777ea0275a126aabae93cc17afd843ad28a417ab68027fa201f0e1a5c10fb5ebc9ed894c4973433b855fb8dce46535e573b78e870df7d2eaee0a0636340550ad90f7550dc84b9c2a28a1b618b97fb4c48204cde999c0f11e4a26101e42962d245aa567ba2c74141f221c4f9b3371000b0b62e333deefab3e16831f9274b8bfa9394a5d9db56d0965be8d2fbbc7d14e2c8bfcd3910c9ca4abe34d42e362e0e7f5b06ad5d8a66b569b4fa8cfd9ca2d3ee2bb493cf0c36ba5075ae2a70540e6bdf3c3e2d8efb9f1509866f79a2ffda6bacb59d4940f5b820791d918477c609486904cbfe7ca9d3f5f666de821c66fe97bc100440e1bc7fde7e34000e56dba4a3ad703687bbdb31e963def36c5d6d970b6bf248d938d7b4f7ca1bb71c885d5ccee86eb68f3d98649be0e8dfe2864dceec68d35fc32cd7425a94d06cf1ce95df51dacf38af3a784b2f8e4727e2b62eb8416a1bfbffa1ac40755156bc65dbe5d6758a9f2219b5d716382997261d7eda19baa85e6acceadfad5f7f2b3c5d366f5bd247a2fa4a483898dd6e2d3a73a5a535459090a31867ae3d9b33292809c7a39d7bc85351a150bbc09f8ae5aefc3406125680140ddcfaae77f2ae8098991eaf654b796d100e7596daef45d2ae35b6aecacb886112dbf2a8994aed555ca194a7881501d67b0c88ae6189bb287e9810210d5e70a09c36029d7b4d13f4384bc4a0905cb82283bade0bfa1f45e38fad5b3d2e100291ffc2802587876</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">测试加密，这里的密码是：test</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>学习</category>
       </categories>
